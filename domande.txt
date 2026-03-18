@@ -1,0 +1,14 @@
+V |  I veicoli a due ruote, con motore termico fino a 50 cm3 di cilindrata e velocità massima di 45 km/h sono ciclomotori
+V |  I ciclomotori possono avere due o tre ruote
+V |  Non tutti i veicoli a motore a due ruote vengono classificati ciclomotori
+V |  I ciclomotori a due ruote non possono avere un motore termico di cilindrata superiore a 50 cm3
+V |  I ciclomotori sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+F |  I ciclomotori non hanno più di due ruote
+F |  Le biciclette con pedalata assistita, dotate di motore elettrico ausiliario di potenza massima fino a 0,25 kW, sono definite ciclomotori
+F |  Si definiscono ciclomotori tutti i veicoli a due ruote di cilindrata superiore a 50 cm3
+F |  I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale
+F |  I ciclomotori possono circolare alla velocità di 60 km/h fuori dai centri urbani
+F |  I ciclomotori non sono soggetti a revisione periodica
+V |  I motocicli sono veicoli a due ruote
+V |  I motocicli hanno cilindrata superiore a 50 cm3
+V |  I ciclomotori non rientrano nella categoria dei motocicli

@@ -1,0 +1,1386 @@
+V | I veicoli a due ruote, con motore termico fino a 50 cm3 di cilindrata e velocità massima di 45 km/h sono ciclomotori
+V | I ciclomotori possono avere due o tre ruote
+V | Non tutti i veicoli a motore a due ruote vengono classificati ciclomotori
+V | I ciclomotori a due ruote non possono avere un motore termico di cilindrata superiore a 50 cm3
+V | I ciclomotori sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+F | I ciclomotori non hanno più di due ruote
+F | Le biciclette con pedalata assistita, dotate di motore elettrico ausiliario di potenza massima fino a 0,25 kW, sono definite ciclomotori
+F | Si definiscono ciclomotori tutti i veicoli a due ruote di cilindrata superiore a 50 cm3
+F | I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale
+F | I ciclomotori possono circolare alla velocità di 60 km/h fuori dai centri urbani
+F | I ciclomotori non sono soggetti a revisione periodica Motocicli
+V | I motocicli sono veicoli a due ruote
+V | I motocicli hanno cilindrata superiore a 50 cm3
+V | I ciclomotori non rientrano nella categoria dei motocicli
+V | I motocicli possono essere dotati di cambio automatico
+V | I motocicli sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+F | Tutti i veicoli a motore con tre ruote sono dei motocicli
+F | I motocicli sono veicoli a motore con più di due ruote
+F | Il motociclo è un qualunque veicolo a due ruote
+F | Si definiscono motocicli solo i veicoli a due ruote di cilindrata fino a 125 cm3
+F | I motocicli hanno motore di cilindrata fino a 50 cm3 e sviluppano una velocità fino a 45 km/h
+F | Ai fini della circolazione i quadricicli leggeri sono assimilati ai motocicli Tricicli a motore
+V | I tricicli a motore sono veicoli a motore a tre ruote simmetriche
+V | I tricicli a motore sono veicoli con motore di cilindrata superiore a 50 cm3
+V | I tricicli a motore sono veicoli a motore aventi una velocità massima per costruzione superiore a 45 km/h
+V | I tricicli a motore sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+F | I tricicli a motore sono veicoli a motore che possono essere condotti senza patente
+F | I tricicli a motore sono costituiti da un motociclo e un sidecar
+F | I tricicli a motore sono veicoli con motore di cilindrata inferiore a 50 cm3 e aventi velocità massima per costruzione fino a 45 km/h
+F | I tricicli a motore non sono soggetti a revisione periodica 1 I VEICOLI Quadricicli a motore
+V | I quadricicli leggeri alimentati a benzina hanno cilindrata del motore inferiore o pari a 50 cm3
+V | I quadricicli sono veicoli a motore a quattro ruote
+V | I quadricicli leggeri, ai fini della circolazione, sono assimilati ai ciclomotori
+V | La potenza dei quadricicli non leggeri è sempre inferiore o uguale a 15 kW
+V | I quadricicli sono soggetti a revisione periodica
+F | I quadricicli diversi da quelli leggeri possono essere guidati senza patente
+F | I quadricicli non leggeri, ai fini della circolazione, sono equiparati ai ciclomotori
+F | È consentito sostituire il dispositivo di scarico dei quadricicli leggeri per aumentare la velocità massima, purché non si aumenti la cilindrata del motore
+F | La guida dei quadricicli non leggeri è consentita già al compimento del quattordicesimo anno di età
+F | I quadricicli non leggeri a manubrio e con carrozzeria aperta possono essere condotti senza casco
+F | È consentito aumentare la cilindrata dei quadricicli leggeri purché non si aumenti la velocità
+F | È consentito sostituire il motore del quadriciclo leggero per aumentare la velocità massima oltre i 45 km/h
+F | I quadricicli non sono soggetti a revisione periodica Autovetture
+V | L’autovettura è un veicolo a motore con quattro ruote, destinato al trasporto di massimo nove persone, compreso il conducente
+V | L’autovettura fa parte degli autoveicoli
+V | L’autovettura non può avere più di nove posti, compreso il conducente
+V | L’autobus non è un’autovettura
+V | Le autovetture possono avere motore elettrico
+V | Le autovetture sono soggette a revisione periodica
+F | Si definiscono autovetture tutti i veicoli a motore che hanno la trazione posteriore
+F | Le autovetture non possono trainare carrelli-appendice o rimorchi
+F | Vengono definite autovetture tutti i veicoli con motore anteriore
+F | L’autovettura è un veicolo con dieci posti in totale, compreso il conducente
+F | Si definisce autovettura il veicolo blindato e appositamente attrezzato per il trasporto di valori
+F | L’autocarro è un’autovettura
+F | L’autovettura può avere, al massimo, cinque posti
+F | Le autovetture sono soggette a revisione ogni cinque anni 2 I VEICOLI Autoveicoli
+V | Gli autoveicoli sono veicoli a motore con almeno quattro ruote, esclusi i quadricicli
+V | L’autoveicolo è un veicolo a motore con non meno di quattro ruote, eccetto i quadricicli
+V | L’autobus viene classificato autoveicolo
+V | L’autocarro è un autoveicolo
+V | I quadricicli non sono autoveicoli
+F | Gli autoveicoli sono tutti i veicoli a motore con quattro o più ruote, compresi i quadricicli
+F | Gli autoveicoli sono tutti i veicoli con almeno due ruote
+F | Gli autoveicoli sono tutti i veicoli con almeno quattro ruote, compresi quelli senza motore
+F | Il triciclo a motore è un autoveicolo
+F | L’autoveicolo è un qualunque veicolo a motore
+F | L’autoveicolo è un qualunque veicolo adibito al trasporto di merce Autocaravan (camper)
+V | Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all’alloggio di persone
+V | Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all’alloggio al massimo del numero di persone indicato nella carta di circolazione
+V | Le autocaravan (camper) sono veicoli attrezzati permanentemente per essere adibiti al trasporto ed all’alloggio di persone
+V | Le autocaravan sono soggette a revisione periodica
+F | Le autocaravan (camper) sono rimorchi
+F | Le autocaravan (camper) sono veicoli destinati ai lavori agricoli
+F | Le autocaravan (camper) sono veicoli destinati alla costruzione e alla manutenzione di opere stradali
+F | Sulle autocaravan (camper) è possibile viaggiare in piedi, solo per brevi tratti
+F | Le autocaravan sono soggette a revisione ogni cinque anni Macchine agricole - Macchine operatrici
+V | Le macchine agricole possono circolare su strada per il proprio trasferimento se immatricolate
+V | Le macchine agricole possono essere a ruote o a cingoli
+V | Le macchine agricole a ruote o a cingoli possono circolare su strada per il trasporto di prodotti agricoli per conto delle aziende agricole e forestali
+V | Le macchine agricole possono essere semoventi o trainate
+V | Le macchine agricole operatrici possono essere dotate di speciali attrezzature per l’esecuzione di operazioni agricole
+V | Le macchine operatrici possono essere semoventi o trainate
+V | Le macchine operatrici possono essere veicoli sgombraneve
+F | Le macchine operatrici possono circolare ad una velocità superiore a 50 km/h
+F | Le macchine operatrici a cingoli possono circolare ad una velocità superiore a 45 km/h
+F | Le macchine operatrici semoventi possono trasportare fino a quattro passeggeri
+F | Per condurre macchine operatrici è necessario essere titolari della patente di guida della categoria A
+F | Le macchine agricole possono trasportare fino a quattro passeggeri
+F | Sulle macchine agricole e sui loro rimorchi è consentito il trasporto di persone in piedi
+F | Con la patente di categoria A si possono guidare tutte le macchine agricole
+F | Con la patente di categoria B si possono guidare le macchine operatrici eccezionali 3 I VEICOLI Rimorchi e semirimorchi
+V | I rimorchi o i semirimorchi sono veicoli privi di motore, destinati ad essere trainati
+V | I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 750 kg
+V | L’autosnodato non è classificato rimorchio
+V | L’autocaravan non è un rimorchio
+F | Il caravan non è un rimorchio
+F | I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 500 kg
+F | I semirimorchi sono rimorchi privi di impianto frenante
+F | I rimorchi sono muniti di silenziatore Caravan (roulotte)
+V | I caravan (roulottes) sono rimorchi attrezzati per essere adibiti ad alloggio
+V | I caravan (roulottes) sono utilizzabili come alloggio solo con veicolo fermo
+V | I caravan (roulottes) sono muniti di targa
+F | È possibile alloggiare nei caravan (roulottes) durante la circolazione
+F | I caravan (roulottes) sono rimorchi destinati ai lavori agricoli
+F | I caravan (roulottes) sono rimorchi destinati esclusivamente al trasporto di attrezzature turistiche e sportive 4 LA STRADA Strada
+V | La strada può essere suddivisa in carreggiate
+V | La strada può comprendere le piste ciclabili
+V | La strada può essere a senso unico di circolazione
+V | La strada può essere a doppio senso di circolazione
+V | La strada è aperta alla circolazione dei pedoni, degli animali e dei veicoli
+F | La strada non comprende le banchine
+F | La strada è riservata alla circolazione dei soli autoveicoli e motocicli
+F | La strada è normalmente riservata alla circolazione dei soli veicoli e animali
+F | La strada non comprende i marciapiedi
+F | La strada è qualsiasi area asfaltata, limitata lateralmente dagli attraversamenti pedonali Autostrada
+V | L’autostrada non ha incroci a raso che l’attraversano
+V | L’autostrada è dotata di speciali corsie per l’ingresso e l’uscita dei veicoli
+V | L’autostrada è a carreggiate indipendenti o separate da spartitraffico
+V | I motocicli con cilindrata di almeno 150 cm3 possono circolare in autostrada
+V | Le macchine agricole non possono circolare in autostrada
+V | Non tutti i tipi di veicoli possono circolare in autostrada
+V | L’uscita dei veicoli dalle autostrade avviene tramite corsie di decelerazione
+V | L’autostrada deve essere lateralmente recintata
+F | Nelle autostrade possono circolare solo le autovetture
+F | Nelle autostrade possono circolare tutti i tipi di motocicli
+F | L’autostrada può comprendere piste ciclabili
+F | Nelle autostrade possono circolare i ciclomotori e i motocicli con cilindrata fino a 125 cm3
+F | Nelle autostrade possono circolare solo gli autoveicoli
+F | Nelle autostrade possono circolare tutti i motocicli e i ciclomotori 5 LA STRADA Strada extraurbana principale
+V | Le strade extraurbane principali sono a carreggiate separate
+V | Le strade extraurbane principali sono dotate di apposite aree di sosta
+V | La strada extraurbana principale non ha incroci a raso che l’attraversano
+V | Le strade extraurbane principali sono segnalate da cartelli stradali di inizio e fine
+V | Nelle strade extraurbane principali possono circolare solo alcune categorie di veicoli a motore
+V | Nelle strade extraurbane principali si possono trovare intersezioni (incroci) a livelli sfalsati
+V | Le strade extraurbane principali sono provviste di corsie di accelerazione per l’ingresso
+F | Sulle strade extraurbane principali è consentito circolare alla velocità massima di 130 km/h
+F | Le strade extraurbane principali sono contraddistinte da segnaletica verde
+F | Le strade extraurbane principali possono essere ad un’unica carreggiata
+F | Sulle strade extraurbane principali è consentito circolare alla stessa velocità massima prevista per le autostrade
+F | Sulle strade extraurbane principali i quadricicli leggeri possono transitare
+F | Le strade extraurbane principali hanno una sola corsia per ogni senso di marcia
+F | Sulle strade extraurbane principali i ciclomotori possono transitare
+F | Nelle strade extraurbane principali non vi sono curve né dossi
+F | Le strade extraurbane principali devono essere dotate di pannelli a messaggio variabile Carreggiata
+V | La carreggiata può essere a senso unico di circolazione
+V | La carreggiata può essere a doppio senso di circolazione
+V | La carreggiata può essere suddivisa in corsie
+V | La carreggiata non comprende le piste ciclabili
+V | La carreggiata non comprende i marciapiedi
+V | La carreggiata è la parte della strada destinata normalmente alla circolazione dei veicoli
+F | La carreggiata è destinata soltanto alla circolazione di carri a trazione animale
+F | La carreggiata è destinata alla sosta di emergenza
+F | La carreggiata è destinata alla sosta degli autocarri
+F | La carreggiata è la traccia lasciata dalle ruote dei veicoli sulle strade innevate
+F | La carreggiata comprende le piazzole di sosta Carreggiata
+V | Fanno parte della carreggiata le corsie di marcia
+V | Fanno parte della carreggiata gli attraversamenti ciclabili
+V | Fanno parte della carreggiata gli attraversamenti pedonali
+V | Fanno parte della carreggiata le corsie di sorpasso
+F | Fanno parte della carreggiata le corsie di emergenza delle autostrade
+F | Fanno parte della carreggiata le banchine
+F | Fanno parte della carreggiata i marciapiedi 6 LA STRADA Corsia
+V | La corsia può essere destinata alla normale marcia dei veicoli
+V | La corsia è limitata da strisce continue o discontinue
+V | La corsia può essere di accelerazione
+V | La corsia può essere di decelerazione
+V | Le corsie possono essere vietate a taluni tipi di veicoli
+V | La corsia può essere riservata alla circolazione di alcune categorie di veicoli (taxi, autobus, ecc.)
+V | La corsia può essere destinata ad effettuare sorpassi
+V | L’ente proprietario della strada può imporre che su una corsia i veicoli transitino ad una velocità minima obbligatoria
+V | La corsia è una parte della carreggiata che consente la circolazione di una sola fila di veicoli
+V | La corsia può essere destinata alle soste di emergenza, in caso di guasto o malessere
+V | La corsia può essere riservata ai veicoli che intendono svoltare (corsia specializzata)
+V | La corsia può essere destinata al rallentamento dei veicoli in uscita dalle autostrade
+F | La corsia è destinata solo al transito dei pedoni
+F | La corsia può essere a doppio senso di circolazione
+F | La corsia è una pista riservata alle vetture da corsa
+F | La corsia non può mai essere attraversata dai pedoni
+F | La corsia è formata da due carreggiate
+F | La corsia è una strada a scorrimento veloce
+F | Nei centri abitati, su una stessa corsia possono circolare affiancati due motocicli
+F | Fuori dai centri abitati, su una stessa corsia possono circolare affiancati due ciclomotori Corsia di accelerazione
+V | La corsia di accelerazione facilita l’ingresso dei veicoli in autostrada o su strade extraurbane principali
+V | La corsia di accelerazione serve ad entrare correttamente in autostrada
+V | La corsia di accelerazione viene utilizzata per aumentare la velocità
+V | La corsia di accelerazione serve per rientrare sulla carreggiata dell’autostrada dopo che si è usciti da un’area di servizio
+F | La corsia di accelerazione può essere utilizzata per il sorpasso
+F | La corsia di accelerazione serve per uscire da una piazzola di sosta
+F | La corsia di accelerazione serve per abbandonare la carreggiata dell’autostrada ed entrare in un’area di sosta Corsia di decelerazione
+V | La corsia di decelerazione facilita l’uscita dei veicoli dall’autostrada
+V | La corsia di decelerazione serve per uscire correttamente da una strada extraurbana principale
+V | La corsia di decelerazione serve per uscire dalla carreggiata dell’autostrada ed entrare nell’area di servizio
+F | La corsia di decelerazione può essere utilizzata per la sosta dei veicoli
+F | La corsia di decelerazione serve per entrare in una piazzola di sosta
+F | La corsia di decelerazione serve ad entrare in autostrada 7 LA STRADA Banchina
+V | La banchina non consente, di norma, il transito ai veicoli
+V | La banchina è parte della strada, posta al di fuori della carreggiata
+V | La banchina è parte della strada, situata oltre la linea bianca continua di margine della carreggiata
+F | La banchina è riservata ai veicoli lenti, nelle strade in salita
+F | Sulle banchine la sosta dei veicoli è consentita per un massimo di 5 ore
+F | La banchina divide la carreggiata in due corsie
+F | La banchina è parte della carreggiata, destinata alla sosta dei veicoli Passo carrabile
+V | Il passo carrabile consente ai veicoli di accedere alle proprietà private laterali alla strada (garage, cortili, ecc.)
+V | Il passo carrabile permette ai veicoli che circolano su una strada pubblica di accedere ad un’area laterale adibita alla sosta
+V | Il passo carrabile deve essere corredato da apposito segnale, che riporti l’ente e il numero di autorizzazione
+V | Il passo carrabile è una zona per l’accesso dei veicoli alle proprietà laterali alla strada
+V | In corrispondenza del passo carrabile è consentita la fermata
+F | Il passo carrabile è un parcheggio scambiatore
+F | Il passo carrabile è una strada riservata ai carri trainati da animali
+F | Il passo carrabile è una strada riservata agli autocarri
+F | Il passo carrabile è un salvagente circolare per i pedoni
+F | Il passo carrabile è un segnale che impone la circolazione rotatoria su una piazza
+F | In corrispondenza del passo carrabile è consentita la sosta Marciapiede
+V | Il marciapiede è una parte della strada, rialzata o delimitata in altro modo, riservata ai pedoni
+V | Il marciapiede è una parte della strada riservata, di norma, ai pedoni
+V | Il marciapiede consente la sosta dei veicoli solo in presenza di apposite strisce di parcheggio
+V | Il marciapiede è una parte della strada, al di fuori della carreggiata, destinata alla circolazione dei pedoni
+F | Il marciapiede è una parte della carreggiata
+F | Il marciapiede è una parte della strada riservata anche alle biciclette
+F | Il marciapiede è riservato ai pedoni e ai veicoli in sosta, qualora non sia rialzato
+F | Il marciapiede è una parte della strada dove, di norma, è consentita la sosta dei ciclomotori 8 LA STRADA Attraversamento pedonale
+V | L’attraversamento pedonale viene segnalato con strisce bianche parallele
+V | L’attraversamento pedonale è una parte della carreggiata sulla quale è vietata la fermata dei veicoli
+V | L’attraversamento pedonale è una parte della carreggiata, in cui i veicoli devono dare la precedenza ai pedoni, che attraversano sulle apposite strisce
+V | L’attraversamento pedonale è una parte della carreggiata destinata al transito dei pedoni che attraversano
+V | L’attraversamento pedonale è una parte della carreggiata sulla quale è vietata la sosta dei veicoli
+F | L’attraversamento pedonale è una parte della strada, separata dalla carreggiata mediante una striscia gialla
+F | L’attraversamento pedonale è una parte della carreggiata vietata al transito dei veicoli
+F | L’attraversamento pedonale non fa parte della carreggiata
+F | L’attraversamento pedonale è posto al di fuori della carreggiata ed è destinato al transito dei pedoni
+F | L’attraversamento pedonale è una parte della carreggiata in cui è consentita la fermata ma non la sosta dei veicoli Intersezione (incrocio) a raso
+V | Nell’intersezione (incrocio) a raso due o più strade si incrociano allo stesso livello
+V | L’intersezione (incrocio) a raso può essere regolata da semaforo
+V | L’intersezione (incrocio) a raso è un’intersezione di due o più strade poste allo stesso livello
+V | L’intersezione (incrocio) a raso richiede di fare attenzione ai veicoli provenienti dalle strade che si incrociano
+F | L’intersezione (incrocio) a raso è un incrocio fra una strada statale e i binari del tram
+F | L’intersezione (incrocio) a raso è un incrocio fra una strada statale e un passo carrabile
+F | L’intersezione (incrocio) a raso è un passaggio a livello  dotato di barriere o semibarriere
+F | L’intersezione (incrocio) a raso è un’intersezione a livelli sfalsati
+F | L’intersezione (incrocio) a raso è un insieme di sovrappassi, sottopassi e rampe Intersezione (incrocio) a livelli sfalsati
+V | L’intersezione (incrocio) a livelli sfalsati comprende strade situate ad altezze diverse
+V | L’intersezione (incrocio) a livelli sfalsati facilita la circolazione, perché esclude l’incrocio diretto fra i veicoli
+V | L’intersezione (incrocio) a livelli sfalsati comprende rampe, sovrappassi o sottopassi
+V | L’intersezione (incrocio) a livelli sfalsati è munita di infrastrutture (rampe, sovrappassi, sottopassi) per il collegamento fra strade poste a livelli diversi
+F | L’intersezione a livelli sfalsati è un incrocio a raso fra una strada e i binari del treno
+F | Nell’intersezione (incrocio) a livelli sfalsati non valgono i limiti massimi generali di velocità
+F | L’intersezione (incrocio) a livelli sfalsati è, di norma, regolata da semafori 9 LA STRADA Passaggio a livello
+V | In un passaggio a livello si possono trovare le barriere
+V | In un passaggio a livello si possono trovare le semibarriere
+V | In un passaggio a livello si possono trovare le luci rosse
+V | In vicinanza di un passaggio a livello si trovano i pannelli distanziometrici
+V | In un passaggio a livello si può trovare la croce di S. Andrea
+V | In un passaggio a livello si può trovare un dispositivo di segnalazione acustica
+F | Il passaggio a livello è un cavalcavia ferroviario o tranviario
+F | In un passaggio a livello si possono trovare le luci gialle lampeggianti
+F | Il passaggio a livello è caratterizzato dalla presenza di un attraversamento autostradale
+F | In un passaggio a livello si possono trovare le corsie di accelerazione
+F | Il passaggio a livello è un passo carrabile
+F | Il passaggio a livello è caratterizzato dalla presenza di un sottopassaggio Isola di traffico
+V | L’isola di traffico serve a facilitare l’incanalamento dei veicoli verso varie direzioni
+V | L’isola di traffico è delimitata da strisce bianche continue
+V | L’isola di traffico può essere a raso o in rilievo (rialzata)
+V | L’isola di traffico viene evidenziata mediante zebrature di colore bianco
+V | L’isola di traffico è una parte della strada sulla quale è vietato il transito dei motocicli
+V | L’isola di traffico a raso è costituita da zebrature di colore bianco
+V | L’isola di traffico, se rialzata, è preceduta da zebrature di colore bianco
+V | L’isola di traffico è una parte della strada sulla quale è vietato il transito dei veicoli
+F | L’isola di traffico serve a separare la carreggiata dalla banchina
+F | L’isola di traffico serve per il transito dei pedoni
+F | L’isola di traffico è una piazzola di sosta per i veicoli
+F | L’isola di traffico può essere percorsa solo dai taxi e dagli autobus urbani
+F | L’isola di traffico è la parte della città con maggiore traffico
+F | L’isola di traffico corrisponde, in genere, al centro storico della città
+F | L’isola di traffico è una piazzola per effettuare l’inversione di marcia
+F | L’isola di traffico è posta al di fuori della strada
+F | L’isola di traffico serve per la fermata dei veicoli
+F | L’isola di traffico facilita la salita e la discesa di passeggeri da tram, filobus e autobus
+F | L’isola di traffico è una zona destinata al parcheggio dei veicoli
+F | L’isola di traffico è un’area pedonale urbana
+F | L’isola di traffico è una parte della strada sulla quale è consentito il transito dei ciclomotori 10 LA STRADA Zona a traffico limitato
+V | Una zona a traffico limitato è un’area in cui può essere limitata la circolazione dei veicoli solo in alcune ore
+V | Una zona a traffico limitato è un’area nella quale può essere limitata la circolazione solo di particolari categorie di veicoli
+V | In una zona a traffico limitato possono circolare solo i veicoli autorizzati
+V | Una zona a traffico limitato è un’area nella quale può essere limitata la circolazione solo a particolari categorie di utenti
+V | Una zona a traffico limitato è delimitata da appositi segnali stradali di inizio e di fine
+F | In una zona a traffico limitato non possono entrare più di un certo numero di veicoli
+F | Una zona a traffico limitato è un’area nella quale è consentito solo il transito di ciclomotori e biciclette
+F | Una zona a traffico limitato è un’area sempre vietata al transito dei veicoli a motore
+F | Una zona a traffico limitato è un’area vietata al transito dei pedoni durante le ore notturne Area pedonale
+V | Nelle aree pedonali possono transitare i veicoli ad emissione zero (elettrici), se espressamente consentito
+V | Nelle aree pedonali possono transitare i pedoni
+V | Nelle aree pedonali possono transitare le biciclette
+V | Nelle aree pedonali possono transitare i veicoli al servizio di persone diversamente abili
+V | Nelle aree pedonali possono transitare i veicoli della polizia, con sirena e luce lampeggiante blu in funzione
+V | Nelle aree pedonali possono transitare gli autoveicoli dei vigili del fuoco, con luce lampeggiante blu e sirena in funzione
+F | Nelle aree pedonali possono transitare tutti i motocicli, purché diano la precedenza ai pedoni
+F | Nelle aree pedonali possono transitare i trattori stradali, con velocità non superiore a 30 km/h
+F | Nelle aree pedonali i ciclomotori possono transitare solo di giorno
+F | Nelle aree pedonali possono transitare tutti gli autoveicoli, ma con prudenza
+F | Nelle aree pedonali possono transitare i quadricicli a motore, purché non superino la velocità di 50 km/h Salvagente
+V | Il salvagente, posto in corrispondenza di attraversamenti pedonali, serve anche al riparo o alla sosta dei pedoni che attraversano la strada
+V | Il salvagente facilita la salita e la discesa dei passeggeri da tram, filobus o autobus
+V | Il salvagente può essere segnalato da colonnine luminose a luce gialla fissa
+F | Il salvagente serve a dividere i sensi di marcia in una strada a doppio senso di circolazione
+F | Il salvagente serve a incanalare i veicoli in varie direzioni
+F | Il salvagente è una persona preposta al primo soccorso
+F | Il salvagente è un itinerario ciclopedonale 11 Strada deformata Figura 1 Figura 901 Figura 902
+V | Il segnale raffigurato preannuncia un tratto di strada deformata
+V | Il segnale raffigurato può essere associato con un segnale di limite massimo di velocità
+V | Il segnale raffigurato indica un tratto di strada deformata lungo 380 metri  (FIG 901)
+V | Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare
+V | Il segnale raffigurato preannuncia una strada in cattivo stato
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato si trova, in genere, 150 metri prima di un tratto di strada con fondo irregolare
+V | Il segnale raffigurato preannuncia un tratto di strada dissestata
+V | Il segnale raffigurato, se a fondo giallo, è usato in presenza di cantieri stradali
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato preannuncia una discesa pericolosa
+F | Il segnale raffigurato preannuncia più curve consecutive
+F | Il segnale raffigurato preannuncia una serie di dossi
+F | Il segnale raffigurato preannuncia una forte variazione di pendenza della strada
+F | Il segnale raffigurato preannuncia una doppia curva
+F | Il segnale raffigurato preannuncia un dosso
+F | Il segnale raffigurato preannuncia una cunetta o un dosso
+F | Il segnale raffigurato preannuncia un tratto di strada a visibilità limitata
+F | Il segnale raffigurato indica un tratto di strada deformata lungo 320 metri  (FIG 902) Strada deformata (comportamento) Figura 1
+V | In presenza del segnale raffigurato è importante prevedere eventuali sbandamenti dei veicoli provenienti dal senso opposto
+V | In presenza del segnale raffigurato è necessario adeguare la velocità in relazione alle particolari condizioni del fondo stradale
+V | In presenza del segnale raffigurato è necessario circolare a velocità moderata se si traina un rimorchio
+V | In presenza del segnale raffigurato è necessario moderare la velocità per evitare eccessive sollecitazioni e danni alle sospensioni
+V | In presenza del segnale raffigurato è necessario tenere saldamente il volante, per controllare possibili sbandamenti
+F | In presenza del segnale raffigurato è obbligatorio circolare al centro della carreggiata
+F | In presenza del segnale raffigurato non è necessario rallentare in caso di scarsa visibilità
+F | In presenza del segnale raffigurato è necessario fare attenzione al restringimento della carreggiata
+F | In presenza del segnale raffigurato è vietato il sorpasso
+F | In presenza del segnale raffigurato è necessario rallentare solo se provengono veicoli dal senso opposto 12 Dosso Figura 2
+V | Il segnale raffigurato preannuncia un dosso
+V | Il segnale raffigurato preannuncia un tratto di strada pericoloso per limitata visibilità
+V | Il segnale raffigurato è posto, di norma, 150 metri prima di un dosso
+V | In presenza del segnale raffigurato bisogna considerare che la visibilità è limitata
+V | Il segnale raffigurato preannuncia una salita, seguita da una discesa
+V | Il segnale raffigurato preannuncia una variazione di pendenza della strada con limitata visibilità
+F | Il segnale raffigurato preannuncia una cunetta
+F | Il segnale raffigurato preannuncia un tratto di strada deformata
+F | Il segnale raffigurato preannuncia un tratto di strada in cattivo stato
+F | Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare
+F | Il segnale raffigurato preannuncia un ponte
+F | Il segnale raffigurato preannuncia lavori in corso
+F | Il segnale raffigurato preannuncia l’ingresso in una galleria Dosso (comportamento) Figura 2
+V | In presenza del segnale raffigurato è necessario moderare la velocità in relazione alla visibilità
+V | In presenza del segnale raffigurato è vietata l’inversione di marcia
+V | In presenza del segnale raffigurato sono vietate la sosta e la fermata sia sul tratto in salita che su quello in discesa
+V | In presenza del segnale raffigurato è vietato il sorpasso sul tratto in salita, se la strada è a doppio senso di circolazione con due sole corsie
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato può presegnalare dossi artificiali
+F | Il segnale raffigurato vieta il transito degli autobus
+F | In presenza del segnale raffigurato è vietato il sorpasso nel tratto in discesa
+F | Il segnale raffigurato è un segnale di obbligo
+F | In presenza del segnale raffigurato è possibile effettuare l’inversione di marcia nel tratto in discesa
+F | Il segnale raffigurato è un segnale di precedenza 13 Cunetta Figura 3
+V | Il segnale raffigurato preannuncia una cunetta
+V | Il segnale raffigurato preannuncia un tratto di strada pericoloso a causa di una cunetta
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato si trova prima di un tratto in discesa seguito da uno in salita
+V | Il segnale raffigurato preannuncia un tratto di strada che potrebbe allagarsi in caso di forti piogge
+F | Il segnale raffigurato indica una banchina cedevole
+F | Il segnale raffigurato preannuncia una strada deformata
+F | Il segnale raffigurato preannuncia un tratto di strada in cattivo stato
+F | Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare
+F | Il segnale raffigurato può trovarsi prima di un tratto in salita seguito da una discesa
+F | Il segnale raffigurato preannuncia un restringimento della carreggiata
+F | Il segnale raffigurato preannuncia un dosso Cunetta (comportamento) Figura 3
+V | In presenza del segnale raffigurato è necessario moderare la velocità per evitare danni alle sospensioni
+V | In presenza del segnale raffigurato è necessario moderare la velocità per mantenere il controllo del veicolo
+V | In presenza del segnale raffigurato è necessario tenere il volante con una presa più sicura
+V | In presenza del segnale raffigurato e in caso di pioggia è necessario prevedere la possibilità di accumulo di acqua nella cunetta
+V | In presenza del segnale raffigurato è necessario prevedere la possibilità di accumulo di fango e detriti nella cunetta
+F | In presenza del segnale raffigurato è necessario rallentare solo se provengono veicoli dal senso opposto
+F | In presenza del segnale raffigurato non è necessario rallentare se la cunetta presenta visibilità
+F | In presenza del segnale raffigurato è vietato il sorpasso se si circola in una strada a senso unico
+F | Il segnale raffigurato preannuncia una banchina cedevole 14 Curva pericolosa a destra Figura 4
+V | Il segnale raffigurato preannuncia una curva pericolosa a destra
+V | Il segnale raffigurato è posto, di norma, a 150 metri dal punto di inizio della curva
+V | Il segnale raffigurato può essere integrato con pannello con la scritta TORNANTE
+V | Il segnale raffigurato preannuncia un tratto di strada pericoloso per ridotta visibilità
+V | Il segnale raffigurato richiede di moderare la velocità
+V | Il segnale raffigurato preannuncia un tratto di strada pericoloso
+F | Il segnale raffigurato preannuncia una serie di curve pericolose di cui la prima a destra
+F | Il segnale raffigurato preannuncia un obbligo di svolta a destra
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato preannuncia un tratto di strada in salita
+F | Il segnale raffigurato preannuncia un cambio di corsia
+F | Il segnale raffigurato preannuncia una curva a sinistra
+F | Il segnale raffigurato, posto su una strada a doppio senso di circolazione, impone di portarsi sulla parte sinistra della carreggiata per affrontare meglio la curva
+F | Il segnale raffigurato è posto, di norma, a 5 metri dall’inizio della curva Curva pericolosa a destra (comportamento) Figura 4
+V | In presenza del segnale raffigurato, posto su strada a doppio senso di circolazione e con due sole corsie, si deve circola- re il più possibile vicino al margine destro
+V | Il segnale raffigurato preannuncia un tratto di strada in cui è necessario regolare la velocità in relazione alla visibilità e al raggio della curva
+V | Il segnale raffigurato preannuncia un tratto di strada in cui è necessario percorrere la curva con più attenzione se la strada è bagnata
+V | Il segnale raffigurato preannuncia un tratto di strada in cui non è consentito il sorpasso se la carreggiata è a doppio senso di circolazione e con due sole corsie
+V | In presenza del segnale raffigurato si deve viaggiare ad andatura particolarmente moderata se si circola con il ruotino (ruota di soccorso)
+F | Il segnale raffigurato preannuncia un tratto di strada a due corsie e doppio senso di circolazione in cui è consentito sor- passare i motocicli, senza superare la striscia bianca continua
+F | In presenza del segnale raffigurato si deve circolare il più possibile vicino alla striscia bianca che separa i sensi di marcia
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentita la fermata, ma non la sosta
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentito sorpassare i motocicli, anche invadendo la corsia opposta
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentito effettuare l’inversione di marcia
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentito effettuare manovre di retromarcia
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentito sorpassare i motocicli, anche superando di poco la striscia bianca continua 15 Curva pericolosa a sinistra Figura 5
+V | La figura rappresenta un segnale di pericolo
+V | Il segnale raffigurato preannuncia una curva pericolosa a sinistra
+V | Il segnale raffigurato preannuncia un tratto di strada non rettilineo, che limita la visibilità
+V | Il segnale raffigurato preannuncia un tratto di strada che curva a sinistra con limitata visibilità
+V | Il segnale raffigurato preannuncia, di norma a 150 metri, una curva pericolosa
+V | Il segnale raffigurato preannuncia un tratto di strada pericoloso per ridotta visibilità
+V | Il segnale raffigurato richiede di moderare la velocità per potersi arrestare in caso di un ostacolo improvviso
+F | La figura rappresenta un segnale di obbligo
+F | Il segnale raffigurato preannuncia un ostacolo da aggirare a sinistra
+F | La figura rappresenta un divieto di svolta a sinistra
+F | Il segnale raffigurato impone l’obbligo di mantenere la sinistra
+F | Il segnale raffigurato impone di circolare il più vicino possibile al centro della strada
+F | Il segnale raffigurato indica una circolazione rotatoria
+F | La figura rappresenta un segnale di prescrizione
+F | Il segnale raffigurato indica una deviazione per cantiere di lavoro Curva pericolosa a sinistra (comportamento) Figura 5
+V | In presenza del segnale raffigurato, su una strada a doppio senso di circolazione con due sole corsie, si deve circolare il più possibile vicino al margine destro
+V | In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio della curva
+V | In presenza del segnale raffigurato è necessario percorrere la curva con più attenzione se la strada è bagnata
+V | In presenza del segnale raffigurato non è consentito sorpassare altri veicoli su una carreggiata a doppio senso di circo- lazione con due sole corsie
+V | In presenza del segnale raffigurato si deve viaggiare ad andatura particolarmente moderata se si circola con il “ruotino” (ruota di soccorso)
+F | In presenza del segnale raffigurato, su strada a senso unico di circolazione si deve marciare il più possibile vicino al margine destro della carreggiata
+F | In presenza del segnale raffigurato è consentita la fermata ma non la sosta
+F | In presenza del segnale raffigurato è consentito, su strada a doppio senso di circolazione a due corsie, sorpassare i motocicli senza invadere la corsia opposta
+F | In presenza del segnale raffigurato è consentito effettuare l’inversione di marcia
+F | In presenza del segnale raffigurato è consentito effettuare manovre di retromarcia
+F | In presenza del segnale raffigurato non è consentito il transito ai veicoli con il “ruotino” (ruota di soccorso) 16 Doppia curva pericolosa, la prima a destra Figura 6 Figura 905 Figura 906
+V | Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a destra
+V | Il segnale raffigurato preannuncia un tratto di strada non rettilineo che limita la visibilità
+V | Il segnale raffigurato può essere integrato con un pannello indicante TORNANTI
+V | Il segnale raffigurato richiede di moderare la velocità per potersi arrestare in caso di un ostacolo improvviso
+V | Il segnale raffigurato può essere integrato con il pannello in figura  (FIG 906)
+V | La figura rappresenta un segnale di pericolo
+V | Il segnale raffigurato preannuncia, di norma a 150 metri, una doppia curva pericolosa
+V | In presenza del segnale raffigurato bisogna moderare la velocità
+F | Il segnale raffigurato preannuncia una deviazione per lavori in corso
+F | Il segnale raffigurato preannuncia un raccordo di uscita autostradale
+F | Il segnale raffigurato preannuncia una discesa pericolosa
+F | Il segnale raffigurato preannuncia un tratto di strada con superficie sdrucciolevole
+F | Il segnale raffigurato preannuncia un incrocio
+F | Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare
+F | Il segnale con il pannello in figura preannuncia un tratto di strada lungo 3,8 km con una serie di curve pericolose  (FIG 905) Doppia curva pericolosa, la prima a destra (comportamento) Figura 6
+V | Su strada a due sole corsie e a doppio senso di circolazione, in presenza del segnale raffigurato si deve marciare il più possibile vicino al margine destro
+V | In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio delle curve
+V | In presenza del segnale raffigurato è necessario percorrere le curve con più attenzione in caso di pioggia
+V | In presenza del segnale raffigurato è necessario regolare la velocità in relazione alle condizioni di carico del veicolo
+V | Nelle curve pericolose preannunciate dal segnale raffigurato è vietato il sorpasso se la carreggiata è a due corsie e a doppio senso di circolazione
+V | Su strada a due corsie e a doppio senso di circolazione, in presenza del segnale raffigurato è opportuno fare particolare attenzione ai veicoli provenienti dal senso opposto
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentita l’inversione di marcia
+F | In presenza del segnale raffigurato, posto su strada a due corsie e a doppio senso di circolazione, è consentito sorpas- sare nelle ore diurne
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentita la manovra di retromarcia
+F | In presenza del segnale raffigurato è necessario tenere una velocità moderata esclusivamente nella prima curva
+F | In presenza del segnale raffigurato è consentito effettuare la fermata in curva
+F | In presenza del segnale raffigurato è consentito sorpassare motocicli e ciclomotori su strada a due corsie e a doppio senso di circolazione 17 Doppia curva pericolosa, la prima a sinistra Figura 7
+V | Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a sinistra
+V | Il segnale raffigurato preannuncia un tratto di strada non rettilineo che limita la visibilità
+V | Il segnale raffigurato preannuncia la presenza di tornanti se integrato con apposito pannello
+V | La figura rappresenta un segnale di pericolo
+V | Il segnale raffigurato preannuncia, in genere a 150 m, una doppia curva pericolosa
+V | Il segnale raffigurato richiede di moderare la velocità
+F | Il segnale raffigurato preannuncia una confluenza a sinistra
+F | Il segnale raffigurato preannuncia una strettoia
+F | Il segnale raffigurato preannuncia un tratto di carreggiata sdrucciolevole
+F | Il segnale raffigurato preannuncia un tratto di strada con una serie di dossi
+F | Il segnale raffigurato preannuncia una deviazione per lavori in corso
+F | Il segnale raffigurato preannuncia un tratto di strada deformata Doppia curva pericolosa, la prima a sinistra (comportamento) Figura 7
+V | In presenza del segnale raffigurato si deve circolare il più vicino possibile al margine destro della carreggiata, su strada a due sole corsie e a doppio senso di circolazione
+V | In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio delle curve
+V | In presenza del segnale raffigurato è necessario percorrere le curve con più attenzione in caso di pioggia
+V | In presenza del segnale raffigurato è necessario regolare la velocità in relazione alle condizioni di carico del veicolo
+V | In presenza del segnale raffigurato non è consentito effettuare manovre di sorpasso su strade a due sole corsie e a doppio senso di circolazione
+V | In presenza del segnale raffigurato è opportuno fare particolare attenzione ai veicoli provenienti dal senso opposto
+F | In presenza del segnale raffigurato è consentita l’inversione di marcia
+F | In presenza del segnale raffigurato, posto su strade a due corsie e a doppio senso, è consentito sorpassare un veicolo molto lento
+F | In presenza del segnale raffigurato è consentita la manovra di retromarcia
+F | In presenza del segnale raffigurato è necessario tenere una velocità moderata esclusivamente nella prima curva
+F | In presenza del segnale raffigurato è consentito effettuare la fermata in corrispondenza delle curve
+F | In presenza del segnale raffigurato è consentito sorpassare motocicli e ciclomotori su strade a due corsie e a doppio senso 18 Passaggio a livello con barriere o semibarriere Figura 8
+V | Il segnale raffigurato preannuncia un passaggio a livello con barriere o con semibarriere
+V | Dopo il segnale raffigurato, se ci sono le semibarriere, è installato un dispositivo a luci rosse lampeggianti
+V | Il segnale raffigurato preannuncia un attraversamento ferroviario protetto da barriere o semibarriere, qualunque sia il numero dei binari
+V | Il segnale raffigurato preannuncia un attraversamento ferroviario munito di barriere o semibarriere
+V | Dopo il segnale raffigurato si può trovare un dispositivo acustico che avverte della chiusura delle barriere o delle semibarriere
+V | Il segnale raffigurato è posto, di norma, 150 metri prima del passaggio a livello
+V | In presenza del segnale raffigurato è necessario moderare la velocità
+V | Dopo il segnale raffigurato, se ci sono le barriere, è installato un dispositivo a luce rossa fissa
+V | La figura rappresenta un segnale di pericolo
+F | Il segnale raffigurato preannuncia l’incrocio con una linea tranviaria
+F | Il segnale raffigurato preannuncia una strada senza uscita
+F | Il segnale raffigurato obbliga ad arrestarsi se le luci rosse poste in prossimità delle barriere o delle semibarriere sono spente
+F | Il segnale raffigurato indica una deviazione obbligatoria
+F | Il segnale raffigurato permette di transitare tra una barra e l’altra se le semibarriere sono chiuse, dopo aver verificato che non ci sono treni in arrivo
+F | Il segnale raffigurato indica un’area di sosta custodita
+F | Il segnale raffigurato si trova prima del segnale verticale DOPPIA CROCE DI S. ANDREA
+F | Il segnale raffigurato preannuncia barriere di recinzione di un cantiere stradale
+F | Il segnale raffigurato impone di dare la precedenza ai veicoli della polizia penitenziaria in uscita dalle carceri Passaggio a livello con barriere o semibarriere (comportamento) Figura 8
+V | In presenza del segnale raffigurato è necessario moderare la velocità per essere pronti ad arrestarsi se le barriere sono chiuse
+V | In presenza del segnale raffigurato non è consentito impegnare il passaggio a livello se il traffico intenso impedisce di sgomberarlo
+V | In presenza del segnale raffigurato è necessario arrestarsi se sono in funzione le due luci rosse lampeggianti
+V | In presenza del segnale raffigurato è necessario arrestarsi se è in funzione il dispositivo acustico che avverte della chiusura delle barriere
+V | In presenza del segnale raffigurato, se il veicolo si ferma per avaria sui binari, il conducente deve adottare ogni iniziativa utile al fine di evitare incidenti
+F | In presenza del segnale raffigurato è consentito sostare in corrispondenza o in prossimità dei passaggi a livelli
+F | In presenza del segnale raffigurato è necessario rallentare solo in caso di scarsa visibilità
+F | In presenza del segnale raffigurato è possibile attraversare i binari se sbarrati da cavalletti a strisce bianche e rosse
+F | In presenza del segnale raffigurato sono consentite la fermata ma non la sosta in prossimità o in corrispondenza dei binari 19 Passaggio a livello senza barriere Figura 9
+V | Il segnale raffigurato preannuncia un attraversamento ferroviario a livello senza barriere
+V | Il segnale raffigurato è posto, di norma, a 150 metri dai binari, integrato dal relativo pannello distanziometrico
+V | Il segnale raffigurato richiede di usare la massima prudenza
+V | La figura rappresenta un segnale di pericolo
+V | Dopo il segnale raffigurato è installato il segnale CROCE DI S. ANDREA, che è posizionato prima dei binari
+V | Il segnale raffigurato è integrato con il pannello distanziometrico a tre barre rosse
+V | Dopo il segnale raffigurato è installato il segnale DOPPIA CROCE DI S. ANDREA, se la linea ferroviaria ha più di un binario
+F | Il segnale raffigurato indica l’incrocio con una linea tranviaria
+F | Il segnale raffigurato preannuncia un attraversamento ferroviario a livello munito di semibarriere
+F | Il segnale raffigurato è posto sul secondo pannello distanziometrico a barre rosse
+F | Il segnale raffigurato preannuncia un passaggio a livello con barriere
+F | Il segnale raffigurato indica la presenza di una stazione ferroviaria a 150 metri
+F | Il segnale raffigurato può essere integrato con un pannello con la scritta TRAM
+F | La figura rappresenta un segnale di precedenza Passaggio a livello senza barriere (comportamento) Figura 9
+V | In presenza del segnale raffigurato è necessario rallentare in relazione alla visibilità della linea ferroviaria
+V | In presenza del segnale raffigurato è necessario usare la massima prudenza
+V | In presenza del segnale raffigurato è necessario rallentare per potere, eventualmente, arrestare il veicolo prima dell’at- traversamento ferroviario
+V | In presenza del segnale raffigurato è necessario, prima di attraversare, assicurarsi che non ci siano treni in arrivo sia da destra che da sinistra
+V | In presenza del segnale raffigurato non è consentito sostare o fermarsi in prossimità o in corrispondenza dei binari
+F | In presenza del segnale raffigurato è necessario rallentare esclusivamente in caso di nebbia
+F | In presenza del segnale raffigurato è obbligatorio fermarsi prima dei binari se le segnalazioni luminose o acustiche non sono in funzione
+F | In presenza del segnale raffigurato è possibile attraversare i binari nel caso siano sbarrati da cavalletti a strisce bianche e rosse
+F | In presenza del segnale raffigurato è obbligatorio usare il segnalatore acustico (clacson) prima di attraversare i binari
+F | In presenza del segnale raffigurato è consentito il sorpasso invadendo la corsia opposta 20 Croce di S. Andrea Figura 10
+V | Il segnale raffigurato indica che la sede ferroviaria ha un solo binario
+V | Il segnale raffigurato è posto nelle immediate vicinanze di un attraversamento ferroviario senza barriere
+V | Il segnale raffigurato è posto nelle immediate vicinanze del binario
+V | Il segnale raffigurato è posto sulla strada dopo il segnale PASSAGGIO A LIVELLO SENZA BARRIERE
+V | La figura rappresenta un segnale di pericolo
+V | Il segnale raffigurato può essere posto sia in senso orizzontale che in senso verticale
+F | Il segnale raffigurato preannuncia una sede ferroviaria con più binari
+F | Il segnale raffigurato preannuncia un incrocio di quattro strade
+F | Il segnale raffigurato preannuncia una sede tranviaria con un solo binario
+F | Il segnale raffigurato è installato in prossimità di un passaggio a livello con semibarriere
+F | Il segnale raffigurato è posto prima del segnale PASSAGGIO A LIVELLO SENZA BARRIERE
+F | Il segnale raffigurato è integrato da una luce verde ed una rossa fissa
+F | Il segnale raffigurato si trova, di norma, a 150 metri dai binari Doppia croce di S. Andrea Figura 11 Figura 908 Figura 909
+V | Il segnale raffigurato impone di arrestarsi entro la striscia di arresto, se è in arrivo il treno.
+V | Il segnale raffigurato è posto nelle immediate vicinanze di un attraversamento ferroviario a livello senza barriere
+V | Il segnale raffigurato indica che la linea ferroviaria ha più di un binario
+V | Il segnale raffigurato invita a fare attenzione, prima di attraversare, perché potrebbe transitare più di un treno
+V | Il segnale raffigurato si trova dopo i pannelli distanziometrici a barre rosse
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale (A) può essere abbinato al segnale (B)  (FIG 908)
+F | Il segnale raffigurato è posto, di norma, a 150 metri dai binari
+F | Il segnale (A) si trova dopo il segnale (B)  (FIG 909)
+F | Il segnale raffigurato preannuncia un doppio incrocio stradale pericoloso
+F | Il segnale raffigurato indica che la linea ferroviaria ha solo un binario
+F | Il segnale raffigurato può essere posto prima di un attraversamento ferroviario con semibarriere
+F | Il segnale raffigurato indica che si possono incontrare due passaggi a livello consecutivi, che distano meno di 150 metri l’uno dall’altro
+F | Il segnale può avere fondo giallo in caso di lavori ai binari 21 Pannelli distanziometrici ai passaggi a livello Figura 13 Figura 910 Figura 911
+V | I pannelli raffigurati sono posti prima di qualsiasi tipo di passaggio a livello
+V | I pannelli raffigurati sono posti, di norma, a circa 150, 100 e 50 metri dall’attraversamento ferroviario
+V | I pannelli raffigurati servono ad indicare che ci si sta avvicinando al passaggio a livello
+V | Il pannello con tre barre rosse (A) è posto sotto il segnale (B)  (FIG 910)
+V | Nel caso di attraversamento ferroviario senza barriere, i pannelli (A) sono posti prima del segnale (B)  (FIG 911)
+V | Il pannello con tre barre oblique rosse è il primo dei pannelli che si incontra quando ci si approssima ad un passaggio a livello
+F | I pannelli raffigurati si possono trovare solo se il passaggio a livello è con barriere
+F | I pannelli raffigurati sono segnali di prescrizione
+F | I pannelli raffigurati indicano lavori in corso
+F | I pannelli raffigurati hanno tante barre diagonali quanti sono i binari del passaggio a livello
+F | I pannelli raffigurati, se con due barre, indicano un attraversamento ferroviario con due soli binari
+F | I pannelli raffigurati sono installati su cavalletti che vietano il transito dell’attraversamento ferroviario Attraversamento tranviario Figura 14
+V | Il segnale raffigurato preannuncia di moderare la velocità perché poco più avanti si potrebbe incrociare un tram
+V | Il segnale raffigurato posto fuori dei centri abitati, preannuncia una linea tranviaria non regolata da semafori
+V | Il segnale raffigurato, posto nei centri abitati, preannuncia l’incrocio con una linea tranviaria non regolata da semafori
+V | Il segnale raffigurato preannuncia, fuori e dentro i centri abitati, una linea tranviaria non regolata da semafori
+V | Il segnale raffigurato preannuncia una linea tranviaria che incrocia la carreggiata
+V | Il segnale raffigurato preannuncia una linea tranviaria che riduce lo spazio utile per la circolazione dei veicoli
+V | In presenza del segnale raffigurato, il conducente deve porre maggiore attenzione per non intralciare la marcia del tram
+V | In presenza del segnale raffigurato, il conducente deve prestare maggiore attenzione, perché potrebbe incrociare un tram
+F | Il segnale raffigurato preannuncia un eventuale transito di filobus
+F | Il segnale raffigurato può essere integrato con un dispositivo a due luci rosse che si accendono alternativamente
+F | Il segnale raffigurato obbliga a dare la precedenza ai filobus
+F | Il segnale raffigurato vieta il sorpasso dei tram
+F | Il segnale raffigurato preannuncia un passaggio a livello ferroviario senza barriere
+F | Il segnale raffigurato preannuncia una zona in cui possono circolare solo i veicoli in servizio pubblico 22 Attraversamento tranviario (comportamento) Figura 14
+V | In presenza del segnale raffigurato si può sorpassare a destra il tram in marcia se vi è lo spazio necessario
+V | In presenza del segnale raffigurato si può circolare sui binari senza intralciare la marcia del tram
+V | In presenza del segnale raffigurato si può sorpassare a destra il tram fermo al centro della strada per la salita e discesa dei passeggeri, solo se esiste l’apposito salvagente
+V | In presenza del segnale raffigurato si deve fare attenzione agli eventuali pedoni presenti alla fermata del tram
+V | In presenza del segnale raffigurato bisogna fare attenzione alla possibile diminuzione di aderenza delle ruote del veicolo se si frena sui binari
+V | In presenza del segnale raffigurato occorre tenere presente che il tram necessita di una distanza di arresto maggiore di quella degli autoveicoli
+F | In presenza del segnale raffigurato si ha l’obbligo di dare la precedenza ai filobus
+F | In presenza del segnale raffigurato il sorpasso dei tram è vietato esclusivamente ai motocicli
+F | In presenza del segnale raffigurato è vietata la marcia sopra i binari del tram
+F | In presenza del segnale raffigurato il sorpasso del tram è consentito solo a sinistra
+F | In presenza del segnale raffigurato il sorpasso del tram è consentito solo a destra
+F | In presenza del segnale raffigurato, il tram fermo per la salita e la discesa dei passeggeri può essere sorpassato a destra quando non esiste il salvagente
+F | Il segnale raffigurato preannuncia un’area di sosta per autobus
+F | Il segnale raffigurato preannuncia una corsia riservata ai filobus Attraversamento pedonale Figura 15
+V | Il segnale raffigurato preannuncia un attraversamento pedonale
+V | In presenza del segnale raffigurato, il conducente deve dare la precedenza ai pedoni che attraversano sulle strisce
+V | Nelle strade extraurbane il segnale raffigurato è posto, di norma, a 150 metri dall’attraversamento
+V | Il segnale raffigurato può essere posto anche nei centri abitati
+V | Il segnale raffigurato comporta il divieto di sorpassare un veicolo che si sia arrestato per far attraversare i pedoni
+F | Il segnale raffigurato preannuncia un luogo frequentato da bambini
+F | Il segnale raffigurato preannuncia un viale pedonale
+F | Il segnale raffigurato impone di usare i dispositivi di segnalazione acustica per far spostare i pedoni
+F | Il segnale raffigurato consente la fermata dei veicoli sull’attraversamento pedonale, purché rimanga spazio sufficiente per i pedoni
+F | Il segnale raffigurato vieta il transito ai pedoni
+F | Il segnale raffigurato preannuncia un’isola pedonale 23 Attraversamento pedonale (comportamento) Figura 15
+V | In presenza del segnale raffigurato non è consentito sorpassare i veicoli che rallentano per far attraversare i pedoni
+V | In presenza del segnale raffigurato bisogna rallentare per essere pronti ad arrestarsi se ci sono pedoni che attraversano la carreggiata
+V | In presenza del segnale raffigurato si deve fare attenzione a non tamponare i veicoli che si arrestano per dare la prece- denza ai pedoni
+V | In presenza del segnale raffigurato non si deve effettuare sosta o fermata sopra le strisce pedonali
+V | In presenza del segnale raffigurato, qualora non si dia la precedenza ai pedoni che attraversano sulle apposite strisce, si incorre nella sottrazione di punti della patente
+F | In presenza del segnale raffigurato è obbligatorio suonare il clacson se vi sono pedoni che attraversano sulle strisce pedonali
+F | In presenza del segnale raffigurato si deve rallentare solo se vi sono bambini che attraversano sulle strisce pedonali
+F | In presenza del segnale raffigurato i pedoni devono dare la precedenza ai veicoli
+F | In presenza del segnale raffigurato non è obbligatorio dare la precedenza ai pedoni che attraversano sulle strisce pedonali
+F | In presenza del segnale raffigurato si deve dare la precedenza solo ai pedoni che attraversano da sinistra
+F | Il segnale in figura preannuncia un sovrappasso pedonale
+F | Il segnale in figura preannuncia un sottopasso pedonale
+F | Il segnale raffigurato è posto in corrispondenza di un attraversamento pedonale Attraversamento ciclabile Figura 16
+V | Il segnale raffigurato preannuncia un attraversamento ciclabile
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato preannuncia un attraversamento per ciclisti, contraddistinto dagli appositi segni sulla carreggiata
+V | Il segnale raffigurato preannuncia l’approssimarsi di un luogo dal quale possono provenire ciclisti
+V | Il segnale raffigurato è posto, di norma, 150 metri prima dell’attraversamento ciclabile
+V | Il segnale raffigurato comporta di moderare la velocità in modo da non costituire pericolo per la sicurezza dei ciclisti
+F | Il segnale raffigurato è posto in corrispondenza di un attraversamento ciclabile
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato vieta il transito ai ciclisti
+F | Il segnale raffigurato preannuncia l’inizio di una pista ciclabile
+F | Il segnale raffigurato indica che si sta svolgendo una gara ciclistica
+F | Il segnale raffigurato indica un’area riservata alla circolazione dei ciclomotori 24 Attraversamento ciclabile (comportamento) Figura 16
+V | In presenza del segnale raffigurato bisogna comportarsi in modo da non costituire pericolo o intralcio per i ciclisti
+V | In presenza del segnale raffigurato bisogna rallentare ed essere pronti ad arrestarsi, se necessario, per dare la prece- denza ai ciclisti che attraversano
+V | In presenza del segnale raffigurato non è consentito sorpassare i veicoli che si sono arrestati per far attraversare la carreggiata ai ciclisti
+F | In presenza del segnale raffigurato si deve suonare il clacson se vi sono ciclisti che stanno attraversando sulle strisce
+F | In presenza del segnale raffigurato è necessario tenere presente che i ciclisti devono dare la precedenza ai veicoli
+F | In presenza del segnale raffigurato bisogna dare la precedenza solo ai ciclisti che attraversano da destra Discesa pericolosa Figura 17
+V | Il segnale raffigurato è posto prima di una discesa pericolosa
+V | Il segnale raffigurato preannuncia una discesa particolarmente pericolosa
+V | Il segnale raffigurato preannuncia un tratto di strada sul quale aumenta lo spazio di frenatura del veicolo
+V | Il segnale raffigurato preannuncia una discesa e ne specifica la pendenza
+V | Il segnale raffigurato comporta di moderare la velocità
+V | Il segnale raffigurato richiede di inserire una marcia adeguatamente bassa
+F | Il segnale raffigurato preannuncia una salita da percorrere con marcia adeguatamente bassa
+F | Il segnale raffigurato preannuncia un tratto di strada pericoloso per il fondo dissestato
+F | Il segnale raffigurato specifica la pendenza di una salita
+F | Il segnale raffigurato preannuncia un tratto di strada che è bene percorrere con il pedale della frizione abbassato
+F | Il segnale raffigurato preannuncia una salita pericolosa
+F | Il segnale raffigurato indica che non è consentito superare la velocità di 10 km/h
+F | In presenza del segnale raffigurato il pericolo è minore in caso di pioggia 25 Discesa pericolosa (comportamento) Figura 17
+V | In presenza del segnale raffigurato, l’inserimento di una marcia bassa consente di sfruttare adeguatamente l’azione frenante del motore
+V | In presenza del segnale raffigurato si deve moderare la velocità per evitare di tamponare veicoli che procedono più lentamente
+V | In presenza del segnale raffigurato bisogna evitare l’uso prolungato dei freni per non surriscaldarli
+V | In presenza del segnale raffigurato bisogna evitare un uso eccessivo dei freni e regolare la velocità inserendo una mar- cia bassa
+V | In presenza del segnale raffigurato bisogna usare molta prudenza se la strada è bagnata
+F | In presenza del segnale raffigurato si deve rallentare usando continuamente i freni per non danneggiare il cambio di velocità
+F | In presenza del segnale raffigurato bisogna inserire la marcia più alta e adeguare la velocità con i freni
+F | In presenza del segnale raffigurato bisogna marciare con la frizione abbassata
+F | In presenza del segnale raffigurato il conducente deve diminuire la distanza di sicurezza dal veicolo che lo precede Salita ripida Figura 18
+V | Il segnale raffigurato è posto prima di una salita ripida
+V | Il segnale raffigurato preannuncia una salita da percorrere con prudenza
+V | Il segnale raffigurato preannuncia un tratto di strada da percorrere con marcia adeguatamente bassa
+V | Il segnale raffigurato specifica la pendenza della salita
+F | Il segnale raffigurato preannuncia un tratto di strada da percorrere con il pedale della frizione abbassato
+F | Il segnale raffigurato preannuncia un tratto di strada nel quale aumenta lo spazio di frenatura del veicolo
+F | Il segnale raffigurato preannuncia un tratto di strada pericoloso per curve strette
+F | Il segnale raffigurato preannuncia una discesa e ne specifica la pendenza 26 Strettoia simmetrica Figura 19 Figura 912 Figura 913
+V | Il segnale raffigurato preannuncia un restringimento della carreggiata
+V | Il segnale raffigurato preannuncia una strettoia con probabili difficoltà di incrocio con i veicoli provenienti dal senso opposto
+V | Il segnale raffigurato preannuncia un restringimento sui due lati della carreggiata
+V | Il segnale in figura è un segnale di pericolo
+V | Dopo il segnale (A) si può trovare il segnale (B)  (FIG 913)
+V | Dopo il segnale (A) si può trovare il segnale (B)  (FIG 912)
+V | Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere stradale che riduce la larghezza della carreggiata
+V | Il segnale raffigurato comporta di moderare la velocità
+F | Il segnale raffigurato preannuncia un senso unico alternato con l’obbligo di dare la precedenza ai veicoli provenienti dall’altro senso
+F | Il segnale raffigurato preannuncia che i veicoli provenienti dall’altro senso devono darci la precedenza
+F | Il segnale raffigurato preannuncia un divieto di transito agli autobus
+F | Il segnale raffigurato preannuncia un lungo rettilineo
+F | Il segnale raffigurato preannuncia l’ingresso di una galleria
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato preannuncia una strada a senso unico
+F | Il segnale raffigurato preannuncia una corsia di accelerazione Strettoia a sinistra Figura 20
+V | Il segnale raffigurato preannuncia un restringimento della carreggiata
+V | Il segnale raffigurato preannuncia una strettoia sul lato sinistro della carreggiata
+V | Il segnale raffigurato preannuncia un restringimento pericoloso sulla sinistra della carreggiata
+V | Il segnale raffigurato preannuncia una strettoia con probabile difficoltà di incrocio con i veicoli provenienti dal senso opposto
+V | Il segnale raffigurato impone di moderare la velocità e, se occorre, arrestarsi
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere stradale che riduce la larghezza della carreggiata
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato preannuncia una confluenza da sinistra
+F | Il segnale raffigurato preannuncia una strada con una serie di curve
+F | Il segnale raffigurato preannuncia un cavalcavia
+F | Il segnale raffigurato preannuncia un sottopassaggio pedonale
+F | Il segnale raffigurato preannuncia un restringimento sulla destra della carreggiata
+F | Il segnale raffigurato preannuncia la presenza di un cordolo alto per separare le corsie
+F | Il segnale raffigurato preannuncia un tratto di strada sdrucciolevole 27 Strettoia a destra Figura 21
+V | Il segnale raffigurato preannuncia una strettoia sulla destra della carreggiata
+V | Il segnale raffigurato preannuncia una strettoia causata da un ostacolo fisso sul lato destro
+V | Il segnale raffigurato preannuncia un restringimento pericoloso sulla destra della carreggiata
+V | Il segnale raffigurato preannuncia il restringimento della carreggiata causato da muretti o altro ostacolo sul lato destro
+V | Il segnale raffigurato può trovarsi anche su strada a doppio senso di circolazione
+V | Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere che riduce la larghezza della carreggiata
+F | Il segnale raffigurato indica la fine del doppio senso di circolazione
+F | Il segnale raffigurato obbliga a dare la precedenza ai veicoli provenienti dal senso opposto
+F | Il segnale raffigurato autorizza la marcia per file parallele
+F | Il segnale raffigurato indica di disporsi su due file
+F | Il segnale raffigurato preannuncia una confluenza da destra
+F | Il segnale raffigurato preannuncia l’inizio di un senso unico Bambini Figura 25
+V | Il segnale raffigurato può preannunciare la presenza di una scuola frequentata da bambini nelle vicinanze
+V | Il segnale raffigurato può essere posto nelle vicinanze di un campo da gioco frequentato da bambini
+V | Il segnale raffigurato preannuncia luoghi frequentati da fanciulli
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato può essere posto nelle vicinanze di giardini pubblici frequentati da bambini
+V | Il segnale raffigurato invita a circolare a velocità moderata
+V | Il segnale raffigurato invita a considerare eventuali comportamenti imprudenti di fanciulli
+F | Il segnale raffigurato vieta il transito ai bambini non accompagnati
+F | Il segnale raffigurato preannuncia un attraversamento pedonale
+F | Il segnale raffigurato indica la fine di un viale riservato ai bambini
+F | Il segnale raffigurato preannuncia un percorso pedonale
+F | Il segnale raffigurato vieta il transito ai veicoli a motore durante l’orario di uscita dei bambini dalla scuola
+F | Il segnale raffigurato indica la fermata di uno scuolabus
+F | Il segnale raffigurato è posto sulla parte posteriore dello scuolabus 28 Bambini (comportamento) Figura 25
+V | In presenza del segnale raffigurato occorre prestare particolare attenzione per la possibile presenza di bambini
+V | In presenza del segnale raffigurato è necessario moderare la velocità e prestare attenzione ai bambini anche se si trovano sui marciapiedi
+V | In presenza del segnale raffigurato occorre prestare particolare attenzione ai movimenti imprevedibili dei bambini
+V | In presenza del segnale raffigurato è vietato sorpassare i veicoli che si sono fermati per lasciare attraversare i bambini
+F | In presenza del segnale raffigurato è necessario fare attenzione ai bambini sulla carreggiata e non a quelli sul marciapiede
+F | In presenza del segnale raffigurato è vietato transitare durante l’orario di uscita dei bambini da scuola
+F | In presenza del segnale raffigurato è vietato superare la velocità di 30 km/h Ponte mobile Figura 22
+V | Il segnale raffigurato preannuncia un ponte mobile
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato può essere integrato con pannello indicante gli orari di manovra o di funzionamento di un ponte mobile
+V | Dopo il segnale raffigurato possiamo trovare un dispositivo a luci rosse lampeggianti
+V | Il segnale raffigurato comporta di arrestarsi se sono in funzione le luci rosse lampeggianti
+V | Il segnale raffigurato può essere integrato dal pannello distanziometrico a tre barre rosse
+F | Il segnale raffigurato preannuncia un’area portuale
+F | Il segnale raffigurato obbliga ad arrestarsi prima di attraversare il ponte
+F | Il segnale raffigurato preannuncia un ponte con forte pendenza
+F | Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti dal senso opposto
+F | Il segnale raffigurato vieta il sorpasso se posto sulla strada di accesso ad un’area portuale
+F | Il segnale raffigurato preannuncia un passaggio a livello con barriere 29 Banchina cedevole Figura 23
+V | Il segnale raffigurato preannuncia un tratto di strada con banchina cedevole
+V | Il segnale raffigurato preannuncia un tratto di strada con banchina non praticabile
+V | Il segnale raffigurato preannuncia un possibile pericolo di caduta nella cunetta laterale alla strada
+V | Il segnale raffigurato preannuncia un tratto di strada con banchina pericolosa
+V | Il segnale raffigurato è un segnale di pericolo
+V | In presenza del segnale raffigurato è consigliabile non avvicinarsi troppo al margine destro della strada
+F | Il segnale raffigurato deve essere integrato con il segnale di limite di velocità
+F | Il segnale raffigurato è un segnale di indicazione
+F | Il segnale raffigurato preannuncia il divieto di continuare a percorrere quella strada
+F | Il segnale raffigurato preannuncia una strada dissestata
+F | Il segnale raffigurato preannuncia la presenza di pietrisco sulla pavimentazione
+F | Il segnale raffigurato preannuncia il pericolo di allagamento della carreggiata
+F | Il segnale raffigurato, preannuncia lo sbocco su un molo Strada sdrucciolevole Figura 24 Figura 917 Figura 918
+V | Il segnale raffigurato preannuncia un tratto di strada che può diventare pericoloso in particolari condizioni climatiche specificate nei pannelli integrativi
+V | Il segnale raffigurato preannuncia una strada con superficie che può diventare particolarmente sdrucciolevole
+V | Il segnale (A), abbinato con il pannello (B), preannuncia una strada con superficie particolarmente sdrucciolevole in caso di pioggia (FIG 918)
+V | Il segnale (A), se abbinato con il pannello (B), preannuncia un tratto di strada sul quale, in particolari condizioni meteo- rologiche, è probabile la presenza di ghiaccio (FIG 917)
+V | Il segnale raffigurato preannuncia un tratto di strada sul quale può diminuire l’aderenza degli pneumatici
+V | Il segnale raffigurato comporta di procedere a velocità moderata e di evitare brusche manovre
+F | Il segnale raffigurato preannuncia una strettoia
+F | Il segnale raffigurato preannuncia la possibilità di sbandamento per forte vento laterale
+F | Il segnale raffigurato preannuncia un tratto di strada dove aumenta l’aderenza degli pneumatici
+F | Il segnale raffigurato preannuncia che su quella strada diminuisce lo spazio di frenatura
+F | Il segnale raffigurato invita a diminuire la distanza di sicurezza
+F | Il segnale raffigurato preannuncia una strada con molte curve
+F | Il segnale raffigurato preannuncia una pista per la prova di tenuta degli pneumatici 30 Strada sdrucciolevole (comportamento) Figura 24
+V | In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche frenate in caso di pioggia
+V | In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche accelerate in caso di ghiaccio
+V | In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche sterzate in caso di pioggia
+V | In presenza del segnale raffigurato è necessario moderare la velocità e tenere presente che la distanza di sicurezza aumenta in caso di ghiaccio
+F | In presenza del segnale raffigurato è necessario tenere presente che la distanza di frenatura diminuisce in caso di pioggia
+F | In presenza del segnale raffigurato è necessario diminuire la distanza dal veicolo che ci precede, in caso di pioggia
+F | In presenza del segnale raffigurato è necessario accelerare bruscamente in caso di pioggia
+F | In presenza del segnale raffigurato è sempre vietato il sorpasso quando piove
+F | In presenza del segnale raffigurato è necessario frenare bruscamente in caso di ghiaccio
+F | Il segnale raffigurato vieta il transito ai veicoli con ruote sporche di fango
+F | In presenza del segnale raffigurato è necessario montare le catene Animali domestici vaganti Figura 26
+V | Il segnale raffigurato preannuncia un tratto di strada con probabile attraversamento di animali domestici
+V | Il segnale raffigurato richiede di rallentare o di arrestarsi se gli animali sulla strada danno segno di spavento
+V | Il segnale raffigurato richiede di rallentare o di arrestarsi se gli animali sulla strada non si spostano
+V | Il segnale raffigurato preannuncia la possibilità di trovare sulla strada animali domestici vaganti
+V | Il segnale raffigurato invita a fare attenzione per la probabile presenza di animali domestici sulla carreggiata
+F | In presenza del segnale raffigurato è obbligatorio usare ripetutamente l’avvisatore acustico per allontanare gli animali
+F | Il segnale raffigurato preannuncia una zona riservata al pascolo con divieto di transito ai veicoli a motore
+F | Il segnale raffigurato preannuncia una strada riservata alla circolazione di animali domestici
+F | Il segnale raffigurato preannuncia la presenza di veicoli a trazione animale
+F | Il segnale raffigurato preannuncia una fattoria in aperta campagna 31 Animali selvatici vaganti Figura 27
+V | Il segnale raffigurato preannuncia il probabile attraversamento di animali selvatici
+V | Il segnale raffigurato richiede di rallentare e all’occorrenza di arrestarsi se gli animali danno segno di spavento
+V | Il segnale raffigurato richiede di rallentare e all’occorrenza di arrestarsi se gli animali attraversano improvvisamente la strada
+V | Il segnale raffigurato preannuncia la possibilità di trovare improvvisamente animali vaganti sulla carreggiata
+V | Il segnale raffigurato preannuncia il probabile e improvviso attraversamento di animali selvatici
+V | Il segnale raffigurato richiede di rallentare per evitare urti con animali selvatici vaganti
+F | In presenza del segnale raffigurato è obbligatorio usare ripetutamente l’avvisatore acustico per allontanare gli animali
+F | Il segnale raffigurato preannuncia una area riservata alla circolazione di animali selvatici
+F | Il segnale raffigurato obbliga a marciare al centro della strada per evitare di investire gli animali selvatici
+F | Il segnale raffigurato consente il transito dei soli veicoli a quattro ruote motrici
+F | Il segnale raffigurato indica l’ingresso di uno “zoo safari”
+F | Il segnale raffigurato indica l’ingresso di un Parco Nazionale Doppio senso di circolazione Figura 28
+V | Il segnale raffigurato preannuncia che una carreggiata a senso unico, diventa a doppio senso di circolazione
+V | Il segnale raffigurato preannuncia che, poco oltre, si potranno incontrare veicoli che marciano in senso opposto
+V | Il segnale raffigurato preannuncia che termina il senso unico di circolazione
+V | Il segnale raffigurato è un segnale di pericolo
+V | Il segnale raffigurato indica che, poco oltre, occorrerà usare maggiore prudenza
+V | Il segnale raffigurato, se a fondo giallo, è posto in presenza di lavori in corso
+V | In presenza del segnale raffigurato il sorpasso, se consentito, deve essere effettuato con particolare prudenza
+F | Il segnale raffigurato preannuncia che il traffico si svolge su due carreggiate separate
+F | Il segnale raffigurato preannuncia che la circolazione diventa a senso unico
+F | Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti in senso contrario
+F | Il segnale raffigurato preannuncia il diritto di precedenza nei sensi unici alternati
+F | Il segnale raffigurato preannuncia che bisogna ritornare indietro
+F | Il segnale raffigurato preannuncia un senso unico alternato
+F | Il segnale raffigurato è un preavviso di direzione obbligatoria 32 Rotatoria Figura 29
+V | Il segnale raffigurato preannuncia un incrocio di due o più strade extraurbane regolato con circolazione rotatoria
+V | Il segnale raffigurato preannuncia un incrocio di più strade regolato con circolazione nel senso indicato dalle frecce
+V | Il segnale raffigurato può essere usato anche nei centri abitati
+F | Il segnale raffigurato vieta la svolta a destra al primo incrocio
+F | Il segnale raffigurato preannuncia una strada senza uscita, per cui bisogna tornare indietro
+F | Il segnale raffigurato preannuncia una svolta a sinistra obbligatoria Sbocco su molo o argine Figura 30
+V | Il segnale raffigurato preannuncia lo sbocco della strada su una banchina portuale
+V | Il segnale raffigurato preannuncia lo sbocco della strada su un molo
+V | Il segnale raffigurato preannuncia lo sbocco della strada sull’argine di un fiume
+V | Il segnale raffigurato preannuncia lo sbocco della strada sull’argine di un canale
+V | In presenza del segnale raffigurato bisogna usare particolare prudenza, soprattutto di notte, per evitare di cadere in acqua
+V | Il segnale raffigurato preannuncia il pericolo di caduta in acqua
+V | In presenza del segnale raffigurato bisogna usare particolare prudenza se, nel tratto di strada che segue, si dovranno effettuare manovre di retromarcia
+V | Il segnale raffigurato è un segnale di pericolo
+F | Il segnale raffigurato preannuncia un viadotto in costruzione
+F | Il segnale raffigurato obbliga ad arrestarsi in corrispondenza di un ponte mobile in manovra
+F | Il segnale raffigurato preannuncia un tratto di strada interrotto per alluvione
+F | Il segnale raffigurato preannuncia lo sbocco su un ponte mobile
+F | In presenza del segnale raffigurato bisogna usare particolare prudenza perché si incontra una discesa ripida
+F | Il segnale raffigurato preannuncia il pericolo di mareggiate
+F | Il segnale raffigurato preannuncia un’area attrezzata per il lavaggio dei veicoli
+F | Il segnale raffigurato si riferisce soltanto alle autovetture
+F | Il segnale raffigurato non ha validità nei mesi estivi 33 Materiale instabile sulla strada Figura 31
+V | Il segnale raffigurato preannuncia un tratto di strada sul quale l’aderenza del veicolo può diminuire
+V | Il segnale raffigurato richiede di procedere con cautela in presenza di pedoni, anche se si trovano fuori dalla carreggiata
+V | Il segnale raffigurato preannuncia la presenza di pietrisco che può essere scagliato a distanza al passaggio del veicolo
+V | Il segnale raffigurato richiede di moderare la velocità, incrociando un altro veicolo
+V | In presenza del segnale raffigurato è opportuno mantenere una distanza maggiore dal veicolo che precede
+V | Il segnale raffigurato preannuncia il pericolo di trovare pietrisco sulla pavimentazione stradale
+V | In presenza del segnale raffigurato occorre considerare il pericolo di sbandamento o di slittamento
+V | Il segnale raffigurato, se a fondo giallo, è posto in presenza di cantieri stradali
+F | Il segnale raffigurato consiglia di accelerare per aumentare l’aderenza del veicolo sull’asfalto
+F | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato preannuncia un tratto di strada soggetto a frana
+F | Il segnale raffigurato, se a fondo giallo, preannuncia un tratto di strada non percorribile per la presenza di cantieri stradali
+F | Il segnale raffigurato preannuncia la presenza di banchine cedevoli
+F | Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di caduta di massi
+F | Il segnale raffigurato preannuncia l’obbligo di montare le catene da neve Caduta massi (da sinistra) Figura 32
+V | Il segnale raffigurato preannuncia il pericolo di caduta di massi
+V | Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata
+V | Il segnale raffigurato preannuncia il pericolo di caduta di pietre da sinistra con conseguente loro presenza sulla carreggiata
+V | In presenza del segnale raffigurato è opportuno moderare la velocità per evitare di urtare eventuali massi caduti sulla carreggiata
+V | In presenza del segnale raffigurato è consigliabile evitare lunghe soste nel tratto di strada interessato dal pericolo
+F | Il segnale raffigurato preannuncia un tratto di strada con cantieri stradali
+F | In presenza del segnale raffigurato è opportuno suonare con insistenza
+F | Il segnale raffigurato preannuncia un tratto di strada in cattivo stato o con pavimentazione irregolare
+F | Il segnale raffigurato preannuncia un tratto di strada deformata
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è vietato il sorpasso 34 Caduta massi (da destra) Figura 33
+V | Il segnale raffigurato preannuncia il pericolo di caduta di massi da destra
+V | Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata
+V | Il segnale raffigurato preannuncia il pericolo di caduta di pietre dalla parete rocciosa
+V | In presenza del segnale raffigurato è opportuno moderare la velocità per evitare di urtare eventuali massi caduti sulla carreggiata
+V | In presenza del segnale raffigurato bisogna far attenzione a possibili brusche frenate da parte dei veicoli che precedono
+F | Il segnale raffigurato preannuncia un tratto di strada sdrucciolevole
+F | Il segnale raffigurato preannuncia una strettoia a destra
+F | Il segnale raffigurato preannuncia un tratto di strada non asfaltato
+F | Il segnale raffigurato preannuncia banchine cedevoli
+F | Il segnale raffigurato preannuncia un tratto di strada dove non si può circolare ad oltre 30 km/h
+F | Il segnale raffigurato preannuncia possibili grandinate Semaforo (dischi in verticale) Figura 34
+V | Il segnale raffigurato preannuncia un semaforo
+V | Il segnale raffigurato è un segnale di pericolo
+V | Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante
+V | In presenza del segnale raffigurato bisogna moderare la velocità per potersi all’occorrenza fermare
+V | Il segnale raffigurato è a fondo giallo se posto prima di un cantiere stradale
+V | Il segnale raffigurato preannuncia un semaforo con disposizione delle luci in verticale
+V | Il segnale raffigurato è obbligatorio sulle strade extraurbane
+V | Sulle strade extraurbane il segnale è sempre obbligatorio
+F | Il segnale raffigurato può avere il disco rosso sostituito da una luce rossa lampeggiante
+F | Il segnale raffigurato preannuncia un attraversamento ferroviario senza barriere
+F | Il segnale raffigurato può preannunciare un passaggio a livello con semibarriere
+F | Il segnale raffigurato preannuncia un senso unico alternato
+F | Il segnale raffigurato preannuncia la presenza di un ponte mobile
+F | Il segnale raffigurato può avere al centro una luce gialla fissa 35 Semaforo (dischi in orizzontale) Figura 35
+V | Il segnale raffigurato preannuncia un impianto semaforico con disposizione delle luci in orizzontale
+V | Il segnale raffigurato è un segnale di pericolo
+V | Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante
+V | Il segnale raffigurato indica che bisogna moderare la velocità per potersi all’occorrenza fermare
+V | Il segnale raffigurato è, di norma, posto 150 metri prima di un semaforo
+F | Il segnale raffigurato indica l’obbligo di arresto ad un posto di blocco stradale istituito dagli organi di polizia
+F | Il segnale raffigurato preannuncia la presenza di un ponte mobile
+F | Il segnale raffigurato preannuncia l’accesso al pontile d’imbarco di navi traghetto
+F | Il segnale raffigurato può avere il disco rosso sostituito da una luce rossa lampeggiante
+F | Il segnale raffigurato preannuncia un attraversamento ferroviario senza barriere
+F | Il segnale raffigurato preannuncia un passaggio a livello con semibarriere
+F | Il segnale raffigurato preannuncia la presenza di corsie reversibili
+F | Il segnale raffigurato preannuncia la presenza di macchine sgombraneve in azione
+F | Il segnale raffigurato preannuncia un attraversamento ciclabile Aeromobili Figura 36
+V | Il segnale raffigurato preannuncia la possibilità di un improvviso abbagliamento dovuto ad aeroplani a bassa quota
+V | Il segnale raffigurato preannuncia la possibilità di un improvviso e forte rumore dovuto ad aeroplani a bassa quota
+V | Il segnale raffigurato è posto nelle vicinanze di aeroporti
+V | Il segnale raffigurato è posto nelle vicinanze di piste per l’atterraggio ed il decollo di aeroplani
+V | Il segnale raffigurato è posto in zone dove può avvenire il volo a bassa quota di aeroplani
+F | Il segnale raffigurato preannuncia una località di volo a vela
+F | Il segnale raffigurato preannuncia una zona riservata ai veicoli dell’aeronautica militare
+F | Il segnale raffigurato preannuncia un bivio per l’aeroporto
+F | Il segnale raffigurato vieta l’accesso agli aeroporti
+F | Il segnale raffigurato preannuncia una corsia riservata per l’ingresso in aeroporto 36 Forte vento laterale Figura 37
+V | Il segnale raffigurato presegnala un tratto di strada soggetto a forti raffiche di vento laterale
+V | Il segnale raffigurato preannuncia la possibilità di forti raffiche di vento laterale all’uscita da una galleria
+V | Il segnale raffigurato preannuncia la presenza di un viadotto esposto ad improvvise raffiche di vento laterale
+V | Il segnale raffigurato preannuncia zone soggette a forti ed improvvise raffiche di vento laterale
+V | Il segnale raffigurato preannuncia un pericolo che è maggiore per i veicoli telonati o furgonati
+V | Il segnale raffigurato preannuncia di procedere con prudenza tenendo saldamente il volante
+F | Il segnale raffigurato preannuncia la presenza di aeroplani a bassa quota
+F | Il segnale raffigurato preannuncia un tratto di strada vicino ad un aeroporto
+F | Il segnale raffigurato preannuncia la presenza di un campo d’aviazione
+F | Il segnale raffigurato indica da quale direzione proviene il vento
+F | Il segnale raffigurato preannuncia la presenza, nelle vicinanze, di un parco giochi
+F | Il segnale raffigurato preannuncia la presenza di capannoni industriali nelle vicinanze Forte vento laterale Figura 37
+V | Il segnale raffigurato preannuncia un pericolo che, in caso di forte vento laterale, è maggiore per i veicoli che trainano rimorchi
+V | Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è maggiore per i veicoli a due ruote
+V | Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è maggiore per i veicoli che trainano caravan
+V | Il segnale raffigurato richiede, in caso di forte vento laterale, di procedere con prudenza tenendo il volante con una presa più sicura
+V | Il segnale raffigurato preannuncia, in caso di forte vento laterale, la necessità per i veicoli telonati di rallentare e all’oc- correnza di fermarsi
+V | Il segnale raffigurato preannuncia, in caso di forte vento laterale, possibili sbandamenti dei veicoli provenienti dal senso opposto
+V | Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che aumenta all’aumentare della superficie laterale del veicolo
+F | Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo maggiore all’entrata delle gallerie per i veicoli stretti e alti
+F | Il segnale raffigurato preannuncia una zona dove, in caso di forte vento laterale, i veicoli con rimorchio hanno maggiore tenuta di strada
+F | Il segnale raffigurato preannuncia una zona dove, in caso di forte vento laterale, i veicoli scarichi o leggeri hanno mag- giore tenuta di strada
+F | Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è minore per i veicoli con carichi volu- minosi sopra il tetto
+F | Il segnale raffigurato, in caso di forte vento laterale, consente di sorpassare riducendo la distanza laterale dal veicolo che si sta superando
+F | Il segnale raffigurato preannuncia l’ingresso in galleria
+F | Il segnale raffigurato preannuncia la possibile presenza di ghiaccio sulla strada 37 Pericolo di incendio Figura 38
+V | Il segnale raffigurato preannuncia l’attraversamento di una zona soggetta al pericolo d’incendio
+V | Il segnale raffigurato preannuncia la vicinanza di zone ad alto rischio d’incendio
+V | Il segnale raffigurato indica che ci si sta avvicinando ad un bosco facilmente infiammabile
+V | Il segnale raffigurato preannuncia zone laterali alla strada che sono ad alto rischio d’incendio
+V | Il segnale raffigurato è integrato dal pannello che indica la lunghezza del tratto di strada interessato
+V | In presenza del segnale se il conducente o gli eventuali passeggeri non rispettano il divieto di gettare sigarette accese dal finestrino, può verificarsi un incendio
+F | Il segnale raffigurato preannuncia l’attraversamento di una zona soggetta al pericolo di esplosioni
+F | Il segnale raffigurato preannuncia un tratto di strada fiancheggiato da cave di pietra, con pericolo di esplosioni
+F | Il segnale raffigurato vieta il transito ai veicoli che trasportano esplosivi
+F | Il segnale raffigurato vieta il transito ai veicoli che trasportano prodotti facilmente infiammabili
+F | Il segnale raffigurato vieta il transito ai veicoli che trasportano liquidi infiammabili
+F | Il segnale raffigurato preannuncia la possibilità di forte vento laterale Altri pericoli Figura 39 Figura 920 Figura 921 Figura 922 Figura 923
+V | Il segnale raffigurato preannuncia un pericolo diverso da quelli per cui sono previsti specifici segnali
+V | Il segnale raffigurato preannuncia che bisogna usare prudenza perché è vicino un pericolo
+V | Il segnale (A), integrato con il pannello (B), preannuncia la possibilità di formazione del ghiaccio  (FIG 923)
+V | Il segnale raffigurato può essere usato senza pannelli integrativi per indicare un pericolo generico in caso di emergenza
+V | Il segnale (A), integrato con il pannello (B), preannuncia la presenza di binari di manovra in corrispondenza di stabili- menti industriali  (FIG 920)
+V | Il segnale (A), integrato con il pannello (B), preannuncia la possibile presenza di macchine sgombraneve al lavoro sulla strada  (FIG 921)
+F | Il segnale raffigurato preannuncia un tratto di strada in cattivo stato o con pavimentazione irregolare
+F | Il segnale raffigurato preannuncia che bisogna proseguire diritto
+F | Il segnale raffigurato preannuncia una salita ripida
+F | Il segnale (A), integrato con il pannello (B), preannuncia un passaggio a livello senza barriere  (FIG 920)
+F | Il segnale (A), integrato con il pannello (B), preannuncia la presenza di veicoli militari in manovra  (FIG 922) 38 Dare precedenza Figura 40
+V | Il segnale raffigurato è un segnale di precedenza
+V | Il segnale raffigurato obbliga a dare precedenza ai veicoli provenienti sia da destra che da sinistra
+V | Il segnale raffigurato comporta di dare la precedenza ai veicoli che circolano sulla strada che si incrocia
+V | Il segnale raffigurato viene posto su strada secondaria che non ha il diritto di precedenza
+V | Il segnale raffigurato si trova sulle corsie di accelerazione per l’immissione in autostrada
+V | Il segnale raffigurato su strade extraurbane è preceduto dal segnale PREAVVISO DI DARE PRECEDENZA
+V | Il segnale raffigurato preannuncia di moderare particolarmente la velocità e all’occorrenza fermarsi
+V | In presenza del segnale raffigurato non occorre fermarsi all’incrocio se, rallentando, si ha modo di vedere che non vi sono veicoli in arrivo, sia da destra che da sinistra
+F | Il segnale raffigurato può essere preceduto dal segnale DIRITTO DI PRECEDENZA
+F | Il segnale raffigurato è impiegato su strade che godono del diritto di precedenza
+F | Il segnale raffigurato è posto, di norma, 150 metri prima dell’incrocio
+F | Il segnale raffigurato, lungo le autostrade, viene posto a distanza maggiore di 150 m
+F | Il segnale raffigurato obbliga a fermarsi prima di impegnare l’incrocio
+F | Il segnale raffigurato si trova solo su strade urbane
+F | Il segnale raffigurato è un segnale generico di pericolo
+F | In presenza del segnale raffigurato è obbligatorio dare la precedenza a sinistra solo ai tram e ai veicoli in servizio di emergenza Dare precedenza Figura 40
+V | Il segnale raffigurato è un segnale di prescrizione
+V | Il segnale raffigurato obbliga a dare precedenza ai veicoli che circolano sulla strada su cui ci si immette
+V | La prescrizione del segnale raffigurato, se abbinato ad un semaforo, vale quando il semaforo funziona a luce gialla lampeggiante
+V | Il segnale raffigurato si trova sulle rampe di raccordo per l’immissione in autostrada
+V | Il segnale raffigurato impone l’uso della massima prudenza al fine di evitare incidenti
+F | Il segnale raffigurato può essere preceduto dal PREAVVISO DI FERMARSI E DARE PRECEDENZA
+F | Il segnale raffigurato lungo le autostrade viene posto a distanza di 150 metri dall’area di servizio
+F | Il segnale raffigurato preannuncia di arrestarsi prima di impegnare l’incrocio
+F | Il segnale raffigurato si trova solo su strade extraurbane 39 Fermarsi e dare precedenza Figura 41
+V | Il segnale raffigurato obbliga a fermarsi in corrispondenza della striscia trasversale di arresto e a dare la precedenza agli altri veicoli
+V | Il segnale raffigurato impone di arrestarsi e dare la precedenza prima di impegnare l’incrocio
+V | Il segnale raffigurato obbliga ad arrestarsi all’incrocio e a dare la precedenza a destra e a sinistra
+V | Il segnale raffigurato impone di fermarsi all’incrocio anche in presenza di semaforo a luce lampeggiante gialla
+V | Il segnale raffigurato si trova all’incrocio con una strada con diritto di precedenza
+V | Il segnale raffigurato si trova, in genere, negli incroci con scarsa visibilità
+V | Il segnale raffigurato, fuori dei centri abitati, è preceduto dal relativo segnale di preavviso
+V | Il segnale raffigurato è utilizzato, di norma, negli incroci di particolare pericolosità
+V | Il segnale raffigurato può trovarsi in corrispondenza di un passaggio a livello
+F | Il segnale raffigurato preannuncia l’obbligo di fermarsi e di dare la precedenza nei sensi unici alternati
+F | Il segnale raffigurato obbliga ad arrestarsi al varco doganale
+F | Il segnale raffigurato obbliga ad arrestarsi soltanto in caso di incrocio con altri veicoli
+F | Il segnale raffigurato obbliga ad arrestarsi per dare la precedenza solo ai veicoli provenienti da destra
+F | Il segnale raffigurato è posto, di norma, 150 metri prima dell’incrocio
+F | Il segnale raffigurato impone di arrestarsi perché il transito è vietato
+F | Il segnale raffigurato preannuncia di arrestarsi all’incrocio anche se il semaforo emette luce verde
+F | Il segnale raffigurato preannuncia l’obbligo di arresto ad un posto di blocco istituito dagli organi di polizia
+F | Il segnale raffigurato obbliga ad arrestarsi solo se sopraggiungono altri veicoli Preavviso di dare precedenza Figura 42
+V | Il segnale raffigurato è un segnale di prescrizione
+V | Il segnale raffigurato è un preavviso di dare precedenza sia a destra che a sinistra
+V | Il segnale raffigurato preannuncia la successiva presenza di un segnale di DARE PRECEDENZA
+V | Il segnale raffigurato indica la distanza dall’incrocio in cui dobbiamo dare precedenza
+V | Il segnale raffigurato preannuncia di rallentare per potersi fermare se ci sono veicoli cui bisogna dare precedenza
+V | Il segnale raffigurato può preannunciare un incrocio a T, in cui bisogna dare la precedenza
+V | Il segnale raffigurato è posto su una strada che non ha diritto di precedenza
+F | Il segnale raffigurato è un preavviso di fermarsi e dare precedenza
+F | Il segnale raffigurato preannuncia la distanza dal prossimo segnale di STOP
+F | Il segnale raffigurato indica la distanza dall’incrocio in cui dovremo obbligatoriamente fermarci
+F | In presenza del segnale raffigurato è obbligatorio fermarsi al prossimo incrocio
+F | Il segnale raffigurato preannuncia un incrocio in cui vale la regola di dare la precedenza solo a destra
+F | Il segnale raffigurato preannuncia la presenza di un semaforo a tre luci a 320 metri 40 Preavviso di fermarsi e dare precedenza Figura 43
+V | Il segnale raffigurato è un segnale di preavviso di fermarsi e dare precedenza
+V | Il segnale raffigurato preannuncia un segnale di STOP a 320 metri
+V | Il segnale raffigurato preannuncia di arrestarsi al prossimo incrocio e dare la precedenza a destra ed a sinistra
+V | Il segnale raffigurato preannuncia di fermarsi 320 metri dopo il segnale e dare la precedenza
+V | Il segnale raffigurato invita a rallentare perché è prossimo un incrocio in cui bisogna fermarsi e dare la precedenza
+V | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato obbliga solo a rallentare e, se necessario, a dare la precedenza all’incrocio a 320 metri
+F | Il segnale raffigurato è posto a 320 metri dal segnale DARE PRECEDENZA
+F | Il segnale raffigurato si trova solo nelle strade urbane
+F | Il segnale raffigurato preannuncia la presenza di una barriera doganale
+F | Il segnale raffigurato può presegnalare un casello autostradale
+F | Il segnale raffigurato è posto prima del segnale ALT-POLIZIA
+F | Incontrando il segnale raffigurato occorre fermarsi e poi arrestarsi nuovamente dopo 320 metri
+F | Il segnale raffigurato è un segnale di pericolo Intersezione con precedenza a destra Figura 44
+V | Il segnale raffigurato preannuncia un incrocio in cui vale la regola generale di dare la precedenza a destra
+V | Il segnale raffigurato prescrive di procedere a velocità particolarmente moderata
+V | Il segnale raffigurato preannuncia un incrocio in cui si deve dare precedenza a destra
+V | Il segnale raffigurato è un segnale di precedenza
+V | Il segnale raffigurato non si trova sul tratto di strada con diritto di precedenza
+F | Il segnale raffigurato presegnala un passaggio a livello custodito con barriere
+F | Il segnale raffigurato precede il segnale DARE PRECEDENZA
+F | Il segnale raffigurato precede il segnale di STOP
+F | Il segnale raffigurato si trova, di norma, a non più di 50 metri dall’incrocio
+F | Il segnale raffigurato, in autostrada, viene posto a una distanza maggiore di 250 metri
+F | Il segnale raffigurato preannuncia la presenza del segnale CROCE DI S. ANDREA 41 Intersezione con diritto di precedenza Figura 47
+V | Il segnale raffigurato preannuncia un incrocio con strade di minore importanza
+V | Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza sui veicoli provenienti dalle strade secondarie
+V | Il segnale raffigurato preannuncia l’incrocio con una strada senza diritto di precedenza
+V | Il segnale raffigurato, all’incrocio, ci dà la precedenza sui veicoli provenienti sia da destra che da sinistra
+V | Il segnale raffigurato perde la sua efficacia in presenza di agente che regola il traffico
+V | Il segnale raffigurato può essere preceduto dal segnale DIRITTO DI PRECEDENZA
+V | Il segnale raffigurato preannuncia che bisogna rallentare per accertare che ci venga data la precedenza
+V | Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza
+F | Il segnale raffigurato preannuncia una confluenza sia da destra che da sinistra
+F | Il segnale raffigurato vieta la svolta a sinistra all’incrocio
+F | Il segnale raffigurato preannuncia un incrocio con precedenza rispetto ai veicoli provenienti da sinistra mentre si deve dare la precedenza a quelli provenienti da destra
+F | Il segnale raffigurato è posto sulle autostrade
+F | Il segnale raffigurato è posto a non più di 25 metri dall’incrocio
+F | Il segnale raffigurato preannuncia un incrocio nel quale bisogna dare la precedenza
+F | Il segnale raffigurato preannuncia corsie di accelerazione a destra e a sinistra Intersezione a T con diritto di precedenza Figura 48
+V | Il segnale raffigurato preannuncia che si incrocia a destra una strada di minore importanza
+V | Il segnale raffigurato preannuncia un incrocio con una strada secondaria che si immette da destra
+V | In presenza del segnale raffigurato bisogna usare prudenza perché ci si sta avvicinando ad un incrocio
+V | Il segnale raffigurato è un segnale di precedenza
+V | Il segnale raffigurato preannuncia l’incrocio con una strada senza diritto di precedenza
+V | Il segnale raffigurato preannuncia un incrocio in cui il conducente ha la precedenza sui veicoli provenienti da destra
+F | Il segnale raffigurato preannuncia, sulla destra, una strada senza uscita
+F | Il segnale raffigurato vieta la svolta a destra
+F | Il segnale raffigurato è posto sulle corsie di accelerazione delle autostrade
+F | Il segnale raffigurato preannuncia un’immissione stradale con corsia di accelerazione
+F | Il segnale raffigurato preannuncia un incrocio in cui il conducente ha l’obbligo di fermarsi e dare precedenza ai veicoli provenienti da destra
+F | Il segnale raffigurato indica una piazzola di sosta a destra 42 Intersezione a T con diritto di precedenza Figura 49
+V | Il segnale raffigurato preannuncia che si incrocia sulla sinistra una strada di minore importanza
+V | Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza
+V | Il segnale raffigurato prescrive di usare prudenza perché ci si sta avvicinando ad un incrocio
+V | Il segnale raffigurato è un segnale di precedenza
+V | Il segnale raffigurato preannuncia l’incrocio con una strada senza diritto di precedenza
+V | Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza sui veicoli provenienti da sinistra
+F | Il segnale raffigurato preannuncia sulla sinistra una strada senza uscita
+F | Il segnale raffigurato vieta la svolta a sinistra
+F | Il segnale raffigurato preannuncia una confluenza in autostrada
+F | Il segnale raffigurato preannuncia una confluenza a destra
+F | Il segnale raffigurato è posto sulle rampe di accesso alle autostrade
+F | Il segnale raffigurato preannuncia l’incrocio con un binario morto Confluenza a destra Figura 50
+V | Il segnale raffigurato preannuncia una immissione da destra con corsia di accelerazione
+V | Il segnale raffigurato preannuncia una confluenza sul lato destro
+V | Il segnale raffigurato può trovarsi sulle autostrade
+V | Il segnale raffigurato invita ad usare la massima prudenza al fine di evitare incidenti
+V | Il segnale raffigurato indica che abbiamo la precedenza sui veicoli che si immettono da destra
+V | In presenza del segnale raffigurato, sulla rampa di raccordo è posto il segnale di DARE PRECEDENZA
+F | Il segnale raffigurato è posto a non più di 25 metri dall’incrocio
+F | Il segnale raffigurato preannuncia di dare precedenza ai veicoli provenienti da destra
+F | Il segnale raffigurato viene posto su strada secondaria che non gode del diritto di precedenza
+F | Il segnale raffigurato può precedere il segnale DARE PRECEDENZA
+F | Il segnale raffigurato, su autostrada, non comporta una riduzione della velocità
+F | Il segnale raffigurato consente la svolta a destra al prossimo incrocio 43 Confluenza a sinistra Figura 51
+V | Il segnale raffigurato preannuncia un’immissione stradale con corsia di accelerazione posta sulla sinistra
+V | Il segnale raffigurato preannuncia una confluenza sul lato sinistro della carreggiata
+V | Il segnale raffigurato si trova su carreggiate a senso unico di circolazione
+V | Il segnale raffigurato invita ad usare prudenza perché altri veicoli potrebbero immettersi nel flusso della circolazione
+V | Il segnale raffigurato è usato su strade con diritto di precedenza
+V | Il segnale raffigurato comporta la presenza del segnale DARE PRECEDENZA sulla strada di immissione laterale
+F | Il segnale raffigurato è posto a non più di 25 metri dall’incrocio
+F | Il segnale raffigurato prescrive di dare la precedenza ai veicoli provenienti da sinistra
+F | Il segnale raffigurato preannuncia che non si ha diritto di precedenza nella confluenza
+F | Il segnale raffigurato precede il segnale di DARE PRECEDENZA
+F | Il segnale raffigurato, posto sulle autostrade, precede il segnale d’obbligo di svolta a sinistra
+F | Il segnale raffigurato consente la svolta a sinistra al prossimo incrocio Diritto di precedenza Figura 52
+V | Il segnale raffigurato indica l’inizio di una strada in cui i veicoli hanno diritto di precedenza
+V | Il segnale raffigurato può essere posto su una strada statale
+V | In presenza del segnale raffigurato bisogna comunque dare la precedenza ai veicoli che hanno in funzione il lampeg- giante blu e sirena
+V | Il segnale raffigurato è un segnale di precedenza
+V | In presenza del segnale raffigurato bisogna comunque assicurarsi che i veicoli provenienti dalle strade laterali diano la precedenza
+V | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato obbliga ad arrestarsi all’incrocio
+F | Il segnale raffigurato può essere posto a protezione di attraversamenti pedonali pericolosi
+F | Il segnale raffigurato è posto esclusivamente su strade extraurbane ad intenso traffico
+F | Il segnale raffigurato preannuncia incrocio con precedenza rispetto ai soli veicoli provenienti da destra
+F | Il segnale raffigurato preannuncia le corsie riservate agli autobus in servizio pubblico
+F | Il segnale raffigurato preannuncia l’inizio di un cantiere stradale 44 Diritto di precedenza Figura 52 Figura 972
+V | Il segnale raffigurato si può trovare all’inizio di una strada urbana o extraurbana che gode del diritto di precedenza
+V | Il segnale raffigurato può essere ripetuto in formato piccolo prima e dopo ogni incrocio
+V | Il segnale di figura (A) può essere ripetuto in formato piccolo e integrato con il pannello in figura (B)  (FIG 972)
+V | Il segnale raffigurato comporta la presenza sulle strade che si incrociano del segnale DARE PRECEDENZA o STOP
+V | In presenza del segnale raffigurato è comunque necessario moderare la velocità in prossimità degli incroci
+F | Il segnale raffigurato si trova all’inizio di una strada senza diritto di precedenza
+F | Il segnale raffigurato si trova all’inizio di un’autostrada
+F | Il segnale raffigurato si trova esclusivamente all’inizio di una strada statale
+F | In presenza del segnale raffigurato non occorrono particolari cautele perché si ha la precedenza
+F | Il segnale raffigurato si trova alla fine di una strada con diritto di precedenza
+F | Il segnale raffigurato si trova alla fine di una strada statale
+F | Il segnale raffigurato indica che si ha la precedenza fino all’uscita del centro abitato Fine del diritto di precedenza Figura 46
+V | Il segnale raffigurato invita a maggiore prudenza perché non si ha più diritto di precedenza
+V | In presenza del segnale raffigurato il conducente, salvo diverso ulteriore segnale, deve dare precedenza ai veicoli pro- venienti da destra
+V | Il segnale raffigurato è un segnale di precedenza
+V | Il segnale raffigurato indica che la strada non gode più del diritto di precedenza
+V | Il segnale raffigurato può essere seguito dal segnale FERMARSI E DARE PRECEDENZA
+V | Il segnale raffigurato modifica le precedenti norme sulla precedenza agli incroci
+F | Il segnale raffigurato è un segnale di indicazione
+F | Il segnale raffigurato preannuncia che si sta percorrendo una strada con diritto di precedenza
+F | Il segnale raffigurato obbliga ad arrestarsi all’incrocio
+F | Il segnale raffigurato indica l’andamento della strada principale
+F | Il segnale raffigurato preannuncia sempre un incrocio con precedenza a destra
+F | Il segnale raffigurato preannuncia la fine dell’obbligo precedentemente imposto
+F | Il segnale raffigurato preannuncia una strada senza uscita 45 Fine del diritto di precedenza Figura 46
+V | Il segnale raffigurato indica il ripristino della norma generale sulla precedenza
+V | Il segnale raffigurato indica che termina una strada con diritto di precedenza
+V | Il segnale raffigurato indica che dopo di esso si dovrà, di norma, dare la precedenza a destra
+V | Il segnale raffigurato indica la fine del diritto di precedenza anche sulle strade urbane
+F | Il segnale raffigurato indica la fine di un’autostrada
+F | Il segnale raffigurato indica la fine di una strada a senso unico
+F | Il segnale raffigurato indica la fine di una strada a doppio senso di circolazione
+F | Il segnale raffigurato indica fine del limite di velocità
+F | Il segnale raffigurato indica la fine di tutti i divieti Dare precedenza nei sensi unici alternati Figura 45
+V | Il segnale raffigurato impone, nelle strettoie, di dare precedenza ai veicoli provenienti dal senso opposto
+V | Il segnale raffigurato preannuncia, in presenza di lavori, di dare precedenza ai veicoli provenienti dal senso opposto
+V | Il segnale raffigurato preannuncia che bisogna dare la precedenza ai veicoli provenienti di fronte
+V | Il segnale raffigurato obbliga a dare la precedenza ai veicoli provenienti dal senso contrario
+V | Il segnale raffigurato impone di dare la precedenza nei sensi unici alternati
+V | Il segnale raffigurato, in una strada a doppio senso, precede una strettoia che permette il transito di una sola fila di veicoli
+V | Il segnale raffigurato preannuncia che la circolazione non può svolgersi contemporaneamente nei due sensi
+F | Il segnale raffigurato preannuncia che la circolazione è ammessa nei giorni pari in un senso e nei giorni dispari nell’altro
+F | Il segnale raffigurato preannuncia il diritto di precedenza nei sensi unici alternati
+F | Il segnale raffigurato, su una carreggiata a senso unico, preannuncia l’inizio del doppio senso di circolazione
+F | Il segnale raffigurato preannuncia la fine del senso unico di circolazione
+F | Il segnale raffigurato preannuncia la fine del diritto di precedenza nei sensi unici alternati
+F | Il segnale raffigurato si trova su strade a senso unico di circolazione 46 Dare precedenza nei sensi unici alternati Figura 45
+V | Il segnale raffigurato è un segnale di prescrizione
+V | Il segnale raffigurato può essere posto in una strada in cui una parte della carreggiata è sbarrata
+V | Il segnale raffigurato può essere posto in una strada con strettoia
+V | Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti dal senso opposto
+V | Il segnale raffigurato prescrive di dare la precedenza nei sensi unici alternati
+V | Il segnale raffigurato si incontra prima di una strettoia che, di norma, consente il passaggio di una sola fila di veicoli
+F | Il segnale raffigurato si incontra prima di un qualsiasi restringimento della carreggiata
+F | Il segnale raffigurato è un segnale di divieto
+F | Il segnale raffigurato è posto all’inizio di una strada a senso unico
+F | Il segnale raffigurato obbliga a dare la precedenza, negli incroci, ai veicoli provenienti sia da destra che da sinistra
+F | Il segnale raffigurato è un segnale di pericolo
+F | Il segnale raffigurato preannuncia il diritto di precedenza nei sensi unici alternati Diritto di precedenza nei sensi unici alternati Figura 53
+V | In presenza del segnale raffigurato dobbiamo accertarci che i veicoli provenienti dal senso contrario ci diano la precedenza
+V | In presenza del segnale raffigurato possiamo percorrere la strettoia, dopo esserci assicurati di aver ottenuto la precedenza
+V | In presenza del segnale raffigurato dobbiamo procedere con cautela, anche se abbiamo la precedenza
+V | In presenza del segnale raffigurato si può percorrere la strettoia accertandosi di aver avuto la precedenza dai veicoli provenienti di fronte
+F | In presenza del segnale raffigurato si deve dare la precedenza ai veicoli che provengono dal senso opposto
+F | In presenza del segnale raffigurato possiamo procedere senza cautela, dato che abbiamo il diritto di precedenza
+F | In presenza del segnale raffigurato non vi sono particolari obblighi perché siamo su una strada a senso unico
+F | In presenza del segnale raffigurato inizia il doppio senso di circolazione
+F | In presenza del segnale raffigurato si deve usare prudenza nella strettoia perché la circolazione si svolge a doppio senso
+F | Il segnale raffigurato preannuncia il divieto d’inversione di marcia
+F | Il segnale raffigurato preannuncia il divieto di svolta 47 Divieto di transito Figura 54
+V | Il segnale raffigurato vieta la circolazione nei due sensi
+V | Il segnale raffigurato vieta il transito a tutti i veicoli
+V | Il segnale raffigurato vieta la circolazione ai quadricicli a motore
+V | Il segnale raffigurato è posto su entrambi gli accessi della strada
+V | Il segnale raffigurato vieta il transito agli autocarri
+V | Il segnale raffigurato può avere validità limitata nel tempo, indicata in un pannello integrativo
+V | Il segnale raffigurato consente il transito ai pedoni
+V | Il segnale raffigurato vieta la circolazione ai ciclomotori
+V | Il segnale raffigurato è un DIVIETO DI TRANSITO
+F | Il segnale raffigurato consente il transito alle biciclette
+F | Il segnale raffigurato vieta il transito unicamente ai veicoli a motore
+F | Il segnale raffigurato consente, di norma, di entrare nella strada per effettuare la sosta e le operazioni di carico e scarico
+F | Il segnale raffigurato non consente l’ingresso, ma solo l’uscita dalla strada
+F | Il segnale raffigurato indica che la circolazione è a senso unico
+F | Il segnale raffigurato consente il transito alle autovetture con motore elettrico
+F | Il segnale raffigurato è un segnale di pericolo
+F | Il segnale raffigurato, se barrato in rosso, indica la fine del divieto Divieto di transito per particolari categorie di veicoli Figura 151
+V | Il segnale raffigurato vieta il transito ad autotreni ed autoarticolati
+V | In presenza del segnale raffigurato è vietato il transito alle categorie di veicoli rappresentati in figura
+V | Il segnale raffigurato è un divieto di transito per determinate categorie di veicoli
+V | Il segnale raffigurato indica che i veicoli delle categorie rappresentate in figura non possono transitare
+V | Il segnale raffigurato indica che possono transitare tutti i veicoli esclusi quelli delle categorie rappresentate in figura
+F | Il segnale raffigurato indica un itinerario obbligatorio per gli autoveicoli delle categorie rappresentate in figura
+F | Il segnale raffigurato preannuncia un parcheggio per autocarri ed autotreni
+F | Il segnale raffigurato vieta il transito di tutti i veicoli con esclusione di quelli rappresentati in figura
+F | Il segnale raffigurato vieta la sosta ad autotreni ed autoarticolati
+F | Il segnale raffigurato indica un divieto di sosta per autotreni e autoarticolati
+F | Il segnale raffigurato presegnala una strada riservata ai veicoli delle categorie rappresentate in figura 48 Senso vietato Figura 55
+V | Il segnale raffigurato vieta di entrare in una strada accessibile invece dall’altra parte
+V | I veicoli senza motore devono rispettare il divieto imposto dal segnale rappresentato
+V | I taxi devono rispettare il divieto imposto dal segnale rappresentato
+V | I quadricicli a motore devono rispettare il divieto imposto dal segnale rappresentato
+V | Il divieto imposto dal segnale raffigurato deve essere rispettato anche nelle ore notturne
+V | Il segnale raffigurato è posto su una strada a senso unico
+V | Il segnale raffigurato è un SENSO VIETATO
+F | Il segnale raffigurato consente l’accesso ai motocicli
+F | Il segnale raffigurato consente l’accesso ai ciclomotori
+F | Il segnale raffigurato non consente la circolazione dei veicoli in quella strada
+F | Il segnale raffigurato è posto su una carreggiata a doppio senso di circolazione
+F | Il segnale raffigurato vieta la sosta, ma non la fermata
+F | Il segnale raffigurato vieta il sorpasso
+F | Il segnale raffigurato consente la circolazione del traffico locale in entrambi i sensi
+F | Il divieto imposto dal segnale raffigurato deve essere rispettato, nei centri abitati, dalle ore 8.00 alle ore 20.00
+F | Il segnale raffigurato è un DIVIETO DI TRANSITO Distanziamento minimo obbligatorio Figura 57
+V | In presenza del segnale raffigurato è obbligatorio mantenere una distanza di almeno 70 metri dal veicolo che precede
+V | In presenza del segnale raffigurato è consentito ad un veicolo di circolare alla distanza di 80 metri da quello che lo precede
+V | Il segnale raffigurato vieta ad un veicolo di circolare a meno di 70 metri da quello che lo precede
+V | Il segnale raffigurato vale anche per i motocicli
+V | Il segnale raffigurato deve essere rispettato anche quando si viaggia a bassa velocità
+V | Il segnale raffigurato obbliga a rispettare la distanza minima indicata
+F | Il segnale raffigurato obbliga i veicoli a marciare a meno di 70 metri di distanza l’uno dall’altro
+F | Il segnale raffigurato obbliga il veicolo che precede a distanziare quello che lo segue di almeno 70 metri
+F | Il segnale raffigurato indica la distanza massima da mantenere esclusivamente nei tratti di strada dove il sorpasso è vietato
+F | Il segnale raffigurato preavvisa che a 70 metri inizia il divieto di transito per le autovetture
+F | In presenza del segnale raffigurato le autovetture non possono superare la velocità di 70 km/h
+F | Il segnale raffigurato indica la lunghezza massima del cavo di traino 49 Divieto di segnalazioni acustiche Figura 59
+V | Il segnale raffigurato vieta l’uso del clacson
+V | Il segnale raffigurato vieta le segnalazioni acustiche
+V | In presenza del segnale raffigurato è consentito l’uso del clacson solo in caso di pericolo immediato
+V | Il segnale raffigurato indica l’inizio di una zona in cui è vietato suonare il clacson
+V | In presenza del segnale raffigurato si può utilizzare il clacson se si trasportano feriti o ammalati gravi
+F | Il segnale raffigurato consente l’uso del clacson per richiamare l’attenzione in qualsiasi circostanza
+F | Il segnale raffigurato deve essere rispettato soltanto dalle ore 20.00 alle ore 8.00
+F | Il segnale raffigurato preavvisa la possibilità di incontrare una caserma dei vigili del fuoco
+F | Il segnale raffigurato preavvisa una strettoia su strade di montagna
+F | Il segnale raffigurato consente l’uso del clacson nei casi di ingorgo stradale
+F | Il segnale raffigurato indica la fine del divieto di segnalazioni acustiche Divieto di sorpasso A B Figura 56 Figura 932
+V | Il segnale raffigurato consente ad un’autovettura di sorpassare un motociclo
+V | Il segnale raffigurato si può trovare sia sulle strade urbane che su quelle extraurbane
+V | Il segnale (A) può essere ripetuto dopo ogni incrocio con pannello integrativo (B)  (FIG 932)
+V | Il segnale raffigurato vieta di sorpassare autocarri
+V | Il segnale raffigurato consente di sorpassare i ciclomotori
+V | Il segnale raffigurato vieta il sorpasso fra autoveicoli, anche se la manovra può compiersi entro la semicarreggiata
+F | Il segnale raffigurato consente ad un motociclo di sorpassare un’autovettura
+F | Il segnale raffigurato indica che la corsia di destra è riservata ai veicoli lenti
+F | Il segnale raffigurato consente di sorpassare un’autovettura purché non si oltrepassi la striscia continua
+F | Il segnale raffigurato vieta ad un motociclo di sorpassare una bicicletta
+F | Il segnale raffigurato consente il sorpasso tra autovetture se non vi è la striscia bianca continua 50 Divieto di sorpasso (comportamento) Figura 56
+V | In presenza del segnale raffigurato un autocarro può sorpassare un motociclo
+V | In presenza del segnale raffigurato un’autovettura può sorpassare un ciclomotore
+V | Il segnale raffigurato consente il transito agli autotreni, autoarticolati ed autosnodati
+V | In presenza del segnale raffigurato è vietato sorpassare anche gli autoveicoli di massa complessiva inferiore a 3,5 tonnellate
+V | In presenza del segnale raffigurato è vietato sorpassare veicoli a motore diversi dai motocicli e dai ciclomotori
+V | In presenza del segnale raffigurato è consentito sorpassare veicoli a trazione animale
+F | Il segnale raffigurato consente ad un’autovettura di sorpassare un autocarro
+F | Il segnale raffigurato si trova solo sulle strade extraurbane principali
+F | In presenza del segnale raffigurato è vietato sorpassare qualsiasi veicolo
+F | In presenza del segnale raffigurato è vietato il transito alle autovetture
+F | Il segnale raffigurato impone di dare la precedenza nei sensi unici alternati
+F | Il segnale raffigurato consente ad un motociclo di superare un autobus Divieto di sorpasso (comportamento) Figura 56
+V | In presenza del segnale raffigurato è consentito sorpassare ciclomotori a due ruote
+V | In presenza del segnale raffigurato è consentito il sorpasso dei motocicli
+V | Il segnale raffigurato consente il sorpasso delle biciclette
+V | In presenza del segnale raffigurato è consentito il sorpasso dei veicoli sprovvisti di motore
+V | In presenza del segnale raffigurato è consentito il sorpasso dei veicoli a braccia
+V | In presenza del segnale raffigurato è consentito il sorpasso delle carrozze a cavalli
+F | In presenza del segnale raffigurato è consentito il sorpasso degli autoveicoli a motore elettrico
+F | Il segnale raffigurato preannuncia una strettoia
+F | In presenza del segnale raffigurato è consentito il sorpasso delle macchine agricole
+F | In presenza del segnale raffigurato è consentito il sorpasso delle macchine operatrici
+F | In presenza del segnale raffigurato è consentito il sorpasso dei veicoli a motore che procedono molto lentamente
+F | In presenza del segnale raffigurato è consentito il sorpasso dei veicoli che hanno segnalato l’intenzione di svoltare a destra 51 Fine divieto di sorpasso Figura 82
+V | Il segnale raffigurato indica la fine del divieto di sorpasso precedentemente imposto
+V | In presenza del segnale raffigurato è vietato il sorpasso se deve essere oltrepassata la striscia continua
+V | Il segnale raffigurato indica il punto in cui termina il divieto di sorpasso
+V | Il segnale raffigurato non impone un particolare limite di velocità
+V | Il segnale raffigurato può essere posto sia nei centri urbani che fuori
+V | Il segnale raffigurato è un segnale di fine prescrizione
+V | Il segnale raffigurato ha validità per tutte le 24 ore
+F | Il segnale raffigurato indica la fine del divieto di sorpasso tra le sole autovetture
+F | Il segnale raffigurato indica la fine del divieto di transito per tutti gli autoveicoli
+F | Il segnale raffigurato prescrive il divieto di marcia per file parallele
+F | Il segnale raffigurato indica la fine del limite massimo di velocità
+F | Il segnale raffigurato indica la fine del divieto di sosta su entrambi i lati della strada
+F | Il segnale raffigurato indica che è finito l’obbligo di mantenere la distanza di sicurezza
+F | Il segnale raffigurato indica la fine del divieto di sosta in seconda fila Fine divieto di sorpasso per veicoli di massa complessiva a pieno carico oltre 3,5 t non adibiti al trasporto di persone Figura 83
+V | In presenza del segnale raffigurato un autotreno di massa pari a 44 tonnellate può sorpassare un’autovettura
+V | Il segnale raffigurato indica la fine del divieto di sorpasso precedentemente imposto
+V | In presenza del segnale raffigurato un autocarro può sorpassare un autobus
+V | Il segnale raffigurato indica la fine del divieto di sorpasso per veicoli merci di massa a pieno carico superiore a 3,5 ton- nellate
+V | Il segnale raffigurato è un segnale di fine prescrizione
+F | In presenza del segnale raffigurato è vietato il transito degli autotreni, autosnodati, autoarticolati
+F | In presenza del segnale raffigurato le autovetture devono sorpassare gli autocarri sulla corsia di destra
+F | Il segnale raffigurato indica la fine del divieto di sorpasso per autobus di massa a pieno carico superiore a 3,5 tonnellate
+F | Il segnale raffigurato è un segnale di pericolo
+F | Il segnale raffigurato non vale per gli autocarri di massa complessiva pari a 7 tonnellate 52 Divieto di sorpasso per veicoli di massa complessiva a pieno carico oltre 3,5 t non adibiti al trasporto di persone Figura 60
+V | Il segnale raffigurato vieta ai veicoli di massa a pieno carico superiore a 3,5 tonnellate non destinati al trasporto di per- sone, di sorpassare veicoli a motore
+V | In presenza del segnale raffigurato, un autocarro non può sorpassare veicoli a motore se sulla sua carta di circolazione è indicata una massa complessiva a pieno carico superiore a 3,5 tonnellate
+V | Il segnale raffigurato consente ad un autocarro di massa a pieno carico inferiore a 3,5 tonnellate di sorpassare un auto- articolato
+V | Il segnale raffigurato consente ad un autobus di massa a pieno carico pari a 18 tonnellate di sorpassare un autotreno
+V | In presenza del segnale raffigurato un’autovettura con massa a pieno carico pari a 3 tonnellate trainante un carrello appendice, può sorpassare veicoli a motore
+V | In presenza del segnale raffigurato un’autovettura può sorpassare un autotreno
+V | In presenza del segnale raffigurato un autocaravan con massa a pieno carico pari a 4 tonnellate può effettuare manovre di sorpasso
+V | In presenza del segnale raffigurato è vietato agli autocarri con massa a pieno carico superiore a 3,5 t di sorpassare un motociclo
+F | In presenza del segnale raffigurato un autocarro con massa massima a pieno carico superiore a 3,5 tonnellate trainante un rimorchio leggero, può sorpassare un motociclo
+F | In presenza del segnale raffigurato un autocaravan di massa a pieno carico superiore a 3,5 tonnellate non può sorpas- sare veicoli a motore
+F | Il segnale raffigurato consente ad un autocarro di massa complessiva superiore a 3,5 tonnellate di sorpassare un motociclo
+F | Il segnale raffigurato consente alle autovetture di sorpassare gli autocarri sulla corsia di destra
+F | Il segnale raffigurato vieta il sorpasso agli autosnodati
+F | Il segnale raffigurato vieta ad un’autocaravan di massa complessiva pari a 6 tonnellate di effettuare manovre di sorpasso
+F | In presenza del segnale raffigurato, un autocarro di massa a pieno carico pari a 3 tonnellate non può effettuare manovre di sorpasso
+F | In presenza del segnale raffigurato i veicoli con massa a pieno carico superiore a 3,5 tonnellate destinati al trasporto di persone, non possono effettuare manovre di sorpasso 53 Limite massimo di velocità Figura 58
+V | Il segnale raffigurato è un segnale di divieto
+V | In presenza del segnale raffigurato è vietato superare la velocità di 80 km/h
+V | Il segnale raffigurato può trovarsi anche sulle autostrade
+V | Il limite di velocità indicato sul segnale raffigurato ha validità immediatamente dopo il segnale stesso
+V | Il segnale raffigurato prescrive di marciare a velocità inferiore o uguale a 80 km/h
+V | Il segnale raffigurato è un segnale di prescrizione
+F | Il segnale raffigurato impone di mantenere una distanza di sicurezza di almeno 80 metri
+F | Il segnale raffigurato non si riferisce ai motocicli
+F | Il segnale raffigurato indica la velocità consigliata
+F | Il segnale raffigurato permette di effettuare il sorpasso a velocità superiore a 80 km/h
+F | Il segnale raffigurato vieta la circolazione dei veicoli di massa totale superiore a 80 quintali
+F | Il segnale raffigurato obbliga a rispettare un limite minimo di velocità
+F | Il segnale raffigurato vieta il transito ai veicoli che, per costruzione, non possono raggiungere la velocità indicata Limite massimo di velocità Figura 58
+V | Il segnale raffigurato vieta ai veicoli di superare la velocità indicata
+V | Il segnale raffigurato obbliga a rispettare un limite massimo di velocità
+V | Il segnale raffigurato indica la velocità massima alla quale i veicoli possono procedere
+V | Il segnale raffigurato prescrive l’obbligo di viaggiare a velocità non superiore a 80 km/h
+V | Il numero raffigurato nel segnale indica la velocità massima consentita
+V | Il segnale raffigurato consente di circolare a velocità inferiore a quella indicata
+F | Il segnale raffigurato indica un limite di velocità valido solo per autoveicoli
+F | Il segnale raffigurato obbliga a rispettare il limite minimo di velocità indicato
+F | Il segnale raffigurato impone ai veicoli che non sono in grado di superare gli 80 km/h di marciare sulla corsia di destra
+F | Il limite di velocità indicato dal segnale raffigurato entra in vigore 150 metri dopo il segnale stesso
+F | Il segnale raffigurato vieta il transito agli autoveicoli con massa complessiva superiore al valore indicato
+F | Il segnale raffigurato indica un limite di velocità valido dalle ore 8.00 alle ore 20.00 54 Fine limite massimo di velocità Figura 81
+V | Il segnale raffigurato indica la fine di una prescrizione
+V | Il segnale raffigurato indica la fine del limite massimo di velocità
+V | Il segnale raffigurato consente di circolare a velocità superiore a 50 km/h
+V | Il segnale raffigurato consente di circolare entro i limiti di velocità vigenti per quel tipo di strada
+V | Il segnale raffigurato consente di marciare anche a velocità inferiore a 50 km/h
+V | Il segnale raffigurato indica la fine del relativo divieto
+F | Il segnale raffigurato indica il limite di velocità per tutti i veicoli
+F | Il segnale raffigurato vieta di superare la velocità di 50 km/h
+F | Il segnale raffigurato indica la fine del limite minimo di velocità
+F | Il segnale raffigurato indica la fine dell’obbligo di mantenere una distanza di sicurezza di almeno 50 metri
+F | Il segnale raffigurato prescrive ai veicoli che non superano la velocità di 50 km/h di marciare sulla corsia di destra
+F | Il segnale raffigurato indica la velocità consigliata Transito vietato ai pedoni Figura 62
+V | Il segnale raffigurato vieta il transito ai pedoni
+V | Il segnale raffigurato consente il transito agli autoveicoli
+V | Il segnale raffigurato consente il transito ai motocicli
+V | Il segnale raffigurato consente il transito ai quadricicli a motore
+V | Il segnale raffigurato consente il transito alle biciclette
+F | Il segnale raffigurato vieta il transito ai ciclomotori
+F | Il segnale raffigurato vale dalle ore 8.00 alle ore 20.00
+F | Il segnale raffigurato indica un’area urbana riservata a parco giochi e divertimenti
+F | Il segnale raffigurato obbliga i pedoni a circolare sul margine sinistro della carreggiata
+F | Il segnale raffigurato indica l’inizio di un percorso pedonale 55
