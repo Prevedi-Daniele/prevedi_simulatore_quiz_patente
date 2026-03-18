@@ -1,16 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# def schermata_iniziale(finestra, domande):
-#     for widget in finestra.winfo_children():
-#         widget.destroy()
-
-#     titolo = tk.Label(finestra, text="Quiz Simulatore Patente", font=("Arial", 24))
-#     titolo.pack(pady=20)
-
-#     bottone_inizia = tk.Button(finestra, text="Inizia Quiz", font=("Arial", 16), command=lambda: schermata_quiz(finestra, domande))
-#     bottone_inizia.pack(pady=10)
-
 # def schermata_quiz(finestra, domande):
 #     for widget in finestra.winfo_children():
 #         widget.destroy()
@@ -34,6 +24,9 @@ from tkinter import messagebox
 #     bottone_verifica = tk.Button(finestra, text="Verifica Risposta", font=("Arial", 16), command=verifica_risposta)
 #     bottone_verifica.pack(pady=10)
 
+MODELLO_FONT = ("system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif")
+FG_COLOR = "black"
+BG_COLOR = "white"
 
 def leggi_domande():
     domande = []
@@ -44,7 +37,14 @@ def leggi_domande():
     return domande
 
 def schermata_iniziale(finestra, domande):
-    scritta_principale = tk.Label(finestra, text="Benvenuto/a nel Quiz Simulatore Patente", font=("San Francisco", 24), )
+    scritta_principale = tk.Label(finestra, text="Benvenuto/a nel Quiz Simulatore Patente", font=(MODELLO_FONT, 32), fg=FG_COLOR, bg=BG_COLOR)
+    scritta_principale.pack(pady=20)
+
+    pulsante_inizia_quiz = tk.Button(finestra, text="Inizia Quiz", font=(MODELLO_FONT, 16), fg=FG_COLOR, bg=BG_COLOR, command=lambda: inizia_quiz(finestra, domande))
+    pulsante_inizia_quiz.pack(pady=10)
+
+    scritta_crediti = tk.Label(finestra, text="© 2026 Daniele Prevedi. Soggetto a licenza CC BY-NC-SA 4.0", font=(MODELLO_FONT, 12), fg=FG_COLOR, bg="lightgray", padx=1000, pady=10)
+    scritta_crediti.pack(side=tk.BOTTOM)
 
 def main():
     finestra = tk.Tk()
@@ -52,6 +52,8 @@ def main():
 
     finestra.geometry("900x600")
     finestra.resizable(False, False)
+    finestra.configure(bg="white")
+
     domande = leggi_domande()
 
     schermata_iniziale(finestra, domande)
