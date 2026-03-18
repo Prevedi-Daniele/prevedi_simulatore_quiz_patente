@@ -27,6 +27,20 @@ from tkinter import messagebox
 MODELLO_FONT = ("system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif")
 FG_COLOR = "black"
 BG_COLOR = "white"
+TEMPO = 20*60
+tempo_rimanente = TEMPO
+
+def timer(finestra, label_timer):
+    global tempo_rimanente
+    if tempo_rimanente > 0:
+        tempo_rimanente -= 1
+        minuti = tempo_rimanente // 60
+        secondi = tempo_rimanente % 60
+        label_timer.config(text=f"Tempo rimanente: {minuti:02d}:{secondi:02d}")
+        finestra.after(1000, timer)
+    else:
+        messagebox.showinfo("Tempo scaduto", "Il tempo è scaduto! Il quiz è terminato.")
+        finestra.destroy()
 
 def leggi_domande():
     domande = []
