@@ -1,3 +1,12 @@
+# Quiz Simulatore Patente
+# © 2026 Daniele Prevedi. Soggetto a licenza CC BY-NC-SA 4.0
+
+# Cose mancanti:
+# - Schermata del quiz con domande e risposte
+# - Logica per verificare le risposte e tenere traccia del punteggio
+# - Schermata finale con il punteggio e un messaggio di congratulazioni o incoraggiamento
+# - Tornare indietro nelle domande finché il tempo non è scaduto
+
 import tkinter as tk
 from tkinter import messagebox
 
