@@ -46,6 +46,9 @@ def schermata_iniziale(finestra, domande):
     scritta_crediti = tk.Label(finestra, text="© 2026 Daniele Prevedi. Soggetto a licenza CC BY-NC-SA 4.0", font=(MODELLO_FONT, 12), fg=FG_COLOR, bg="lightgray", padx=1000, pady=10)
     scritta_crediti.pack(side=tk.BOTTOM)
 
+def inizia_quiz(finestra, domande):
+    pass
+
 def main():
     finestra = tk.Tk()
     finestra.title("Quiz Simulatore Patente")
