@@ -58,6 +58,12 @@ def schermata_iniziale(finestra, domande):
 
 def inizia_quiz(finestra, domande):
     domande_selezionate = preleva_domande(domande)
+    finestra.destroy()
+    finestra_quiz = tk.Tk()
+    finestra_quiz.title("Quiz Simulatore Patente")
+    finestra_quiz.geometry("900x600")
+    finestra_quiz.resizable(False, False)
+    finestra_quiz.configure(bg=BG_COLOR)
 
 def main():
     finestra = tk.Tk()
