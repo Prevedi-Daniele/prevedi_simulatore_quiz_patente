@@ -39,6 +39,12 @@ def leggi_domande():
     return domande
 
 
+def preleva_domande(domande):
+    import random
+    domande_selezionate = random.sample(domande, 30)
+    return domande_selezionate
+
+
 def schermata_iniziale(finestra, domande):
     scritta_principale = tk.Label(finestra, text="Benvenuto/a nel Quiz Simulatore Patente", font=(MODELLO_FONT, 32), fg=FG_COLOR, bg=BG_COLOR)
     scritta_principale.pack(pady=20)
@@ -51,8 +57,7 @@ def schermata_iniziale(finestra, domande):
 
 
 def inizia_quiz(finestra, domande):
-    pass
-
+    domande_selezionate = preleva_domande(domande)
 
 def main():
     finestra = tk.Tk()
