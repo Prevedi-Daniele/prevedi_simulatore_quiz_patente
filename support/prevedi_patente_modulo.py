@@ -58,7 +58,7 @@ def crea_pulsante_falso(finestra, funzione):
 
 def leggi_domande():
     domande = []
-    with open("domande.txt", "r") as file:
+    with open("support/domande.txt", "r") as file:
         for linea in file:
             parti = linea.strip().split("|")
             domande.append([parti[1].strip(), parti[0].strip()])
