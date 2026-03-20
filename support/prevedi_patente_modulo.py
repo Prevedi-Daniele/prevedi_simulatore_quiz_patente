@@ -132,3 +132,43 @@ def inizia_quiz(finestra, domande, tempo):
         quiz_a_tempo(finestra_quiz, domande_selezionate)
     else:
         quiz_libero(finestra_quiz, domande_selezionate)
+
+def quiz_a_tempo(finestra, domande):
+    label_timer = tk.Label(finestra, text="", font=(MODELLO_FONT, 14), fg=FG_COLOR, bg=BG_COLOR)
+    label_timer.pack(pady=10)
+    timer(finestra, label_timer)
+    quiz_libero(finestra, domande)
+
+def quiz_libero(finestra, domande):
+    indice_domanda = 0
+    punteggio = 0
+
+    def mostra_domanda():
+        nonlocal indice_domanda, punteggio
+        if indice_domanda < len(domande):
+            domanda, risposta = domande[indice_domanda]
+            label_domanda.config(text=domanda)
+            pulsante_vero.config(command=lambda: verifica_risposta("Vero", risposta))
+            pulsante_falso.config(command=lambda: verifica_risposta("Falso", risposta))
+        else:
+            messagebox.showinfo("Quiz completato", f"Hai completato il quiz! Il tuo punteggio è {punteggio}/{len(domande)}.")
+            finestra.destroy()
+
+    def verifica_risposta(risposta_utente, risposta_corretta):
+        nonlocal indice_domanda, punteggio
+        if risposta_utente == risposta_corretta:
+            punteggio += 1
+        indice_domanda += 1
+        mostra_domanda()
+
+    label_domanda = tk.Label(finestra, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, wraplength=800)
+    label_domanda.pack(pady=20)
+
+    pulsante_vero = crea_pulsante_vero(finestra, lambda: verifica_risposta("Vero", domande[indice_domanda][1]))
+    pulsante_vero.pack(side=tk.LEFT, padx=50)
+
+    pulsante_falso = crea_pulsante_falso(finestra, lambda: verifica_risposta("Falso", domande[indice_domanda][1]))
+    pulsante_falso.pack(side=tk.RIGHT, padx=50)
+
+    mostra_domanda()
+
