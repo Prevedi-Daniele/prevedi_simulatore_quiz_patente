@@ -8,13 +8,7 @@
 # - Tornare indietro nelle domande finché il tempo non è scaduto
 
 import tkinter as tk
-from tkinter import messagebox
-import prevedi_patente_modulo as funzioni
-
-FG_COLOR = "black"
-BG_COLOR = "white"
-TEMPO = 20*60
-tempo_rimanente = TEMPO
+import support.prevedi_patente_modulo as funzioni
 
 def main():
     finestra = tk.Tk()
