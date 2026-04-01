@@ -72,7 +72,7 @@ def crea_pulsante_falso(finestra, funzione):
 def leggi_domande():
     domande = []
     try:
-        with open("support/domande_rev_v2.txt", "r", encoding="utf-8") as file:
+        with open("support/domande_rev_v5.txt", "r", encoding="utf-8") as file:
             for linea in file:
                 parti = linea.strip().split("|")
                 if len(parti) >= 2:
