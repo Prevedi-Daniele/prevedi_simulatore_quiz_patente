@@ -107,14 +107,18 @@ def mostra_risultato(finestra, domande, risposte_utente):
         for widget in finestra.winfo_children():
             widget.destroy()
         
-        errori = int(0)
+        errori = 0
         for i in range(len(domande)):
             if risposte_utente[i] != domande[i][1]:
                 errori = errori + 1
-                
-        esito = "PROMOSSO/A" if errori <= 3 else "BOCCIATO/A"
-        colore_esito = VERO_COLORE if errori <= 3 else FALSO_COLORE
-        
+ 
+        if errori <= 3:
+            esito = "PROMOSSO/A"
+            colore_esito = VERO_COLORE
+        else:
+            esito = "BOCCIATO/A"
+            colore_esito = FALSO_COLORE
+
         label_titolo = tk.Label(finestra, text="Risultato del Quiz", font=(MODELLO_FONT, 24, "bold"), bg=BG_COLOR, fg=FG_COLOR)
         label_titolo.pack(pady=30)
         
