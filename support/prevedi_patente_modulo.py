@@ -78,7 +78,12 @@ def leggi_domande():
                 if len(parti) >= 2:
                     domanda_testo = parti[1].strip()
                     risposta = parti[0].strip().upper()
-                    domande.append([domanda_testo, risposta])
+                    if len(parti) == 2:
+                        domande.append([domanda_testo, risposta])
+                    if len(parti) == 3:
+                        percorso_immagine = parti[2].strip()
+                        domande.append([domanda_testo, risposta, percorso_immagine])
+
     except FileNotFoundError:
         messagebox.showerror("Errore", "File delle domande non trovato.")
     except Exception as e:
