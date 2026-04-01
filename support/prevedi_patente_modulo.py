@@ -21,11 +21,11 @@ except Exception as e:
 FG_COLOR = "black"
 BG_COLOR = "white"
 PULSANTE_BG_COLOR = "#dddddd"
-ACT_PULSANTE_BG_COLOR = "#aaaaaa"
+ACTIVE_PULSANTE_BG_COLOR = "#aaaaaa"
 VERO_COLORE = "#16a34a"
-ACT_VERO_COLORE = "#15803d"
+ACTIVE_VERO_COLORE = "#15803d"
 FALSO_COLORE = "#ef4444"
-ACT_FALSO_COLORE = "#dc2626"
+ACTIVE_FALSO_COLORE = "#dc2626"
 
 TEMPO = 20 * 60
 
@@ -37,7 +37,7 @@ def crea_pulsante_vero(finestra, funzione):
             font=(MODELLO_FONT, 15, "bold"),
             bg=VERO_COLORE,
             fg=BG_COLOR,
-            activebackground=ACT_VERO_COLORE,
+            activebackground=ACTIVE_VERO_COLORE,
             activeforeground=BG_COLOR,
             width=12,
             height=2,
@@ -45,8 +45,7 @@ def crea_pulsante_vero(finestra, funzione):
             command=funzione
         )
     except Exception as e:
-        messagebox.showerror("Errore", f"Errore pulsante: {e}")
-        return None
+        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {e}")
 
 
 def crea_pulsante_falso(finestra, funzione):
@@ -57,7 +56,7 @@ def crea_pulsante_falso(finestra, funzione):
             font=(MODELLO_FONT, 15, "bold"),
             bg=FALSO_COLORE,
             fg=BG_COLOR,
-            activebackground=ACT_FALSO_COLORE,
+            activebackground=ACTIVE_FALSO_COLORE,
             activeforeground=BG_COLOR,
             width=12,
             height=2,
@@ -65,7 +64,7 @@ def crea_pulsante_falso(finestra, funzione):
             command=funzione
         )
     except Exception as e:
-        messagebox.showerror("Errore", f"Errore pulsante: {e}")
+        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {e}")
         return None
 
 
@@ -85,9 +84,9 @@ def leggi_domande():
                         domande.append([domanda_testo, risposta, percorso_immagine])
 
     except FileNotFoundError:
-        messagebox.showerror("Errore", "File delle domande non trovato.")
+        messagebox.showerror("Errore", "File delle domande non trovato o danneggiato.")
     except Exception as e:
-        messagebox.showerror("Errore", f"Errore durante la lettura: {e}")
+        messagebox.showerror("Errore", f"Errore durante la lettura del file: {e}")
     return domande
 
 
@@ -98,7 +97,7 @@ def preleva_domande(domande):
         num_domande = min(30, len(domande))
         return random.sample(domande, num_domande)
     except Exception as e:
-        messagebox.showerror("Errore", f"Errore prelievo domande: {e}")
+        messagebox.showerror("Errore", f"Errore nella presa random delle domande: {e}")
         return []
 
 
@@ -145,7 +144,7 @@ def schermata_iniziale(finestra, domande):
                                          fg=FG_COLOR, 
                                          bg=PULSANTE_BG_COLOR,
                                          bd=0,
-                                         activebackground=ACT_PULSANTE_BG_COLOR,
+                                         activebackground=ACTIVE_PULSANTE_BG_COLOR,
                                          activeforeground=FG_COLOR,
                                          width=18,
                                          height=2,
@@ -158,7 +157,7 @@ def schermata_iniziale(finestra, domande):
                                          fg=FG_COLOR, 
                                          bg=PULSANTE_BG_COLOR,
                                          bd=0,
-                                         activebackground=ACT_PULSANTE_BG_COLOR,
+                                         activebackground=ACTIVE_PULSANTE_BG_COLOR,
                                          activeforeground=FG_COLOR,
                                          width=18,
                                          height=2,
@@ -279,11 +278,11 @@ def gestisci_quiz(finestra, domande, a_tempo):
                 
                 if pulsante_vero and pulsante_falso:
                     if risposte_utente[idx] == "V":
-                        pulsante_vero.config(bg=ACT_VERO_COLORE, fg="white")
+                        pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
                         pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
                     elif risposte_utente[idx] == "F":
                         pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
-                        pulsante_falso.config(bg=ACT_FALSO_COLORE, fg="white")
+                        pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
                     else:
                         pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
                         pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
