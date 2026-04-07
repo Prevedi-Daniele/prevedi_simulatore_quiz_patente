@@ -409,8 +409,8 @@ def gestisci_quiz(finestra, domande, a_tempo):
         pulsante_domanda_precedente = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), width=12)
         pulsante_domanda_precedente.pack(side=tk.LEFT)
         
-        btn_consegna = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), width=12)
-        btn_consegna.pack(side=tk.LEFT, padx=160)
+        pulsante_consegna_quiz = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), width=12)
+        pulsante_consegna_quiz.pack(side=tk.LEFT, padx=160)
         
         pulsante_domanda_successiva = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), width=12)
         pulsante_domanda_successiva.pack(side=tk.RIGHT)
