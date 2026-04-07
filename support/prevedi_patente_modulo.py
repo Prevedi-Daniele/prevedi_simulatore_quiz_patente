@@ -17,7 +17,7 @@ try:
         MODELLO_FONT = "San Francisco"
     else:
         MODELLO_FONT = "Arial"
-except Exception as e:
+except Exception as errore:
     MODELLO_FONT = "Arial"
 
 RISOLUZIONE = "1080x720"
@@ -119,7 +119,7 @@ def mostra_risultato(finestra, domande, risposte_utente):
         
         errori = 0
         for i in range(len(domande)):
-            if risposte_utente[i].strip() != domande[i][1].strip():
+            if (risposte_utente[i] is None) or (risposte_utente[i].strip() != domande[i][1].strip()):
                 errori = errori + 1
  
         if errori <= 3:
@@ -200,7 +200,7 @@ def inizia_quiz(finestra, domande, a_tempo):
 
         gestisci_quiz(finestra_quiz, domande_selezionate, a_tempo)
     except Exception as errore:
-        messagebox.showerror("Errore", f"Errore inizio quiz: {e}")
+        messagebox.showerror("Errore", f"Errore inizio quiz: {errore}")
 
 
 def dividi_testo_domanda(testo):
