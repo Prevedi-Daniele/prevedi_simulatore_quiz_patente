@@ -376,17 +376,30 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_top.pack_propagate(False)
         frame_top.pack(pady=20, padx=20)
         
-        label_info = tk.Label(frame_top, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FG_COLOR)
+        label_info = tk.Label(frame_top, 
+                                text="", 
+                                font=(MODELLO_FONT, 14, "bold"), 
+                                bg=BG_COLOR, 
+                                fg=FG_COLOR)
         label_info.pack(side=tk.LEFT)
         
-        label_timer = tk.Label(frame_top, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FALSO_COLORE)
+        label_timer = tk.Label(frame_top, 
+                                text="", 
+                                font=(MODELLO_FONT, 14, "bold"), 
+                                bg=BG_COLOR, 
+                                fg=FALSO_COLORE)
         if a_tempo == True:
             label_timer.pack(side=tk.RIGHT)
 
         frame_centrale = tk.Frame(finestra, bg=BG_COLOR)
         frame_centrale.pack(expand=True)
 
-        label_domanda = tk.Label(frame_centrale, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, justify="center")
+        label_domanda = tk.Label(frame_centrale, 
+                                text="", 
+                                font=(MODELLO_FONT, 18), 
+                                fg=FG_COLOR, 
+                                bg=BG_COLOR, 
+                                justify="center")
         label_domanda.pack(pady=10)
 
         label_immagine = tk.Label(frame_centrale, bg=BG_COLOR)
@@ -406,13 +419,29 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_nav.pack_propagate(False)
         frame_nav.pack(side=tk.BOTTOM, pady=40, padx=50)
 
-        pulsante_domanda_precedente = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), width=12)
+        pulsante_domanda_precedente = tk.Button(frame_nav, 
+                                                text="<< Indietro", 
+                                                font=(MODELLO_FONT, 14), 
+                                                bg=PULSANTE_BG_COLOR, 
+                                                command=lambda: vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                width=12)
         pulsante_domanda_precedente.pack(side=tk.LEFT)
         
-        pulsante_consegna_quiz = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), width=12)
+        pulsante_consegna_quiz = tk.Button(frame_nav, 
+                                            text="Consegna", 
+                                            font=(MODELLO_FONT, 14, "bold"), 
+                                            bg="#3b82f6", 
+                                            fg="white", 
+                                            command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), 
+                                            width=12)
         pulsante_consegna_quiz.pack(side=tk.LEFT, padx=160)
         
-        pulsante_domanda_successiva = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), width=12)
+        pulsante_domanda_successiva = tk.Button(frame_nav, 
+                                                text="Avanti >>", 
+                                                font=(MODELLO_FONT, 14), 
+                                                bg=PULSANTE_BG_COLOR, 
+                                                command=lambda: vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                width=12)
         pulsante_domanda_successiva.pack(side=tk.RIGHT)
 
         aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
