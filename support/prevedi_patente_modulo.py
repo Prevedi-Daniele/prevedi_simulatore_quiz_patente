@@ -216,7 +216,7 @@ def dividi_testo_domanda(testo):
     return nuovo_testo
 
 
-def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente):
+def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente):
     try:
         indice_domanda_attuale = indice_domanda_tkvar.get()
         domanda_corrente = domande[indice_domanda_attuale]
@@ -238,13 +238,15 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
 
                     label_immagine.config(image=img)
                     label_immagine.image = img
-                    label_immagine.pack(pady=10)
                 else:
-                    label_immagine.pack_forget()
+                    label_immagine.config(image="")
+                    label_immagine.image = None
             except Exception as errore:
-                label_immagine.pack_forget()
+                label_immagine.config(image="")
+                label_immagine.image = None
         else:
-            label_immagine.pack_forget()
+            label_immagine.config(image="")
+            label_immagine.image = None
         
         if pulsante_vero != None:
             if pulsante_falso != None:
@@ -257,50 +259,39 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
                 else:
                     pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
                     pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-        
-        if indice_domanda_attuale > 0:
-            pulsante_domanda_precedente.config(state="normal")
-        else:
-            pulsante_domanda_precedente.config(state="disabled")
-            
-        limite_domande = len(domande) - 1
-        if indice_domanda_attuale < limite_domande:
-            pulsante_domanda_successiva.config(state="normal")
-        else:
-            pulsante_domanda_successiva.config(state="disabled")
             
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore aggiornamento vista: {errore}")
 
 
-def set_risposta(risp, indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande):
+def set_risposta(risp, indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande):
     try:
         indice_corrente = indice_domanda_tkvar.get()
         risposte_utente[indice_corrente] = risp
-        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente)
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore risposta: {errore}")
 
 
-def vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
+def vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente):
     try:
         indice_attuale = indice_domanda_tkvar.get()
         if indice_attuale > 0:
             nuovo_indice = indice_attuale - 1
             indice_domanda_tkvar.set(nuovo_indice)
-            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente)
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore navigazione: {errore}")
 
 
-def vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
+def vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente):
     try:
         indice_attuale = indice_domanda_tkvar.get()
         limite_domande = len(domande) - 1
         if indice_attuale < limite_domande:
             nuovo_indice = indice_attuale + 1
             indice_domanda_tkvar.set(nuovo_indice)
-            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente)
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore navigazione: {errore}")
 
@@ -354,18 +345,20 @@ def gestisci_quiz(finestra, domande, a_tempo):
         
         risposte_utente = [None] * len(domande)
 
-        frame_top = tk.Frame(finestra, bg=BG_COLOR, width=860, height=40)
-        frame_top.pack_propagate(False)
-        frame_top.pack(pady=20, padx=20)
+        frame_principale = tk.Frame(finestra, bg=BG_COLOR)
+        frame_principale.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
         
-        indicatore_numero_di_domanda = tk.Label(frame_top, 
+        frame_header = tk.Frame(frame_principale, bg=BG_COLOR)
+        frame_header.pack(fill=tk.X, pady=10)
+        
+        indicatore_numero_di_domanda = tk.Label(frame_header, 
                                 text="", 
                                 font=(MODELLO_FONT, 14, "bold"), 
                                 bg=BG_COLOR, 
                                 fg=FG_COLOR)
         indicatore_numero_di_domanda.pack(side=tk.LEFT)
         
-        label_timer = tk.Label(frame_top, 
+        label_timer = tk.Label(frame_header, 
                                 text="", 
                                 font=(MODELLO_FONT, 14, "bold"), 
                                 bg=BG_COLOR, 
@@ -373,60 +366,61 @@ def gestisci_quiz(finestra, domande, a_tempo):
         if a_tempo == True:
             label_timer.pack(side=tk.RIGHT)
 
-        frame_centrale = tk.Frame(finestra, bg=BG_COLOR)
-        frame_centrale.pack(expand=True)
+        frame_contenuto = tk.Frame(frame_principale, bg=BG_COLOR)
+        frame_contenuto.pack(fill=tk.BOTH, expand=True, pady=20)
 
-        testo_domanda = tk.Label(frame_centrale, 
+        testo_domanda = tk.Label(frame_contenuto, 
                                 text="", 
                                 font=(MODELLO_FONT, 18), 
                                 fg=FG_COLOR, 
                                 bg=BG_COLOR, 
-                                justify="center")
+                                justify="center",
+                                wraplength=800)
         testo_domanda.pack(pady=10)
 
-        label_immagine = tk.Label(frame_centrale, bg=BG_COLOR)
+        label_immagine = tk.Label(frame_contenuto, bg=BG_COLOR, height=6)
+        label_immagine.pack(pady=10)
         
-        frame_pulsanti = tk.Frame(finestra, bg=BG_COLOR)
-        frame_pulsanti.pack(pady=20)
+        frame_pulsanti_risposta = tk.Frame(frame_principale, bg=BG_COLOR)
+        frame_pulsanti_risposta.pack(pady=20)
 
-        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
+        pulsante_vero = crea_pulsante_vero(frame_pulsanti_risposta, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
         if pulsante_vero != None:
             pulsante_vero.pack(side=tk.LEFT, padx=30)
         
-        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
+        pulsante_falso = crea_pulsante_falso(frame_pulsanti_risposta, lambda: set_risposta("F", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
         if pulsante_falso != None:
             pulsante_falso.pack(side=tk.RIGHT, padx=30)
 
-        frame_nav = tk.Frame(finestra, bg=BG_COLOR, width=800, height=50)
-        frame_nav.pack_propagate(False)
-        frame_nav.pack(side=tk.BOTTOM, pady=40, padx=50)
+        frame_navigazione = tk.Frame(frame_principale, bg=BG_COLOR)
+        frame_navigazione.pack(fill=tk.X, pady=20)
 
-        pulsante_domanda_precedente = tk.Button(frame_nav, 
+        pulsante_domanda_precedente = tk.Button(frame_navigazione, 
                                                 text="<< Indietro", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
-                                                command=lambda: vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                command=lambda: vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente), 
                                                 width=12)
         pulsante_domanda_precedente.pack(side=tk.LEFT)
         
-        pulsante_consegna_quiz = tk.Button(frame_nav, 
+        pulsante_consegna_quiz = tk.Button(frame_navigazione, 
                                             text="Consegna", 
                                             font=(MODELLO_FONT, 14, "bold"), 
                                             bg="#3b82f6", 
                                             fg="white", 
                                             command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), 
                                             width=12)
-        pulsante_consegna_quiz.pack(side=tk.LEFT, padx=160)
+        pulsante_consegna_quiz.pack(side=tk.LEFT, padx=60, expand=True)
         
-        pulsante_domanda_successiva = tk.Button(frame_nav, 
+        pulsante_domanda_successiva = tk.Button(frame_navigazione, 
                                                 text="Avanti >>", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
-                                                command=lambda: vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                command=lambda: vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente), 
                                                 width=12)
         pulsante_domanda_successiva.pack(side=tk.RIGHT)
 
-        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente)
         
         if a_tempo == True:
             aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
