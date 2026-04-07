@@ -215,9 +215,9 @@ def dividi_testo_domanda(testo):
     return nuovo_testo
 
 
-def aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente):
+def aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente):
     try:
-        idx = indice_gui.get()
+        idx = indice_domanda_gui.get()
         domanda_corrente = domande[idx]
         domanda_testo = domanda_corrente[0]
         testo_formattato = dividi_testo_domanda(domanda_testo)
@@ -291,34 +291,34 @@ def aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagin
         messagebox.showerror("Errore", f"Errore aggiornamento vista: {e}")
 
 
-def set_risposta(risp, indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande):
+def set_risposta(risp, indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande):
     try:
-        indice_corrente = indice_gui.get()
+        indice_corrente = indice_domanda_gui.get()
         risposte_utente[indice_corrente] = risp
-        aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+        aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore risposta: {e}")
 
 
-def vai_indietro(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
+def vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
     try:
-        indice_attuale = indice_gui.get()
+        indice_attuale = indice_domanda_gui.get()
         if indice_attuale > 0:
             nuovo_indice = indice_attuale - 1
-            indice_gui.set(nuovo_indice)
-            aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+            indice_domanda_gui.set(nuovo_indice)
+            aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore navigazione: {e}")
 
 
-def vai_avanti(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
+def vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
     try:
-        indice_attuale = indice_gui.get()
+        indice_attuale = indice_domanda_gui.get()
         limite_domande = len(domande) - 1
         if indice_attuale < limite_domande:
             nuovo_indice = indice_attuale + 1
-            indice_gui.set(nuovo_indice)
-            aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+            indice_domanda_gui.set(nuovo_indice)
+            aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore navigazione: {e}")
 
@@ -366,7 +366,7 @@ def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gu
 
 def gestisci_quiz(finestra, domande, a_tempo):
     try:
-        indice_gui = tk.IntVar(value=0)
+        indice_domanda_gui = tk.IntVar(value=0)
         tempo_gui = tk.IntVar(value=TEMPO)
         timer_id_gui = tk.StringVar(value="")
         
@@ -394,11 +394,11 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_pulsanti = tk.Frame(finestra, bg=BG_COLOR)
         frame_pulsanti.pack(pady=20)
 
-        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
+        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
         if pulsante_vero != None:
             pulsante_vero.pack(side=tk.LEFT, padx=30)
         
-        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
+        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
         if pulsante_falso != None:
             pulsante_falso.pack(side=tk.RIGHT, padx=30)
 
@@ -406,16 +406,16 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_nav.pack_propagate(False)
         frame_nav.pack(side=tk.BOTTOM, pady=40, padx=50)
 
-        btn_indietro = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_indietro(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
+        btn_indietro = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
         btn_indietro.pack(side=tk.LEFT)
         
         btn_consegna = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), width=12)
         btn_consegna.pack(side=tk.LEFT, padx=160)
         
-        btn_avanti = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_avanti(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
+        btn_avanti = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
         btn_avanti.pack(side=tk.RIGHT)
 
-        aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+        aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
         
         if a_tempo == True:
             aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
