@@ -1,0 +1,419 @@
+F | Ai fini della circolazione i quadricicli leggeri sono assimilati ai motocicli Tricicli a motore
+F | Con la patente di categoria A si possono guidare tutte le macchine agricole
+F | Con la patente di categoria B si possono guidare le macchine operatrici eccezionali 3 I VEICOLI Rimorchi e semirimorchi
+F | È consentito aumentare la cilindrata dei quadricicli leggeri purché non si aumenti la velocità
+F | È consentito sostituire il dispositivo di scarico dei quadricicli leggeri per aumentare la velocità massima, purché non si aumenti la cilindrata del motore
+F | È consentito sostituire il motore del quadriciclo leggero per aumentare la velocità massima oltre i 45 km/h
+F | È possibile alloggiare nei caravan (roulottes) durante la circolazione
+F | Fanno parte della carreggiata i marciapiedi
+F | Fanno parte della carreggiata le banchine
+F | Fanno parte della carreggiata le corsie di emergenza delle autostrade
+F | Fuori dai centri abitati, su una stessa corsia possono circolare affiancati due ciclomotori Corsia di accelerazione
+F | Gli autoveicoli sono tutti i veicoli a motore con quattro o più ruote, compresi i quadricicli
+F | Gli autoveicoli sono tutti i veicoli con almeno due ruote
+F | Gli autoveicoli sono tutti i veicoli con almeno quattro ruote, compresi quelli senza motore
+F | I caravan (roulottes) sono rimorchi destinati ai lavori agricoli
+F | I caravan (roulottes) sono rimorchi destinati esclusivamente al trasporto di attrezzature turistiche e sportive 4 LA STRADA Strada
+F | I ciclomotori non hanno più di due ruote
+F | I ciclomotori non sono soggetti a revisione periodica Motocicli
+F | I ciclomotori possono circolare alla velocità di 60 km/h fuori dai centri urbani
+F | I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale
+F | I motocicli hanno motore di cilindrata fino a 50 cm3 e sviluppano una velocità fino a 45 km/h
+F | I motocicli sono veicoli a motore con più di due ruote
+F | I quadricicli diversi da quelli leggeri possono essere guidati senza patente
+F | I quadricicli non leggeri a manubrio e con carrozzeria aperta possono essere condotti senza casco
+F | I quadricicli non leggeri, ai fini della circolazione, sono equiparati ai ciclomotori
+F | I quadricicli non sono soggetti a revisione periodica Autovetture
+F | I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 500 kg
+F | I rimorchi sono muniti di silenziatore Caravan (roulotte)
+F | I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano che la sosta è consentita solo agli autobus | ./img/blocco_16009.png
+F | I semirimorchi sono rimorchi privi di impianto frenante
+F | I tricicli a motore non sono soggetti a revisione periodica
+F | I tricicli a motore sono costituiti da un motociclo e un sidecar
+F | I tricicli a motore sono veicoli a motore che possono essere condotti senza patente
+F | I tricicli a motore sono veicoli con motore di cilindrata inferiore a 50 cm3 e aventi velocità massima per costruzione fino a 45 km/h
+F | Il caravan non è un rimorchio
+F | Il divieto imposto dal segnale raffigurato deve essere rispettato, nei centri abitati, dalle ore 8.00 alle ore 20.00
+F | Il limite di velocità indicato dal segnale raffigurato entra in vigore 150 metri dopo il segnale stesso
+F | Il marciapiede è riservato ai pedoni e ai veicoli in sosta, qualora non sia rialzato
+F | Il marciapiede è una parte della carreggiata
+F | Il marciapiede è una parte della strada dove, di norma, è consentita la sosta dei ciclomotori 8 LA STRADA Attraversamento pedonale
+F | Il marciapiede è una parte della strada riservata anche alle biciclette
+F | Il motociclo è un qualunque veicolo a due ruote
+F | Il passaggio a livello è caratterizzato dalla presenza di un attraversamento autostradale
+F | Il passaggio a livello è caratterizzato dalla presenza di un sottopassaggio Isola di traffico
+F | Il passaggio a livello è un cavalcavia ferroviario o tranviario
+F | Il passaggio a livello è un passo carrabile
+F | Il passo carrabile è un parcheggio scambiatore
+F | Il passo carrabile è un salvagente circolare per i pedoni
+F | Il passo carrabile è un segnale che impone la circolazione rotatoria su una piazza
+F | Il passo carrabile è una strada riservata agli autocarri
+F | Il passo carrabile è una strada riservata ai carri trainati da animali
+F | Il salvagente è un itinerario ciclopedonale 11 Strada deformata
+F | Il salvagente è una persona preposta al primo soccorso
+F | Il salvagente serve a dividere i sensi di marcia in una strada a doppio senso di circolazione
+F | Il salvagente serve a incanalare i veicoli in varie direzioni
+F | Il segnale raffigurato consente ad un motociclo di sorpassare un’autovettura | ./img/blocco_13003.png
+F | Il segnale raffigurato consente ad un’autovettura di sorpassare un autocarro | ./img/blocco_13004.png
+F | Il segnale raffigurato consente il transito ai motocicli | ./img/blocco_13014.png
+F | Il segnale raffigurato consente il transito alle biciclette | ./img/blocco_13001.png
+F | Il segnale raffigurato consente l’accesso ai motocicli | ./img/blocco_13002.png
+F | Il segnale raffigurato consente l’uso del clacson per richiamare l’attenzione in qualsiasi circostanza | ./img/blocco_13009.png
+F | Il segnale raffigurato è un segnale di prescrizione | ./img/blocco_12001.png
+F | Il segnale raffigurato impone di mantenere una distanza di sicurezza di almeno 80 metri | ./img/blocco_13007.png
+F | Il segnale raffigurato indica un limite di velocità valido solo per autoveicoli | ./img/blocco_13008.png
+F | Il segnale raffigurato indica una banchina cedevole | ./img/blocco_12005.png
+F | Il segnale raffigurato indica una strada riservata ai venditori ambulanti | ./img/blocco_13015.png
+F | Il segnale raffigurato obbliga i veicoli a marciare a meno di 70 metri di distanza l’uno dall’altro | ./img/blocco_13006.png
+F | Il segnale raffigurato preannuncia l’incrocio con una linea tranviaria | ./img/blocco_12015.png
+F | Il segnale raffigurato preannuncia un tratto di strada a due corsie e doppio senso di circolazione in cui è consentito sorpassare i motocicli, senza superare la striscia bianca continua | ./img/blocco_12008.png
+F | Il segnale raffigurato preannuncia un tratto di strada in cui è consentita l’inversione di marcia | ./img/blocco_12012.png
+F | Il segnale raffigurato preannuncia una confluenza a sinistra | ./img/blocco_12013.png
+F | Il segnale raffigurato preannuncia una cunetta | ./img/blocco_12003.png
+F | Il segnale raffigurato preannuncia una deviazione per lavori in corso | ./img/blocco_12011.png
+F | Il segnale raffigurato preannuncia una serie di curve pericolose di cui la prima a destra | ./img/blocco_12007.png
+F | Il segnale raffigurato vale dalle ore 8.00 alle ore 20.00 | ./img/blocco_13013.png
+F | Il segnale raffigurato vieta il transito ai ciclomotori | ./img/blocco_13012.png
+F | Il segnale raffigurato vieta il transito ai veicoli a motore | ./img/blocco_13011.png
+F | Il segnale raffigurato vieta il transito degli autobus | ./img/blocco_12004.png
+F | Il triciclo a motore è un autoveicolo
+F | Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve azionare la segnalazione luminosa di pericolo | ./img/blocco_23001.png
+F | In corrispondenza del passo carrabile è consentita la sosta Marciapiede
+F | In presenza del segnale raffigurato è consentita l’inversione di marcia | ./img/blocco_12014.png
+F | In presenza del segnale raffigurato è consentito il sorpasso degli autoveicoli a motore elettrico | ./img/blocco_13005.png
+F | In presenza del segnale raffigurato è necessario rallentare solo se provengono veicoli dal senso opposto | ./img/blocco_12006.png
+F | In presenza del segnale raffigurato è obbligatorio circolare al centro della carreggiata | ./img/blocco_12002.png
+F | In presenza del segnale raffigurato un autocarro con massa massima a pieno carico superiore a 3,5 tonnellate trainante | ./img/blocco_13010.png
+F | In presenza del segnale raffigurato, su strada a senso unico di circolazione si deve marciare il più possibile vicino al | ./img/blocco_12010.png
+F | In presenza dell’isola di traffico rappresentata in figura il veicolo C può andare in qualsiasi direzione | ./img/blocco_16011.png
+F | In presenza delle strisce di guida in figura il veicolo C deve svoltare a destra | ./img/blocco_16012.png
+F | In un passaggio a livello si possono trovare le corsie di accelerazione
+F | In un passaggio a livello si possono trovare le luci gialle lampeggianti
+F | In una carreggiata extraurbana del tipo rappresentato si può sorpassare indifferentemente sia da destra che da sinistra | ./img/blocco_11001.png
+F | In una zona a traffico limitato non possono entrare più di un certo numero di veicoli
+F | Incontrando il segnale raffigurato occorre fermarsi e poi arrestarsi nuovamente dopo 320 metri
+F | L'attraversamento pedonale è posto al di fuori della carreggiata ed è destinato al transito dei pedoni
+F | L'attraversamento pedonale è una parte della carreggiata in cui è consentita la fermata ma non la sosta dei veicoli Intersezione (incrocio) a raso
+F | L'attraversamento pedonale è una parte della carreggiata vietata al transito dei veicoli
+F | L'attraversamento pedonale è una parte della strada, separata dalla carreggiata mediante una striscia gialla
+F | L'attraversamento pedonale non fa parte della carreggiata
+F | L'autocarro è un'autovettura
+F | L'autostrada può comprendere piste ciclabili
+F | L'autoveicolo è un qualunque veicolo a motore
+F | L'autoveicolo è un qualunque veicolo adibito al trasporto di merce Autocaravan (camper)
+F | L'autovettura è un veicolo con dieci posti in totale, compreso il conducente
+F | L'autovettura può avere, al massimo, cinque posti
+F | L'intersezione (incrocio) a livelli sfalsati è, di norma, regolata da semafori 9 LA STRADA Passaggio a livello
+F | L'intersezione (incrocio) a raso è un incrocio fra una strada statale e i binari del tram
+F | L'intersezione (incrocio) a raso è un incrocio fra una strada statale e un passo carrabile
+F | L'intersezione (incrocio) a raso è un insieme di sovrappassi, sottopassi e rampe Intersezione (incrocio) a livelli sfalsati
+F | L'intersezione (incrocio) a raso è un passaggio a livello  dotato di barriere o semibarriere
+F | L'intersezione (incrocio) a raso è un'intersezione a livelli sfalsati
+F | L'intersezione a livelli sfalsati è un incrocio a raso fra una strada e i binari del treno
+F | L'isola di traffico corrisponde, in genere, al centro storico della città
+F | L'isola di traffico è la parte della città con maggiore traffico
+F | L'isola di traffico è posta al di fuori della strada
+F | L'isola di traffico è un'area pedonale urbana
+F | L'isola di traffico è una parte della strada sulla quale è consentito il transito dei ciclomotori 10 LA STRADA Zona a traffico limitato
+F | L'isola di traffico è una piazzola di sosta per i veicoli
+F | L'isola di traffico è una piazzola per effettuare l'inversione di marcia
+F | L'isola di traffico è una zona destinata al parcheggio dei veicoli
+F | L'isola di traffico facilita la salita e la discesa di passeggeri da tram, filobus e autobus
+F | L'isola di traffico può essere percorsa solo dai taxi e dagli autobus urbani
+F | L'isola di traffico serve a separare la carreggiata dalla banchina
+F | L'isola di traffico serve per il transito dei pedoni
+F | L'isola di traffico serve per la fermata dei veicoli
+F | L’isola di traffico in figura può anche essere realizzata con strisce azzurre trasversali | ./img/blocco_16006.png
+F | La banchina divide la carreggiata in due corsie
+F | La banchina è parte della carreggiata, destinata alla sosta dei veicoli Passo carrabile
+F | La banchina è riservata ai veicoli lenti, nelle strade in salita
+F | La carreggiata comprende le piazzole di sosta Carreggiata
+F | La carreggiata è destinata alla sosta degli autocarri
+F | La carreggiata è destinata alla sosta di emergenza
+F | La carreggiata è destinata soltanto alla circolazione di carri a trazione animale
+F | La carreggiata è la traccia lasciata dalle ruote dei veicoli sulle strade innevate
+F | La corsia di accelerazione può essere utilizzata per il sorpasso
+F | La corsia di accelerazione serve per abbandonare la carreggiata dell'autostrada ed entrare in un'area di sosta Corsia di decelerazione
+F | La corsia di accelerazione serve per uscire da una piazzola di sosta
+F | La corsia di decelerazione può essere utilizzata per la sosta dei veicoli
+F | La corsia di decelerazione serve ad entrare in autostrada 7 LA STRADA Banchina
+F | La corsia di decelerazione serve per entrare in una piazzola di sosta
+F | La corsia è destinata solo al transito dei pedoni
+F | La corsia è formata da due carreggiate
+F | La corsia è una pista riservata alle vetture da corsa
+F | La corsia è una strada a scorrimento veloce
+F | La corsia non può mai essere attraversata dai pedoni
+F | La corsia può essere a doppio senso di circolazione
+F | La doppia striscia continua in figura si può trovare ai bordi della strada, per segnalare i margini | ./img/blocco_16003.png
+F | La doppia striscia in figura non può essere superata, ma si può circolare stando a cavallo di essa (FIG 509) | ./img/blocco_16002.png
+F | La figura rappresenta un segnale di obbligo | ./img/blocco_12009.png
+F | La guida dei quadricicli non leggeri è consentita già al compimento del quattordicesimo anno di età
+F | La segnaletica in figura indica lo spazio riservato alla sosta anche dei taxi | ./img/blocco_16010.png
+F | La strada è normalmente riservata alla circolazione dei soli veicoli e animali
+F | La strada è qualsiasi area asfaltata, limitata lateralmente dagli attraversamenti pedonali Autostrada
+F | La strada è riservata alla circolazione dei soli autoveicoli e motocicli
+F | La strada non comprende i marciapiedi
+F | La strada non comprende le banchine
+F | La strada rappresentata è composta da quattro carreggiate, tutte a senso unico | ./img/blocco_11003.png
+F | La striscia bianca discontinua in figura consente di circolare stando a cavallo di essa | ./img/blocco_16001.png
+F | Le autocaravan (camper) sono rimorchi
+F | Le autocaravan (camper) sono veicoli destinati ai lavori agricoli
+F | Le autocaravan (camper) sono veicoli destinati alla costruzione e alla manutenzione di opere stradali
+F | Le autocaravan sono soggette a revisione ogni cinque anni Macchine agricole - Macchine operatrici
+F | Le autovetture non possono trainare carrelli-appendice o rimorchi
+F | Le autovetture sono soggette a revisione ogni cinque anni 2 I VEICOLI Autoveicoli
+F | Le biciclette con pedalata assistita, dotate di motore elettrico ausiliario di potenza massima fino a 0,25 kW, sono definite ciclomotori
+F | Le frecce direzionali in figura obbligano a seguire la direzione indicata, anche se le strisce di corsia sono discontinue | ./img/blocco_16005.png
+F | Le macchine agricole possono trasportare fino a quattro passeggeri
+F | Le macchine operatrici a cingoli possono circolare ad una velocità superiore a 45 km/h
+F | Le macchine operatrici possono circolare ad una velocità superiore a 50 km/h
+F | Le macchine operatrici semoventi possono trasportare fino a quattro passeggeri
+F | Le strade extraurbane principali devono essere dotate di pannelli a messaggio variabile Carreggiata
+F | Le strade extraurbane principali hanno una sola corsia per ogni senso di marcia
+F | Le strade extraurbane principali possono essere ad un'unica carreggiata
+F | Le strade extraurbane principali sono contraddistinte da segnaletica verde
+F | Le strisce di guida in figura debbono essere lasciate sempre alla destra del veicolo quando si svolta a destra | ./img/blocco_16004.png
+F | Nei centri abitati, su una stessa corsia possono circolare affiancati due motocicli
+F | Nell'intersezione (incrocio) a livelli sfalsati non valgono i limiti massimi generali di velocità
+F | Nella strada rappresentata, per ogni senso di marcia, la corsia di centro è dedicata, di norma, alla marcia ordinaria | ./img/blocco_11002.png
+F | Nelle aree pedonali i ciclomotori possono transitare solo di giorno
+F | Nelle aree pedonali possono transitare i quadricicli a motore, purché non superino la velocità di 50 km/h Salvagente
+F | Nelle aree pedonali possono transitare i trattori stradali, con velocità non superiore a 30 km/h
+F | Nelle aree pedonali possono transitare tutti gli autoveicoli, ma con prudenza
+F | Nelle aree pedonali possono transitare tutti i motocicli, purché diano la precedenza ai pedoni
+F | Nelle autostrade possono circolare i ciclomotori e i motocicli con cilindrata fino a 125 cm3
+F | Nelle autostrade possono circolare solo gli autoveicoli
+F | Nelle autostrade possono circolare solo le autovetture
+F | Nelle autostrade possono circolare tutti i motocicli e i ciclomotori 5 LA STRADA Strada extraurbana principale
+F | Nelle autostrade possono circolare tutti i tipi di motocicli
+F | Nelle strade extraurbane principali non vi sono curve né dossi
+F | Per condurre macchine operatrici è necessario essere titolari della patente di guida della categoria A
+F | Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova, di norma, su strade | ./img/blocco_16007.png
+F | Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura consente anche al veicolo che | ./img/blocco_16008.png
+F | Si definisce autovettura il veicolo blindato e appositamente attrezzato per il trasporto di valori
+F | Si definiscono autovetture tutti i veicoli a motore che hanno la trazione posteriore
+F | Si definiscono ciclomotori tutti i veicoli a due ruote di cilindrata superiore a 50 cm3
+F | Si definiscono motocicli solo i veicoli a due ruote di cilindrata fino a 125 cm3
+F | Sulle autocaravan (camper) è possibile viaggiare in piedi, solo per brevi tratti
+F | Sulle banchine la sosta dei veicoli è consentita per un massimo di 5 ore
+F | Sulle macchine agricole e sui loro rimorchi è consentito il trasporto di persone in piedi
+F | Sulle strade extraurbane principali è consentito circolare alla stessa velocità massima prevista per le autostrade
+F | Sulle strade extraurbane principali è consentito circolare alla velocità massima di 130 km/h
+F | Sulle strade extraurbane principali i ciclomotori possono transitare
+F | Sulle strade extraurbane principali i quadricicli leggeri possono transitare
+F | Tutti i veicoli a motore con tre ruote sono dei motocicli
+F | Una zona a traffico limitato è un'area nella quale è consentito solo il transito di ciclomotori e biciclette
+F | Una zona a traffico limitato è un'area sempre vietata al transito dei veicoli a motore
+F | Una zona a traffico limitato è un'area vietata al transito dei pedoni durante le ore notturne Area pedonale
+F | Vengono definite autovetture tutti i veicoli con motore anteriore
+V | Fanno parte della carreggiata gli attraversamenti ciclabili
+V | Fanno parte della carreggiata gli attraversamenti pedonali
+V | Fanno parte della carreggiata le corsie di marcia
+V | Fanno parte della carreggiata le corsie di sorpasso
+V | Gli autoveicoli sono veicoli a motore con almeno quattro ruote, esclusi i quadricicli
+V | I caravan (roulottes) sono muniti di targa
+V | I caravan (roulottes) sono rimorchi attrezzati per essere adibiti ad alloggio
+V | I caravan (roulottes) sono utilizzabili come alloggio solo con veicolo fermo
+V | I ciclomotori a due ruote non possono avere un motore termico di cilindrata superiore a 50 cm3
+V | I ciclomotori non rientrano nella categoria dei motocicli
+V | I ciclomotori possono avere due o tre ruote
+V | I ciclomotori sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+V | I motocicli con cilindrata di almeno 150 cm3 possono circolare in autostrada
+V | I motocicli hanno cilindrata superiore a 50 cm3
+V | I motocicli possono essere dotati di cambio automatico
+V | I motocicli sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+V | I motocicli sono veicoli a due ruote
+V | I quadricicli a motore devono rispettare il divieto imposto dal segnale rappresentato
+V | I quadricicli leggeri alimentati a benzina hanno cilindrata del motore inferiore o pari a 50 cm3
+V | I quadricicli leggeri, ai fini della circolazione, sono assimilati ai ciclomotori
+V | I quadricicli non sono autoveicoli
+V | I quadricicli sono soggetti a revisione periodica
+V | I quadricicli sono veicoli a motore a quattro ruote
+V | I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 750 kg
+V | I rimorchi o i semirimorchi sono veicoli privi di motore, destinati ad essere trainati
+V | I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano un divieto di sosta | ./img/blocco_16009.png
+V | I taxi devono rispettare il divieto imposto dal segnale rappresentato
+V | I tricicli a motore sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni
+V | I tricicli a motore sono veicoli a motore a tre ruote simmetriche
+V | I tricicli a motore sono veicoli a motore aventi una velocità massima per costruzione superiore a 45 km/h
+V | I tricicli a motore sono veicoli con motore di cilindrata superiore a 50 cm3
+V | I veicoli a due ruote, con motore termico fino a 50 cm3 di cilindrata e velocità massima di 45 km/h sono ciclomotori
+V | I veicoli senza motore devono rispettare il divieto imposto dal segnale rappresentato
+V | Il divieto imposto dal segnale raffigurato deve essere rispettato anche nelle ore notturne
+V | Il limite di velocità indicato sul segnale raffigurato ha validità immediatamente dopo il segnale stesso
+V | Il marciapiede consente la sosta dei veicoli solo in presenza di apposite strisce di parcheggio
+V | Il marciapiede è una parte della strada riservata, di norma, ai pedoni
+V | Il marciapiede è una parte della strada, al di fuori della carreggiata, destinata alla circolazione dei pedoni
+V | Il marciapiede è una parte della strada, rialzata o delimitata in altro modo, riservata ai pedoni
+V | Il numero raffigurato nel segnale indica la velocità massima consentita
+V | Il pannello con tre barre oblique rosse è il primo dei pannelli che si incontra quando ci si approssima ad un passaggio a livello
+V | Il pannello con tre barre rosse (A) è posto sotto il segnale (B)  (FIG 910)
+V | Il passo carrabile consente ai veicoli di accedere alle proprietà private laterali alla strada (garage, cortili, ecc.)
+V | Il passo carrabile deve essere corredato da apposito segnale, che riporti l'ente e il numero di autorizzazione
+V | Il passo carrabile è una zona per l'accesso dei veicoli alle proprietà laterali alla strada
+V | Il passo carrabile permette ai veicoli che circolano su una strada pubblica di accedere ad un'area laterale adibita alla sosta
+V | Il salvagente facilita la salita e la discesa dei passeggeri da tram, filobus o autobus
+V | Il salvagente può essere segnalato da colonnine luminose a luce gialla fissa
+V | Il salvagente, posto in corrispondenza di attraversamenti pedonali, serve anche al riparo o alla sosta dei pedoni che attraversano la strada
+V | Il segnale raffigurato consente ad un’autovettura di sorpassare un motociclo | ./img/blocco_13003.png
+V | Il segnale raffigurato preannuncia un dosso | ./img/blocco_12003.png
+V | Il segnale raffigurato preannuncia un passaggio a livello con barriere o con semibarriere | ./img/blocco_12015.png
+V | Il segnale raffigurato preannuncia un tratto di strada deformata | ./img/blocco_12001.png
+V | Il segnale raffigurato preannuncia una cunetta | ./img/blocco_12005.png
+V | Il segnale raffigurato preannuncia una curva pericolosa a destra | ./img/blocco_12007.png
+V | Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a destra | ./img/blocco_12011.png
+V | Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a sinistra | ./img/blocco_12013.png
+V | Il segnale raffigurato vieta ai veicoli di superare la velocità indicata | ./img/blocco_13008.png
+V | Il segnale raffigurato vieta di entrare in una strada accessibile invece dall'altra parte
+V | Il segnale raffigurato vieta di entrare in una strada accessibile invece dall’altra parte | ./img/blocco_13002.png
+V | Il segnale raffigurato vieta il transito ai motocicli | ./img/blocco_13014.png
+V | Il segnale raffigurato vieta il transito ai pedoni | ./img/blocco_13012.png
+V | Il segnale raffigurato vieta il transito ai veicoli a braccia | ./img/blocco_13015.png
+V | Il segnale raffigurato vieta il transito ai veicoli a trazione animale | ./img/blocco_13011.png
+V | Il segnale raffigurato vieta il transito alle biciclette | ./img/blocco_13013.png
+V | Il segnale raffigurato vieta l’uso del clacson | ./img/blocco_13009.png
+V | Il segnale raffigurato vieta la circolazione nei due sensi | ./img/blocco_13001.png
+V | Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza ai veicoli provenienti | ./img/blocco_23001.png
+V | In corrispondenza del passo carrabile è consentita la fermata
+V | In presenza del segnale raffigurato è consentito sorpassare ciclomotori a due ruote | ./img/blocco_13005.png
+V | In presenza del segnale raffigurato è importante prevedere eventuali sbandamenti dei veicoli provenienti dal senso opposto | ./img/blocco_12002.png
+V | In presenza del segnale raffigurato è necessario moderare la velocità in relazione alla visibilità | ./img/blocco_12004.png
+V | In presenza del segnale raffigurato è necessario moderare la velocità per evitare danni alle sospensioni | ./img/blocco_12006.png
+V | In presenza del segnale raffigurato è obbligatorio mantenere una distanza di almeno 70 metri dal veicolo che precede | ./img/blocco_13006.png
+V | In presenza del segnale raffigurato si deve circolare il più vicino possibile al margine destro della carreggiata, su strada | ./img/blocco_12014.png
+V | In presenza del segnale raffigurato un autocarro può sorpassare un motociclo | ./img/blocco_13004.png
+V | In presenza del segnale raffigurato, su una strada a doppio senso di circolazione con due sole corsie, si deve circolare il | ./img/blocco_12010.png
+V | In presenza dell’isola di traffico rappresentata in figura il veicolo C deve svoltare a destra | ./img/blocco_16011.png
+V | In presenza delle strisce di guida in figura il veicolo C può andare diritto | ./img/blocco_16012.png
+V | In un passaggio a livello si possono trovare le barriere
+V | In un passaggio a livello si possono trovare le luci rosse
+V | In un passaggio a livello si possono trovare le semibarriere
+V | In un passaggio a livello si può trovare la croce di S. Andrea
+V | In un passaggio a livello si può trovare un dispositivo di segnalazione acustica
+V | In una carreggiata del tipo rappresentato si può sorpassare anche in curva | ./img/blocco_11001.png
+V | In una zona a traffico limitato possono circolare solo i veicoli autorizzati
+V | In vicinanza di un passaggio a livello si trovano i pannelli distanziometrici
+V | L'attraversamento pedonale è una parte della carreggiata destinata al transito dei pedoni che attraversano
+V | L'attraversamento pedonale è una parte della carreggiata sulla quale è vietata la fermata dei veicoli
+V | L'attraversamento pedonale è una parte della carreggiata sulla quale è vietata la sosta dei veicoli
+V | L'attraversamento pedonale è una parte della carreggiata, in cui i veicoli devono dare la precedenza ai pedoni, che attraversano sulle apposite strisce
+V | L'attraversamento pedonale viene segnalato con strisce bianche parallele
+V | L'autobus non è un'autovettura
+V | L'autobus viene classificato autoveicolo
+V | L'autocaravan non è un rimorchio
+V | L'autocarro è un autoveicolo
+V | L'autosnodato non è classificato rimorchio
+V | L'autostrada deve essere lateralmente recintata
+V | L'autostrada è a carreggiate indipendenti o separate da spartitraffico
+V | L'autostrada è dotata di speciali corsie per l'ingresso e l'uscita dei veicoli
+V | L'autostrada non ha incroci a raso che l'attraversano
+V | L'autoveicolo è un veicolo a motore con non meno di quattro ruote, eccetto i quadricicli
+V | L'autovettura è un veicolo a motore con quattro ruote, destinato al trasporto di massimo nove persone, compreso il conducente
+V | L'autovettura fa parte degli autoveicoli
+V | L'autovettura non può avere più di nove posti, compreso il conducente
+V | L'ente proprietario della strada può imporre che su una corsia i veicoli transitino ad una velocità minima obbligatoria
+V | L'intersezione (incrocio) a livelli sfalsati comprende rampe, sovrappassi o sottopassi
+V | L'intersezione (incrocio) a livelli sfalsati comprende strade situate ad altezze diverse
+V | L'intersezione (incrocio) a livelli sfalsati è munita di infrastrutture (rampe, sovrappassi, sottopassi) per il collegamento fra strade poste a livelli diversi
+V | L'intersezione (incrocio) a livelli sfalsati facilita la circolazione, perché esclude l'incrocio diretto fra i veicoli
+V | L'intersezione (incrocio) a raso è un'intersezione di due o più strade poste allo stesso livello
+V | L'intersezione (incrocio) a raso può essere regolata da semaforo
+V | L'intersezione (incrocio) a raso richiede di fare attenzione ai veicoli provenienti dalle strade che si incrociano
+V | L'isola di traffico a raso è costituita da zebrature di colore bianco
+V | L'isola di traffico è delimitata da strisce bianche continue
+V | L'isola di traffico è una parte della strada sulla quale è vietato il transito dei motocicli
+V | L'isola di traffico è una parte della strada sulla quale è vietato il transito dei veicoli
+V | L'isola di traffico può essere a raso o in rilievo (rialzata)
+V | L'isola di traffico serve a facilitare l'incanalamento dei veicoli verso varie direzioni
+V | L'isola di traffico viene evidenziata mediante zebrature di colore bianco
+V | L'isola di traffico, se rialzata, è preceduta da zebrature di colore bianco
+V | L'uscita dei veicoli dalle autostrade avviene tramite corsie di decelerazione
+V | L’isola di traffico in figura indica un tratto di strada vietato al transito ed alla sosta dei veicoli | ./img/blocco_16006.png
+V | La banchina è parte della strada, posta al di fuori della carreggiata
+V | La banchina è parte della strada, situata oltre la linea bianca continua di margine della carreggiata
+V | La banchina non consente, di norma, il transito ai veicoli
+V | La carreggiata è la parte della strada destinata normalmente alla circolazione dei veicoli
+V | La carreggiata non comprende i marciapiedi
+V | La carreggiata non comprende le piste ciclabili
+V | La carreggiata può essere a doppio senso di circolazione
+V | La carreggiata può essere a senso unico di circolazione
+V | La carreggiata può essere suddivisa in corsie
+V | La corsia di accelerazione facilita l'ingresso dei veicoli in autostrada o su strade extraurbane principali
+V | La corsia di accelerazione serve ad entrare correttamente in autostrada
+V | La corsia di accelerazione serve per rientrare sulla carreggiata dell'autostrada dopo che si è usciti da un'area di servizio
+V | La corsia di accelerazione viene utilizzata per aumentare la velocità
+V | La corsia di decelerazione facilita l'uscita dei veicoli dall'autostrada
+V | La corsia di decelerazione serve per uscire correttamente da una strada extraurbana principale
+V | La corsia di decelerazione serve per uscire dalla carreggiata dell'autostrada ed entrare nell'area di servizio
+V | La corsia è limitata da strisce continue o discontinue
+V | La corsia è una parte della carreggiata che consente la circolazione di una sola fila di veicoli
+V | La corsia può essere destinata ad effettuare sorpassi
+V | La corsia può essere destinata al rallentamento dei veicoli in uscita dalle autostrade
+V | La corsia può essere destinata alla normale marcia dei veicoli
+V | La corsia può essere destinata alle soste di emergenza, in caso di guasto o malessere
+V | La corsia può essere di accelerazione
+V | La corsia può essere di decelerazione
+V | La corsia può essere riservata ai veicoli che intendono svoltare (corsia specializzata)
+V | La corsia può essere riservata alla circolazione di alcune categorie di veicoli (taxi, autobus, ecc.)
+V | La doppia striscia continua in figura serve a dividere i sensi di marcia, sulle strade a doppio senso di circolazione | ./img/blocco_16003.png
+V | La figura rappresenta un segnale di pericolo | ./img/blocco_12009.png
+V | La potenza dei quadricicli non leggeri è sempre inferiore o uguale a 15 kW
+V | La prescrizione del segnale raffigurato, se abbinato ad un semaforo, vale quando il semaforo funziona a luce gialla lampeggiante
+V | La segnaletica in figura indica una zona per la fermata degli autobus in servizio pubblico di linea | ./img/blocco_16010.png
+V | La strada è aperta alla circolazione dei pedoni, degli animali e dei veicoli
+V | La strada extraurbana principale non ha incroci a raso che l'attraversano
+V | La strada può comprendere le piste ciclabili
+V | La strada può essere a doppio senso di circolazione
+V | La strada può essere a senso unico di circolazione
+V | La strada può essere suddivisa in carreggiate
+V | La strada rappresentata è composta da tre carreggiate | ./img/blocco_11003.png
+V | La striscia bianca discontinua in figura può essere superata | ./img/blocco_16001.png
+V | Le autocaravan (camper) sono veicoli attrezzati permanentemente per essere adibiti al trasporto ed all'alloggio di persone
+V | Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all'alloggio al massimo del numero di persone indicato nella carta di circolazione
+V | Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all'alloggio di persone
+V | Le autocaravan sono soggette a revisione periodica
+V | Le autovetture possono avere motore elettrico
+V | Le autovetture sono soggette a revisione periodica
+V | Le corsie possono essere vietate a taluni tipi di veicoli
+V | Le frecce direzionali in figura si trovano all’interno delle corsie, prima di un incrocio | ./img/blocco_16005.png
+V | Le macchine agricole a ruote o a cingoli possono circolare su strada per il trasporto di prodotti agricoli per conto delle aziende agricole e forestali
+V | Le macchine agricole non possono circolare in autostrada
+V | Le macchine agricole operatrici possono essere dotate di speciali attrezzature per l'esecuzione di operazioni agricole
+V | Le macchine agricole possono circolare su strada per il proprio trasferimento se immatricolate
+V | Le macchine agricole possono essere a ruote o a cingoli
+V | Le macchine agricole possono essere semoventi o trainate
+V | Le macchine operatrici possono essere semoventi o trainate
+V | Le macchine operatrici possono essere veicoli sgombraneve
+V | Le strade extraurbane principali sono a carreggiate separate
+V | Le strade extraurbane principali sono dotate di apposite aree di sosta
+V | Le strade extraurbane principali sono provviste di corsie di accelerazione per l'ingresso
+V | Le strade extraurbane principali sono segnalate da cartelli stradali di inizio e fine
+V | Le strisce di guida in figura, sono strisce curve discontinue (tratteggiate) di colore bianco | ./img/blocco_16004.png
+V | Le strisce lungo il centro della carreggiata possono essere superate se discontinue (tratteggiate) | ./img/blocco_16002.png
+V | Nel caso di attraversamento ferroviario senza barriere, i pannelli (A) sono posti prima del segnale (B)  (FIG 911)
+V | Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante
+V | Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante
+V | Nell'intersezione (incrocio) a raso due o più strade si incrociano allo stesso livello
+V | Nella strada rappresentata, per ogni senso di marcia, la corsia di destra è, di norma, dedicata alla marcia ordinaria | ./img/blocco_11002.png
+V | Nelle aree pedonali possono transitare gli autoveicoli dei vigili del fuoco, con luce lampeggiante blu e sirena in funzione
+V | Nelle aree pedonali possono transitare i pedoni
+V | Nelle aree pedonali possono transitare i veicoli ad emissione zero (elettrici), se espressamente consentito
+V | Nelle aree pedonali possono transitare i veicoli al servizio di persone diversamente abili
+V | Nelle aree pedonali possono transitare i veicoli della polizia, con sirena e luce lampeggiante blu in funzione
+V | Nelle aree pedonali possono transitare le biciclette
+V | Nelle curve pericolose preannunciate dal segnale raffigurato è vietato il sorpasso se la carreggiata è a due corsie e a doppio senso di circolazione
+V | Nelle strade extraurbane il segnale raffigurato è posto, di norma, a 150 metri dall'attraversamento
+V | Nelle strade extraurbane principali possono circolare solo alcune categorie di veicoli a motore
+V | Nelle strade extraurbane principali si possono trovare intersezioni (incroci) a livelli sfalsati
+V | Non tutti i tipi di veicoli possono circolare in autostrada
+V | Non tutti i veicoli a motore a due ruote vengono classificati ciclomotori
+V | Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova prima di una curva | ./img/blocco_16007.png
+V | Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova subito dopo una curva | ./img/blocco_16008.png
+V | Su strada a due corsie e a doppio senso di circolazione, in presenza del segnale raffigurato è opportuno fare particolare attenzione ai veicoli provenienti dal senso opposto
+V | Su strada a due sole corsie e a doppio senso di circolazione, in presenza del segnale raffigurato si deve marciare il più | ./img/blocco_12012.png
+V | Su strada a due sole corsie e a doppio senso di circolazione, in presenza del segnale raffigurato si deve marciare il più possibile vicino al margine destro
+V | Sulle strade extraurbane il segnale è sempre obbligatorio
+V | Una zona a traffico limitato è delimitata da appositi segnali stradali di inizio e di fine
+V | Una zona a traffico limitato è un'area in cui può essere limitata la circolazione dei veicoli solo in alcune ore
+V | Una zona a traffico limitato è un'area nella quale può essere limitata la circolazione solo a particolari categorie di utenti
+V | Una zona a traffico limitato è un'area nella quale può essere limitata la circolazione solo di particolari categorie di veicoli
