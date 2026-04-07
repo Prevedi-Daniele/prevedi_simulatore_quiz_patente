@@ -315,19 +315,12 @@ def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risp
 def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer):
     try:
         timer_corrente = timer_id_gui.get()
-        if timer_corrente != "":
-            finestra.after_cancel(timer_corrente)
+        #if timer_corrente != "":
+        #    finestra.after_cancel(timer_corrente)
             
         non_risposte_conta = risposte_utente.count(None)
-        if non_risposte_conta > 0:
-            domanda_scritta = f"Hai ancora {non_risposte_conta} domande a cui non hai risposto. Vuoi consegnare lo stesso?"
-            risposta_utente = messagebox.askquestion("Attenzione", domanda_scritta)
-            if risposta_utente == "no":
-                if a_tempo == True:
-                    aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
-                return
                 
-        mostra_risultato(finestra, domande, risposte_utente)
+        mostra_risultato(finestra, domande, risposte_utente, non_risposte_conta)
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore consegna: {errore}")
 
