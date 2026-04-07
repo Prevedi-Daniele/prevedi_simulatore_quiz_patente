@@ -204,16 +204,16 @@ def inizia_quiz(finestra, domande, a_tempo):
 
 
 def dividi_testo_domanda(testo):
-    parole = testo.split(" ")
-    nuovo_testo = ""
-    lunghezza_linea = 0
-    for parola in parole:
-        if lunghezza_linea + len(parola) > 70:
-            nuovo_testo = nuovo_testo + "\n"
-            lunghezza_linea = 0
-        nuovo_testo = nuovo_testo + parola + " "
-        lunghezza_linea = lunghezza_linea + len(parola) + 1
-    return nuovo_testo
+    elenco_parole_domanda = testo.split(" ")
+    nuovo_testo_domanda = ""
+    lunghezza_linea_attuale_domanda = 0
+    for parola in elenco_parole_domanda:
+        if lunghezza_linea_attuale_domanda + len(parola) > 70:
+            nuovo_testo_domanda = nuovo_testo_domanda + "\n"
+            lunghezza_linea_attuale_domanda = 0
+        nuovo_testo_domanda = nuovo_testo_domanda + parola + " "
+        lunghezza_linea_attuale_domanda = lunghezza_linea_attuale_domanda + len(parola) + 1
+    return nuovo_testo_domanda
 
 
 def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente):
@@ -246,28 +246,27 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
         else:
             label_immagine.pack_forget()
         
-        if pulsante_vero != None:
-            if pulsante_falso != None:
-                if risposte_utente[indice_domanda_attuale] == "V":
-                    pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
-                    pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-                elif risposte_utente[indice_domanda_attuale] == "F":
-                    pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
-                    pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
-                else:
-                    pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
-                    pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
+        if pulsante_vero != None and pulsante_falso != None:
+            if risposte_utente[indice_domanda_attuale] == "V":
+                pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
+                pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
+            elif risposte_utente[indice_domanda_attuale] == "F":
+                pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
+                pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
+            else:
+                pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
+                pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
         
         if indice_domanda_attuale > 0:
-            pulsante_domanda_precedente.config(state="normal")
+            pulsante_domanda_precedente.pack(side=tk.LEFT, padx=10)
         else:
-            pulsante_domanda_precedente.config(state="disabled")
+            pulsante_domanda_precedente.destroy()
             
         limite_domande = len(domande) - 1
         if indice_domanda_attuale < limite_domande:
-            pulsante_domanda_successiva.config(state="normal")
+            pulsante_domanda_successiva.pack(side=tk.RIGHT, padx=10)
         else:
-            pulsante_domanda_successiva.config(state="disabled")
+            pulsante_domanda_successiva.destroy()
             
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore aggiornamento vista: {errore}")
