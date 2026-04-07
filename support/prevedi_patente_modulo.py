@@ -77,15 +77,15 @@ def leggi_domande():
                 parti = linea.strip().split("|")
 
                 if len(parti) >= 2:
-                    domanda_testo = parti[1].strip()
+                    testo_domanda_attuale = parti[1].strip()
                     risposta = parti[0].strip().upper()
                 
                     if len(parti) == 2:
-                        domande.append([domanda_testo, risposta])
+                        domande.append([testo_domanda_attuale, risposta])
                 
                     if len(parti) == 3:
                         percorso_immagine = parti[2].strip()
-                        domande.append([domanda_testo, risposta, percorso_immagine])
+                        domande.append([testo_domanda_attuale, risposta, percorso_immagine])
 
     except FileNotFoundError:
         messagebox.showerror("Errore", "File delle domande non trovato o danneggiato.")
@@ -215,16 +215,15 @@ def dividi_testo_domanda(testo):
     return nuovo_testo
 
 
-def aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente):
+def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente):
     try:
-        idx = indice_domanda_gui.get()
-        domanda_corrente = domande[idx]
-        domanda_testo = domanda_corrente[0]
-        testo_formattato = dividi_testo_domanda(domanda_testo)
+        indice_domanda_attuale = indice_domanda_tkvar.get()
+        domanda_corrente = domande[indice_domanda_attuale]
+        testo_domanda_attuale = domanda_corrente[0]
+        testo_formattato = dividi_testo_domanda(testo_domanda_attuale)
         
-        stringa_info = f"Domanda {idx + 1} di {len(domande)}"
-        label_info.config(text=stringa_info)
-        label_domanda.config(text=testo_formattato)
+        indicatore_numero_di_domanda.config(text=f"Domanda {indice_domanda_attuale + 1} di {len(domande)}")
+        testo_domanda.config(text=testo_formattato)
 
         if len(domanda_corrente) > 2:
             percorso_immagine = domanda_corrente[2]
@@ -266,23 +265,23 @@ def aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label
         
         if pulsante_vero != None:
             if pulsante_falso != None:
-                if risposte_utente[idx] == "V":
+                if risposte_utente[indice_domanda_attuale] == "V":
                     pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
                     pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-                elif risposte_utente[idx] == "F":
+                elif risposte_utente[indice_domanda_attuale] == "F":
                     pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
                     pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
                 else:
                     pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
                     pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
         
-        if idx > 0:
+        if indice_domanda_attuale > 0:
             pulsante_domanda_precedente.config(state="normal")
         else:
             pulsante_domanda_precedente.config(state="disabled")
             
         limite_domande = len(domande) - 1
-        if idx < limite_domande:
+        if indice_domanda_attuale < limite_domande:
             pulsante_domanda_successiva.config(state="normal")
         else:
             pulsante_domanda_successiva.config(state="disabled")
@@ -291,34 +290,34 @@ def aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label
         messagebox.showerror("Errore", f"Errore aggiornamento vista: {e}")
 
 
-def set_risposta(risp, indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande):
+def set_risposta(risp, indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande):
     try:
-        indice_corrente = indice_domanda_gui.get()
+        indice_corrente = indice_domanda_tkvar.get()
         risposte_utente[indice_corrente] = risp
-        aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore risposta: {e}")
 
 
-def vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
+def vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
     try:
-        indice_attuale = indice_domanda_gui.get()
+        indice_attuale = indice_domanda_tkvar.get()
         if indice_attuale > 0:
             nuovo_indice = indice_attuale - 1
-            indice_domanda_gui.set(nuovo_indice)
-            aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+            indice_domanda_tkvar.set(nuovo_indice)
+            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore navigazione: {e}")
 
 
-def vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
+def vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
     try:
-        indice_attuale = indice_domanda_gui.get()
+        indice_attuale = indice_domanda_tkvar.get()
         limite_domande = len(domande) - 1
         if indice_attuale < limite_domande:
             nuovo_indice = indice_attuale + 1
-            indice_domanda_gui.set(nuovo_indice)
-            aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+            indice_domanda_tkvar.set(nuovo_indice)
+            aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore navigazione: {e}")
 
@@ -366,7 +365,7 @@ def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gu
 
 def gestisci_quiz(finestra, domande, a_tempo):
     try:
-        indice_domanda_gui = tk.IntVar(value=0)
+        indice_domanda_tkvar = tk.IntVar(value=0)
         tempo_gui = tk.IntVar(value=TEMPO)
         timer_id_gui = tk.StringVar(value="")
         
@@ -376,12 +375,12 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_top.pack_propagate(False)
         frame_top.pack(pady=20, padx=20)
         
-        label_info = tk.Label(frame_top, 
+        indicatore_numero_di_domanda = tk.Label(frame_top, 
                                 text="", 
                                 font=(MODELLO_FONT, 14, "bold"), 
                                 bg=BG_COLOR, 
                                 fg=FG_COLOR)
-        label_info.pack(side=tk.LEFT)
+        indicatore_numero_di_domanda.pack(side=tk.LEFT)
         
         label_timer = tk.Label(frame_top, 
                                 text="", 
@@ -394,24 +393,24 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_centrale = tk.Frame(finestra, bg=BG_COLOR)
         frame_centrale.pack(expand=True)
 
-        label_domanda = tk.Label(frame_centrale, 
+        testo_domanda = tk.Label(frame_centrale, 
                                 text="", 
                                 font=(MODELLO_FONT, 18), 
                                 fg=FG_COLOR, 
                                 bg=BG_COLOR, 
                                 justify="center")
-        label_domanda.pack(pady=10)
+        testo_domanda.pack(pady=10)
 
         label_immagine = tk.Label(frame_centrale, bg=BG_COLOR)
         
         frame_pulsanti = tk.Frame(finestra, bg=BG_COLOR)
         frame_pulsanti.pack(pady=20)
 
-        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
+        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
         if pulsante_vero != None:
             pulsante_vero.pack(side=tk.LEFT, padx=30)
         
-        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_domanda_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
+        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande))
         if pulsante_falso != None:
             pulsante_falso.pack(side=tk.RIGHT, padx=30)
 
@@ -423,7 +422,7 @@ def gestisci_quiz(finestra, domande, a_tempo):
                                                 text="<< Indietro", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
-                                                command=lambda: vai_indietro(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                command=lambda: vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
                                                 width=12)
         pulsante_domanda_precedente.pack(side=tk.LEFT)
         
@@ -440,11 +439,11 @@ def gestisci_quiz(finestra, domande, a_tempo):
                                                 text="Avanti >>", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
-                                                command=lambda: vai_avanti(indice_domanda_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
+                                                command=lambda: vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente), 
                                                 width=12)
         pulsante_domanda_successiva.pack(side=tk.RIGHT)
 
-        aggiorna_vista(indice_domanda_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
+        aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
         
         if a_tempo == True:
             aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
