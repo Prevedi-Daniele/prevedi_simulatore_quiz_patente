@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import messagebox
 import platform
 import random
+from PIL import Image, ImageTk
 
 try:
     if platform.system() == "Windows":
@@ -231,7 +232,6 @@ def aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagin
                 import os
                 if os.path.exists(percorso_immagine) == True:
                     try:
-                        from PIL import Image, ImageTk
                         immagine_file = Image.open(percorso_immagine)
                         larghezza_orig = immagine_file.width
                         altezza_orig = immagine_file.height
