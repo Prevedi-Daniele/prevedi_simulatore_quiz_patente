@@ -232,19 +232,14 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
         if len(domanda_corrente) > 2:
             percorso_immagine = domanda_corrente[2]
             try:
-                try:
-                    immagine_file = Image.open(percorso_immagine)
-                    img = ImageTk.PhotoImage(immagine_file)
-                except Exception as errore:
-                    img = tk.PhotoImage(file=percorso_immagine)
-
-                label_immagine.config(image=img)
-                label_immagine.image = img
+                img_originale = Image.open(percorso_immagine)
+                img_tk = ImageTk.PhotoImage(img_originale)
+                label_immagine.config(image=img_tk)
+                label_immagine.image = img_tk 
             except Exception as errore:
-                label_immagine.config(image="")
-                label_immagine.image = None
+                label_immagine.config(image="", text="Errore nel caricamento dell'immagine.")
         else:
-            label_immagine.config(image="")
+            label_immagine.config(image="", text="")
             label_immagine.image = None
         
         if pulsante_vero != None and pulsante_falso != None:
@@ -348,7 +343,7 @@ def gestisci_quiz(finestra, domande, a_tempo):
         testo_domanda = tk.Label(frame_principale, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, justify="center", wraplength=800)
         testo_domanda.grid(row=1, column=0, columnspan=3, pady=(20, 10))
 
-        label_immagine = tk.Label(frame_principale, bg=BG_COLOR, height=6)
+        label_immagine = tk.Label(frame_principale, bg=BG_COLOR)
         label_immagine.grid(row=2, column=0, columnspan=3, pady=10)
         
         pulsante_vero = crea_pulsante_vero(frame_principale, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
