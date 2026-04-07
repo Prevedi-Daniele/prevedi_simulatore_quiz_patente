@@ -47,8 +47,8 @@ def crea_pulsante_vero(finestra, funzione):
             bd=0,
             command=funzione
         )
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {errore}")
 
 
 def crea_pulsante_falso(finestra, funzione):
@@ -66,8 +66,8 @@ def crea_pulsante_falso(finestra, funzione):
             bd=0,
             command=funzione
         )
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {errore}")
 
 
 def leggi_domande():
@@ -90,8 +90,8 @@ def leggi_domande():
 
     except FileNotFoundError:
         messagebox.showerror("Errore", "File delle domande non trovato o danneggiato.")
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore durante la lettura del file: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore durante la lettura del file: {errore}")
     return domande
 
 
@@ -103,8 +103,8 @@ def preleva_domande(domande):
         # Se ci sono meno di 30 domande, prendile tutte        
         num_domande = min(30, len(domande))
         return random.sample(domande, num_domande)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore nella presa random delle domande: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore nella presa random delle domande: {errore}")
         return []
 
 
@@ -142,8 +142,8 @@ def mostra_risultato(finestra, domande, risposte_utente):
         pulsante_esci.pack(pady=40)
 
         finestra_schermata_risultato.mainloop()
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore nel mostrare il risultato: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore nel mostrare il risultato: {errore}")
 
 
 def schermata_iniziale(finestra, domande):
@@ -179,8 +179,8 @@ def schermata_iniziale(finestra, domande):
 
         scritta_crediti = tk.Label(finestra, text="© 2026 Daniele Prevedi. Soggetto a licenza CC BY-NC-SA 4.0", font=(MODELLO_FONT, 10), fg=FG_COLOR, bg="#f1f1f1", padx=1000, pady=10)
         scritta_crediti.pack(side=tk.BOTTOM)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore schermata iniziale: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore schermata iniziale: {errore}")
 
 
 def inizia_quiz(finestra, domande, a_tempo):
@@ -199,7 +199,7 @@ def inizia_quiz(finestra, domande, a_tempo):
         finestra_quiz.configure(bg=BG_COLOR)
 
         gestisci_quiz(finestra_quiz, domande_selezionate, a_tempo)
-    except Exception as e:
+    except Exception as errore:
         messagebox.showerror("Errore", f"Errore inizio quiz: {e}")
 
 
@@ -245,7 +245,7 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
                             immagine_file = immagine_file.resize((nuova_larghezza, nuova_altezza))
                         
                         img = ImageTk.PhotoImage(immagine_file)
-                    except Exception as e_pil:
+                    except Exception as errore:
                         img = tk.PhotoImage(file=percorso_immagine)
                         fattore = 1
                         if img.width() > 400:
@@ -258,7 +258,7 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
                     label_immagine.pack(pady=10)
                 else:
                     label_immagine.pack_forget()
-            except Exception as e:
+            except Exception as errore:
                 label_immagine.pack_forget()
         else:
             label_immagine.pack_forget()
@@ -286,8 +286,8 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
         else:
             pulsante_domanda_successiva.config(state="disabled")
             
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore aggiornamento vista: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore aggiornamento vista: {errore}")
 
 
 def set_risposta(risp, indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande):
@@ -295,8 +295,8 @@ def set_risposta(risp, indice_domanda_tkvar, risposte_utente, indicatore_numero_
         indice_corrente = indice_domanda_tkvar.get()
         risposte_utente[indice_corrente] = risp
         aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore risposta: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore risposta: {errore}")
 
 
 def vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
@@ -306,8 +306,8 @@ def vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_doman
             nuovo_indice = indice_attuale - 1
             indice_domanda_tkvar.set(nuovo_indice)
             aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore navigazione: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore navigazione: {errore}")
 
 
 def vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, domande, risposte_utente):
@@ -318,8 +318,8 @@ def vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda
             nuovo_indice = indice_attuale + 1
             indice_domanda_tkvar.set(nuovo_indice)
             aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, pulsante_domanda_precedente, pulsante_domanda_successiva, risposte_utente)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore navigazione: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore navigazione: {errore}")
 
 
 def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente):
@@ -339,7 +339,7 @@ def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risp
         else:
             messagebox.showinfo("Tempo scaduto", "Il tempo è scaduto! Il quiz verrà consegnato automaticamente.")
             mostra_risultato(finestra, domande, risposte_utente)
-    except Exception as e:
+    except Exception as errore:
         pass
 
 
@@ -359,8 +359,8 @@ def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gu
                 return
                 
         mostra_risultato(finestra, domande, risposte_utente)
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore consegna: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore consegna: {errore}")
 
 
 def gestisci_quiz(finestra, domande, a_tempo):
@@ -448,5 +448,5 @@ def gestisci_quiz(finestra, domande, a_tempo):
         if a_tempo == True:
             aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
             
-    except Exception as e:
-        messagebox.showerror("Errore", f"Errore gestore quiz: {e}")
+    except Exception as errore:
+        messagebox.showerror("Errore", f"Errore gestore quiz: {errore}")
