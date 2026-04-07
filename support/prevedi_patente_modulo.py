@@ -119,7 +119,7 @@ def mostra_risultato(finestra, domande, risposte_utente, non_risposte_conta=0):
         
         errori = 0
         for i in range(len(domande)):
-            if (risposte_utente[i] is None) or (risposte_utente[i].strip() != domande[i][1].strip()):
+            if (risposte_utente[i] == None) or (risposte_utente[i].strip() != domande[i][1].strip()):
                 errori = errori + 1
  
         if errori <= 3:
@@ -315,14 +315,9 @@ def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risp
         pass
 
 
-def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer):
+def consegna(finestra, risposte_utente, domande):
     try:
-        timer_corrente = timer_id_gui.get()
-        #if timer_corrente != "":
-        #    finestra.after_cancel(timer_corrente)
-            
         non_risposte_conta = risposte_utente.count(None)
-                
         mostra_risultato(finestra, domande, risposte_utente, non_risposte_conta)
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore consegna: {errore}")
@@ -399,7 +394,7 @@ def gestisci_quiz(finestra, domande, a_tempo):
                                             font=(MODELLO_FONT, 14, "bold"), 
                                             bg="#3b82f6", 
                                             fg="white", 
-                                            command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), 
+                                            command=lambda: consegna(finestra, risposte_utente, domande), 
                                             width=12)
         pulsante_consegna_quiz.pack(side=tk.LEFT, padx=60, expand=True)
         
