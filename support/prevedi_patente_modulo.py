@@ -229,18 +229,14 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
         if len(domanda_corrente) > 2:
             percorso_immagine = domanda_corrente[2]
             try:
-                if os.path.exists(percorso_immagine) == True:
-                    try:
-                        immagine_file = Image.open(percorso_immagine)
-                        img = ImageTk.PhotoImage(immagine_file)
-                    except Exception as errore:
-                        img = tk.PhotoImage(file=percorso_immagine)
+                try:
+                    immagine_file = Image.open(percorso_immagine)
+                    img = ImageTk.PhotoImage(immagine_file)
+                except Exception as errore:
+                    img = tk.PhotoImage(file=percorso_immagine)
 
-                    label_immagine.config(image=img)
-                    label_immagine.image = img
-                else:
-                    label_immagine.config(image="")
-                    label_immagine.image = None
+                label_immagine.config(image=img)
+                label_immagine.image = img
             except Exception as errore:
                 label_immagine.config(image="")
                 label_immagine.image = None
@@ -248,8 +244,7 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
             label_immagine.config(image="")
             label_immagine.image = None
         
-        if pulsante_vero != None:
-            if pulsante_falso != None:
+        if pulsante_vero != None and pulsante_falso != None:
                 if risposte_utente[indice_domanda_attuale] == "V":
                     pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
                     pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
@@ -259,7 +254,7 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
                 else:
                     pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
                     pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-            
+
     except Exception as errore:
         messagebox.showerror("Errore", f"Errore aggiornamento vista: {errore}")
 
