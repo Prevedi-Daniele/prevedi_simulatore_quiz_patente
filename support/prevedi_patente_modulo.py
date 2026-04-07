@@ -334,77 +334,55 @@ def gestisci_quiz(finestra, domande, a_tempo):
         frame_principale = tk.Frame(finestra, bg=BG_COLOR)
         frame_principale.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
         
-        frame_header = tk.Frame(frame_principale, bg=BG_COLOR)
-        frame_header.pack(fill=tk.X, pady=10)
+        frame_principale.columnconfigure(0, weight=1)
+        frame_principale.columnconfigure(1, weight=1)
+        frame_principale.columnconfigure(2, weight=1)
         
-        indicatore_numero_di_domanda = tk.Label(frame_header, 
-                                text="", 
-                                font=(MODELLO_FONT, 14, "bold"), 
-                                bg=BG_COLOR, 
-                                fg=FG_COLOR)
-        indicatore_numero_di_domanda.pack(side=tk.LEFT)
+        indicatore_numero_di_domanda = tk.Label(frame_principale, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FG_COLOR)
+        indicatore_numero_di_domanda.grid(row=0, column=0, sticky="w", pady=10)
         
-        label_timer = tk.Label(frame_header, 
-                                text="", 
-                                font=(MODELLO_FONT, 14, "bold"), 
-                                bg=BG_COLOR, 
-                                fg=FALSO_COLORE)
+        label_timer = tk.Label(frame_principale, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FALSO_COLORE)
         if a_tempo == True:
-            label_timer.pack(side=tk.RIGHT)
+            label_timer.grid(row=0, column=2, sticky="e", pady=10)
 
-        frame_contenuto = tk.Frame(frame_principale, bg=BG_COLOR)
-        frame_contenuto.pack(fill=tk.BOTH, expand=True, pady=20)
+        testo_domanda = tk.Label(frame_principale, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, justify="center", wraplength=800)
+        testo_domanda.grid(row=1, column=0, columnspan=3, pady=(20, 10))
 
-        testo_domanda = tk.Label(frame_contenuto, 
-                                text="", 
-                                font=(MODELLO_FONT, 18), 
-                                fg=FG_COLOR, 
-                                bg=BG_COLOR, 
-                                justify="center",
-                                wraplength=800)
-        testo_domanda.pack(pady=10)
-
-        label_immagine = tk.Label(frame_contenuto, bg=BG_COLOR, height=6)
-        label_immagine.pack(pady=10)
+        label_immagine = tk.Label(frame_principale, bg=BG_COLOR, height=6)
+        label_immagine.grid(row=2, column=0, columnspan=3, pady=10)
         
-        frame_pulsanti_risposta = tk.Frame(frame_principale, bg=BG_COLOR)
-        frame_pulsanti_risposta.pack(pady=20)
-
-        pulsante_vero = crea_pulsante_vero(frame_pulsanti_risposta, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
+        pulsante_vero = crea_pulsante_vero(frame_principale, lambda: set_risposta("V", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
         if pulsante_vero != None:
-            pulsante_vero.pack(side=tk.LEFT, padx=30)
+            pulsante_vero.grid(row=3, column=0, sticky="e", padx=30, pady=20)
         
-        pulsante_falso = crea_pulsante_falso(frame_pulsanti_risposta, lambda: set_risposta("F", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
+        pulsante_falso = crea_pulsante_falso(frame_principale, lambda: set_risposta("F", indice_domanda_tkvar, risposte_utente, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande))
         if pulsante_falso != None:
-            pulsante_falso.pack(side=tk.RIGHT, padx=30)
+            pulsante_falso.grid(row=3, column=2, sticky="w", padx=30, pady=20)
 
-        frame_navigazione = tk.Frame(frame_principale, bg=BG_COLOR)
-        frame_navigazione.pack(fill=tk.X, pady=20)
-
-        pulsante_domanda_precedente = tk.Button(frame_navigazione, 
-                                                text="<< Indietro", 
+        pulsante_domanda_precedente = tk.Button(frame_principale, 
+                                                text="Indietro", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
                                                 command=lambda: vai_indietro(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente), 
                                                 width=12)
-        pulsante_domanda_precedente.pack(side=tk.LEFT)
+        pulsante_domanda_precedente.grid(row=4, column=0, sticky="w", pady=20)
         
-        pulsante_consegna_quiz = tk.Button(frame_navigazione, 
+        pulsante_consegna_quiz = tk.Button(frame_principale, 
                                             text="Consegna", 
                                             font=(MODELLO_FONT, 14, "bold"), 
                                             bg="#3b82f6", 
                                             fg="white", 
                                             command=lambda: consegna(finestra, risposte_utente, domande), 
                                             width=12)
-        pulsante_consegna_quiz.pack(side=tk.LEFT, padx=60, expand=True)
+        pulsante_consegna_quiz.grid(row=4, column=1, pady=20)
         
-        pulsante_domanda_successiva = tk.Button(frame_navigazione, 
-                                                text="Avanti >>", 
+        pulsante_domanda_successiva = tk.Button(frame_principale, 
+                                                text="Avanti", 
                                                 font=(MODELLO_FONT, 14), 
                                                 bg=PULSANTE_BG_COLOR, 
                                                 command=lambda: vai_avanti(indice_domanda_tkvar, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, domande, risposte_utente), 
                                                 width=12)
-        pulsante_domanda_successiva.pack(side=tk.RIGHT)
+        pulsante_domanda_successiva.grid(row=4, column=2, sticky="e", pady=20)
 
         aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente)
         
