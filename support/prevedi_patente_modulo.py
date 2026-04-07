@@ -108,7 +108,7 @@ def preleva_domande(domande):
         return []
 
 
-def mostra_risultato(finestra, domande, risposte_utente):
+def mostra_risultato(finestra, domande, risposte_utente, non_risposte_conta=0):
     try:
         finestra.destroy()
         finestra_schermata_risultato = tk.Tk()
@@ -137,6 +137,9 @@ def mostra_risultato(finestra, domande, risposte_utente):
         
         scritta_quantita_errori = tk.Label(finestra_schermata_risultato, text=f"Hai commesso {errori} errori su {len(domande)} domande.", font=(MODELLO_FONT, 18), bg=BG_COLOR, fg=FG_COLOR)
         scritta_quantita_errori.pack(pady=20)
+
+        scritta_domande_non_risposte = tk.Label(finestra_schermata_risultato, text=f"Di questi errori, ci sono {non_risposte_conta} domande senza risposta.", font=(MODELLO_FONT, 18), bg=BG_COLOR, fg=FG_COLOR)
+        scritta_domande_non_risposte.pack(pady=10)
         
         pulsante_esci = tk.Button(finestra_schermata_risultato, text="Chiudi Simulatore", font=(MODELLO_FONT, 15), bg=PULSANTE_BG_COLOR, command=finestra_schermata_risultato.destroy, width=20)
         pulsante_esci.pack(pady=40)
