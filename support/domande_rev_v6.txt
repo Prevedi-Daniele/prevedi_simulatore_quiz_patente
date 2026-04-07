@@ -1,6 +1,6 @@
 F | Ai fini della circolazione i quadricicli leggeri sono assimilati ai motocicli Tricicli a motore
 F | Con la patente di categoria A si possono guidare tutte le macchine agricole
-F | Con la patente di categoria B si possono guidare le macchine operatrici eccezionali 3 I VEICOLI Rimorchi e semirimorchi
+F | Con la patente di categoria B si possono guidare le macchine operatrici eccezionali
 F | È consentito aumentare la cilindrata dei quadricicli leggeri purché non si aumenti la velocità
 F | È consentito sostituire il dispositivo di scarico dei quadricicli leggeri per aumentare la velocità massima, purché non si aumenti la cilindrata del motore
 F | È consentito sostituire il motore del quadriciclo leggero per aumentare la velocità massima oltre i 45 km/h
@@ -13,7 +13,7 @@ F | Gli autoveicoli sono tutti i veicoli a motore con quattro o più ruote, comp
 F | Gli autoveicoli sono tutti i veicoli con almeno due ruote
 F | Gli autoveicoli sono tutti i veicoli con almeno quattro ruote, compresi quelli senza motore
 F | I caravan (roulottes) sono rimorchi destinati ai lavori agricoli
-F | I caravan (roulottes) sono rimorchi destinati esclusivamente al trasporto di attrezzature turistiche e sportive 4 LA STRADA Strada
+F | I caravan (roulottes) sono rimorchi destinati esclusivamente al trasporto di attrezzature turistiche e sportive
 F | I ciclomotori non hanno più di due ruote
 F | I ciclomotori non sono soggetti a revisione periodica Motocicli
 F | I ciclomotori possono circolare alla velocità di 60 km/h fuori dai centri urbani
@@ -37,7 +37,7 @@ F | Il divieto imposto dal segnale raffigurato deve essere rispettato, nei centr
 F | Il limite di velocità indicato dal segnale raffigurato entra in vigore 150 metri dopo il segnale stesso
 F | Il marciapiede è riservato ai pedoni e ai veicoli in sosta, qualora non sia rialzato
 F | Il marciapiede è una parte della carreggiata
-F | Il marciapiede è una parte della strada dove, di norma, è consentita la sosta dei ciclomotori 8 LA STRADA Attraversamento pedonale
+F | Il marciapiede è una parte della strada dove, di norma, è consentita la sosta dei ciclomotori
 F | Il marciapiede è una parte della strada riservata anche alle biciclette
 F | Il motociclo è un qualunque veicolo a due ruote
 F | Il passaggio a livello è caratterizzato dalla presenza di un attraversamento autostradale
@@ -103,7 +103,7 @@ F | L'autoveicolo è un qualunque veicolo a motore
 F | L'autoveicolo è un qualunque veicolo adibito al trasporto di merce Autocaravan (camper)
 F | L'autovettura è un veicolo con dieci posti in totale, compreso il conducente
 F | L'autovettura può avere, al massimo, cinque posti
-F | L'intersezione (incrocio) a livelli sfalsati è, di norma, regolata da semafori 9 LA STRADA Passaggio a livello
+F | L'intersezione (incrocio) a livelli sfalsati è, di norma, regolata da semafori
 F | L'intersezione (incrocio) a raso è un incrocio fra una strada statale e i binari del tram
 F | L'intersezione (incrocio) a raso è un incrocio fra una strada statale e un passo carrabile
 F | L'intersezione (incrocio) a raso è un insieme di sovrappassi, sottopassi e rampe Intersezione (incrocio) a livelli sfalsati
@@ -114,7 +114,7 @@ F | L'isola di traffico corrisponde, in genere, al centro storico della città
 F | L'isola di traffico è la parte della città con maggiore traffico
 F | L'isola di traffico è posta al di fuori della strada
 F | L'isola di traffico è un'area pedonale urbana
-F | L'isola di traffico è una parte della strada sulla quale è consentito il transito dei ciclomotori 10 LA STRADA Zona a traffico limitato
+F | L'isola di traffico è una parte della strada sulla quale è consentito il transito dei ciclomotori
 F | L'isola di traffico è una piazzola di sosta per i veicoli
 F | L'isola di traffico è una piazzola per effettuare l'inversione di marcia
 F | L'isola di traffico è una zona destinata al parcheggio dei veicoli
@@ -161,7 +161,7 @@ F | Le autocaravan (camper) sono veicoli destinati ai lavori agricoli
 F | Le autocaravan (camper) sono veicoli destinati alla costruzione e alla manutenzione di opere stradali
 F | Le autocaravan sono soggette a revisione ogni cinque anni Macchine agricole - Macchine operatrici
 F | Le autovetture non possono trainare carrelli-appendice o rimorchi
-F | Le autovetture sono soggette a revisione ogni cinque anni 2 I VEICOLI Autoveicoli
+F | Le autovetture sono soggette a revisione ogni cinque anni
 F | Le biciclette con pedalata assistita, dotate di motore elettrico ausiliario di potenza massima fino a 0,25 kW, sono definite ciclomotori
 F | Le frecce direzionali in figura obbligano a seguire la direzione indicata, anche se le strisce di corsia sono discontinue | ./support/img/blocco_16005.png
 F | Le macchine agricole possono trasportare fino a quattro passeggeri
@@ -184,7 +184,7 @@ F | Nelle aree pedonali possono transitare tutti i motocicli, purché diano la p
 F | Nelle autostrade possono circolare i ciclomotori e i motocicli con cilindrata fino a 125 cm3
 F | Nelle autostrade possono circolare solo gli autoveicoli
 F | Nelle autostrade possono circolare solo le autovetture
-F | Nelle autostrade possono circolare tutti i motocicli e i ciclomotori 5 LA STRADA Strada extraurbana principale
+F | Nelle autostrade possono circolare tutti i motocicli e i ciclomotori
 F | Nelle autostrade possono circolare tutti i tipi di motocicli
 F | Nelle strade extraurbane principali non vi sono curve né dossi
 F | Per condurre macchine operatrici è necessario essere titolari della patente di guida della categoria A
