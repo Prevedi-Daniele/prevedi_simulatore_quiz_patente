@@ -6,7 +6,6 @@ from tkinter import messagebox
 import platform
 import random
 from PIL import Image, ImageTk
-import os
 
 try:
     if platform.system() == "Windows":
@@ -31,6 +30,7 @@ FALSO_COLORE = "#ef4444"
 ACTIVE_FALSO_COLORE = "#dc2626"
 
 TEMPO = 20 * 60
+
 
 def crea_pulsante_vero(finestra, funzione):
     try:
@@ -307,7 +307,7 @@ def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risp
             messagebox.showinfo("Tempo scaduto", "Il tempo è scaduto! Il quiz verrà consegnato automaticamente.")
             mostra_risultato(finestra, domande, risposte_utente)
     except Exception as errore:
-        pass
+        messagebox.showerror("Errore", f"Errore: {errore}")
 
 
 def consegna(finestra, risposte_utente, domande):
@@ -315,7 +315,7 @@ def consegna(finestra, risposte_utente, domande):
         non_risposte_conta = risposte_utente.count(None)
         mostra_risultato(finestra, domande, risposte_utente, non_risposte_conta)
     except Exception as errore:
-        messagebox.showerror("Errore", f"Errore consegna: {errore}")
+        messagebox.showerror("Errore", f"Errore: {errore}")
 
 
 def gestisci_quiz(finestra, domande, a_tempo):
