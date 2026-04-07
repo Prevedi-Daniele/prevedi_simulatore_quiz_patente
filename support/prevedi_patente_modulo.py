@@ -204,16 +204,16 @@ def inizia_quiz(finestra, domande, a_tempo):
 
 
 def dividi_testo_domanda(testo):
-    parole = testo.split(" ")
-    nuovo_testo = ""
-    lunghezza_linea = 0
-    for parola in parole:
-        if lunghezza_linea + len(parola) > 70:
-            nuovo_testo = nuovo_testo + "\n"
-            lunghezza_linea = 0
-        nuovo_testo = nuovo_testo + parola + " "
-        lunghezza_linea = lunghezza_linea + len(parola) + 1
-    return nuovo_testo
+    elenco_parole_domanda = testo.split(" ")
+    nuovo_testo_domanda = ""
+    lunghezza_linea_attuale_domanda = 0
+    for parola in elenco_parole_domanda:
+        if lunghezza_linea_attuale_domanda + len(parola) > 70:
+            nuovo_testo_domanda = nuovo_testo_domanda + "\n"
+            lunghezza_linea_attuale_domanda = 0
+        nuovo_testo_domanda = nuovo_testo_domanda + parola + " "
+        lunghezza_linea_attuale_domanda = lunghezza_linea_attuale_domanda + len(parola) + 1
+    return nuovo_testo_domanda
 
 
 def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, testo_domanda, label_immagine, pulsante_vero, pulsante_falso, risposte_utente):
