@@ -65,7 +65,6 @@ def crea_pulsante_falso(finestra, funzione):
         )
     except Exception as e:
         messagebox.showerror("Errore", f"Errore nella creazione del pulsante: {e}")
-        return None
 
 
 def leggi_domande():
@@ -74,11 +73,14 @@ def leggi_domande():
         with open("support/domande_rev_v5.txt", "r", encoding="utf-8") as file:
             for linea in file:
                 parti = linea.strip().split("|")
+
                 if len(parti) >= 2:
                     domanda_testo = parti[1].strip()
                     risposta = parti[0].strip().upper()
+                
                     if len(parti) == 2:
                         domande.append([domanda_testo, risposta])
+                
                     if len(parti) == 3:
                         percorso_immagine = parti[2].strip()
                         domande.append([domanda_testo, risposta, percorso_immagine])
@@ -92,8 +94,10 @@ def leggi_domande():
 
 def preleva_domande(domande):
     try:
-        if not domande:
+        if len(domande) == 0:
             return []
+
+        # Se ci sono meno di 30 domande, prendile tutte        
         num_domande = min(30, len(domande))
         return random.sample(domande, num_domande)
     except Exception as e:
