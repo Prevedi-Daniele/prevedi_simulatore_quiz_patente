@@ -232,27 +232,10 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
                 if os.path.exists(percorso_immagine) == True:
                     try:
                         immagine_file = Image.open(percorso_immagine)
-                        larghezza_orig = immagine_file.width
-                        altezza_orig = immagine_file.height
-                        
-                        nuova_larghezza = larghezza_orig
-                        nuova_altezza = altezza_orig
-                        
-                        if larghezza_orig > 400:
-                            ratio = larghezza_orig / 400
-                            nuova_larghezza = int(larghezza_orig / ratio)
-                            nuova_altezza = int(altezza_orig / ratio)
-                            immagine_file = immagine_file.resize((nuova_larghezza, nuova_altezza))
-                        
                         img = ImageTk.PhotoImage(immagine_file)
                     except Exception as errore:
                         img = tk.PhotoImage(file=percorso_immagine)
-                        fattore = 1
-                        if img.width() > 400:
-                            fattore = img.width() // 400
-                        if fattore > 1:
-                            img = img.subsample(fattore, fattore)
-                            
+
                     label_immagine.config(image=img)
                     label_immagine.image = img
                     label_immagine.pack(pady=10)
