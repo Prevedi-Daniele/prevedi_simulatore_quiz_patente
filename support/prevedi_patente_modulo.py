@@ -6,6 +6,7 @@ from tkinter import messagebox
 import platform
 import random
 from PIL import Image, ImageTk
+import os
 
 try:
     if platform.system() == "Windows":
@@ -228,7 +229,6 @@ def aggiorna_vista(indice_domanda_tkvar, domande, indicatore_numero_di_domanda, 
         if len(domanda_corrente) > 2:
             percorso_immagine = domanda_corrente[2]
             try:
-                import os
                 if os.path.exists(percorso_immagine) == True:
                     try:
                         immagine_file = Image.open(percorso_immagine)
