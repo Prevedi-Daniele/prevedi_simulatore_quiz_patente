@@ -14,7 +14,7 @@ def main():
     finestra = tk.Tk()
     finestra.title("Quiz Simulatore Patente")
 
-    finestra.geometry("900x600")
+    finestra.geometry("1080x720")
     finestra.resizable(False, False)
     finestra.configure(bg="white")
 

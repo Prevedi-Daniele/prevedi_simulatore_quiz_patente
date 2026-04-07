@@ -18,6 +18,7 @@ try:
 except Exception as e:
     MODELLO_FONT = "Arial"
 
+RISOLUZIONE = "1080x720"
 FG_COLOR = "black"
 BG_COLOR = "white"
 PULSANTE_BG_COLOR = "#dddddd"
@@ -70,7 +71,7 @@ def crea_pulsante_falso(finestra, funzione):
 def leggi_domande():
     domande = []
     try:
-        with open("support/domande_rev_v5.txt", "r", encoding="utf-8") as file:
+        with open("support/domande_rev_v6.txt", "r", encoding="utf-8") as file:
             for linea in file:
                 parti = linea.strip().split("|")
 
@@ -110,7 +111,7 @@ def mostra_risultato(finestra, domande, risposte_utente):
         finestra.destroy()
         finestra_schermata_risultato = tk.Tk()
         finestra_schermata_risultato.title("Risultato Quiz Simulatore Patente")
-        finestra_schermata_risultato.geometry("900x600")
+        finestra_schermata_risultato.geometry(RISOLUZIONE)
         finestra_schermata_risultato.resizable(False, False)
         finestra_schermata_risultato.configure(bg=BG_COLOR)
         
@@ -191,7 +192,7 @@ def inizia_quiz(finestra, domande, a_tempo):
         finestra.destroy()
         finestra_quiz = tk.Tk()
         finestra_quiz.title("Quiz Simulatore Patente")
-        finestra_quiz.geometry("900x600")
+        finestra_quiz.geometry(RISOLUZIONE)
         finestra_quiz.resizable(False, False)
         finestra_quiz.configure(bg=BG_COLOR)
 
@@ -200,126 +201,224 @@ def inizia_quiz(finestra, domande, a_tempo):
         messagebox.showerror("Errore", f"Errore inizio quiz: {e}")
 
 
+def dividi_testo_domanda(testo):
+    parole = testo.split(" ")
+    nuovo_testo = ""
+    lunghezza_linea = 0
+    for parola in parole:
+        if lunghezza_linea + len(parola) > 70:
+            nuovo_testo = nuovo_testo + "\n"
+            lunghezza_linea = 0
+        nuovo_testo = nuovo_testo + parola + " "
+        lunghezza_linea = lunghezza_linea + len(parola) + 1
+    return nuovo_testo
+
+
+def aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente):
+    try:
+        idx = indice_gui.get()
+        domanda_corrente = domande[idx]
+        domanda_testo = domanda_corrente[0]
+        testo_formattato = dividi_testo_domanda(domanda_testo)
+        
+        stringa_info = f"Domanda {idx + 1} di {len(domande)}"
+        label_info.config(text=stringa_info)
+        label_domanda.config(text=testo_formattato)
+
+        if len(domanda_corrente) > 2:
+            percorso_immagine = domanda_corrente[2]
+            try:
+                import os
+                if os.path.exists(percorso_immagine) == True:
+                    try:
+                        from PIL import Image, ImageTk
+                        immagine_file = Image.open(percorso_immagine)
+                        larghezza_orig = immagine_file.width
+                        altezza_orig = immagine_file.height
+                        
+                        nuova_larghezza = larghezza_orig
+                        nuova_altezza = altezza_orig
+                        
+                        if larghezza_orig > 400:
+                            ratio = larghezza_orig / 400
+                            nuova_larghezza = int(larghezza_orig / ratio)
+                            nuova_altezza = int(altezza_orig / ratio)
+                            immagine_file = immagine_file.resize((nuova_larghezza, nuova_altezza))
+                        
+                        img = ImageTk.PhotoImage(immagine_file)
+                    except Exception as e_pil:
+                        img = tk.PhotoImage(file=percorso_immagine)
+                        fattore = 1
+                        if img.width() > 400:
+                            fattore = img.width() // 400
+                        if fattore > 1:
+                            img = img.subsample(fattore, fattore)
+                            
+                    label_immagine.config(image=img)
+                    label_immagine.image = img
+                    label_immagine.pack(pady=10)
+                else:
+                    label_immagine.pack_forget()
+            except Exception as e:
+                label_immagine.pack_forget()
+        else:
+            label_immagine.pack_forget()
+        
+        if pulsante_vero != None:
+            if pulsante_falso != None:
+                if risposte_utente[idx] == "V":
+                    pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
+                    pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
+                elif risposte_utente[idx] == "F":
+                    pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
+                    pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
+                else:
+                    pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
+                    pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
+        
+        if idx > 0:
+            btn_indietro.config(state="normal")
+        else:
+            btn_indietro.config(state="disabled")
+            
+        limite_domande = len(domande) - 1
+        if idx < limite_domande:
+            btn_avanti.config(state="normal")
+        else:
+            btn_avanti.config(state="disabled")
+            
+    except Exception as e:
+        messagebox.showerror("Errore", f"Errore aggiornamento vista: {e}")
+
+
+def set_risposta(risp, indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande):
+    try:
+        indice_corrente = indice_gui.get()
+        risposte_utente[indice_corrente] = risp
+        aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+    except Exception as e:
+        messagebox.showerror("Errore", f"Errore risposta: {e}")
+
+
+def vai_indietro(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
+    try:
+        indice_attuale = indice_gui.get()
+        if indice_attuale > 0:
+            nuovo_indice = indice_attuale - 1
+            indice_gui.set(nuovo_indice)
+            aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+    except Exception as e:
+        messagebox.showerror("Errore", f"Errore navigazione: {e}")
+
+
+def vai_avanti(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente):
+    try:
+        indice_attuale = indice_gui.get()
+        limite_domande = len(domande) - 1
+        if indice_attuale < limite_domande:
+            nuovo_indice = indice_attuale + 1
+            indice_gui.set(nuovo_indice)
+            aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
+    except Exception as e:
+        messagebox.showerror("Errore", f"Errore navigazione: {e}")
+
+
+def aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente):
+    try:
+        tempo_rimanente = tempo_gui.get()
+        if tempo_rimanente > 0:
+            minuti = tempo_rimanente // 60
+            secondi = tempo_rimanente % 60
+            stringa_timer = f"Tempo rimanente: {minuti:02d}:{secondi:02d}"
+            label_timer.config(text=stringa_timer)
+            
+            nuovo_tempo = tempo_rimanente - 1
+            tempo_gui.set(nuovo_tempo)
+            
+            timer_id = finestra.after(1000, lambda: aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente))
+            timer_id_gui.set(timer_id)
+        else:
+            messagebox.showinfo("Tempo scaduto", "Il tempo è scaduto! Il quiz verrà consegnato automaticamente.")
+            mostra_risultato(finestra, domande, risposte_utente)
+    except Exception as e:
+        pass
+
+
+def consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer):
+    try:
+        timer_corrente = timer_id_gui.get()
+        if timer_corrente != "":
+            finestra.after_cancel(timer_corrente)
+            
+        non_risposte_conta = risposte_utente.count(None)
+        if non_risposte_conta > 0:
+            domanda_scritta = f"Hai ancora {non_risposte_conta} domande a cui non hai risposto. Vuoi consegnare lo stesso?"
+            risposta_utente = messagebox.askquestion("Attenzione", domanda_scritta)
+            if risposta_utente == "no":
+                if a_tempo == True:
+                    aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
+                return
+                
+        mostra_risultato(finestra, domande, risposte_utente)
+    except Exception as e:
+        messagebox.showerror("Errore", f"Errore consegna: {e}")
+
+
 def gestisci_quiz(finestra, domande, a_tempo):
     try:
-        stato = {"indice": 0, "tempo": TEMPO, "timer_id": None}
+        indice_gui = tk.IntVar(value=0)
+        tempo_gui = tk.IntVar(value=TEMPO)
+        timer_id_gui = tk.StringVar(value="")
+        
         risposte_utente = [None] * len(domande)
 
-        frame_top = tk.Frame(finestra, bg=BG_COLOR)
-        frame_top.pack(fill=tk.X, pady=20, padx=20)
+        frame_top = tk.Frame(finestra, bg=BG_COLOR, width=860, height=40)
+        frame_top.pack_propagate(False)
+        frame_top.pack(pady=20, padx=20)
         
         label_info = tk.Label(frame_top, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FG_COLOR)
         label_info.pack(side=tk.LEFT)
         
         label_timer = tk.Label(frame_top, text="", font=(MODELLO_FONT, 14, "bold"), bg=BG_COLOR, fg=FALSO_COLORE)
-        if a_tempo:
+        if a_tempo == True:
             label_timer.pack(side=tk.RIGHT)
 
-        label_domanda = tk.Label(finestra, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, wraplength=800, justify="center")
-        label_domanda.pack(pady=40, expand=True)
+        frame_centrale = tk.Frame(finestra, bg=BG_COLOR)
+        frame_centrale.pack(expand=True)
 
+        label_domanda = tk.Label(frame_centrale, text="", font=(MODELLO_FONT, 18), fg=FG_COLOR, bg=BG_COLOR, justify="center")
+        label_domanda.pack(pady=10)
+
+        label_immagine = tk.Label(frame_centrale, bg=BG_COLOR)
+        
         frame_pulsanti = tk.Frame(finestra, bg=BG_COLOR)
         frame_pulsanti.pack(pady=20)
 
-        def set_risposta(risp):
-            try:
-                risposte_utente[stato["indice"]] = risp
-                aggiorna_vista()
-            except Exception as e:
-                messagebox.showerror("Errore", f"Errore risposta: {e}")
-
-        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V"))
-        if pulsante_vero:
+        pulsante_vero = crea_pulsante_vero(frame_pulsanti, lambda: set_risposta("V", indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
+        if pulsante_vero != None:
             pulsante_vero.pack(side=tk.LEFT, padx=30)
         
-        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F"))
-        if pulsante_falso:
+        pulsante_falso = crea_pulsante_falso(frame_pulsanti, lambda: set_risposta("F", indice_gui, risposte_utente, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande))
+        if pulsante_falso != None:
             pulsante_falso.pack(side=tk.RIGHT, padx=30)
 
-        frame_nav = tk.Frame(finestra, bg=BG_COLOR)
-        frame_nav.pack(side=tk.BOTTOM, pady=40, fill=tk.X, padx=50)
+        frame_nav = tk.Frame(finestra, bg=BG_COLOR, width=800, height=50)
+        frame_nav.pack_propagate(False)
+        frame_nav.pack(side=tk.BOTTOM, pady=40, padx=50)
 
-        def vai_indietro():
-            try:
-                if stato["indice"] > 0:
-                    stato["indice"] -= 1
-                    aggiorna_vista()
-            except Exception as e:
-                messagebox.showerror("Errore", f"Errore navigazione: {e}")
-
-        def vai_avanti():
-            try:
-                if stato["indice"] < len(domande) - 1:
-                    stato["indice"] += 1
-                    aggiorna_vista()
-            except Exception as e:
-                messagebox.showerror("Errore", f"Errore navigazione: {e}")
-
-        def consegna():
-            try:
-                if stato.get("timer_id"):
-                    finestra.after_cancel(stato["timer_id"])
-                non_risposte = risposte_utente.count(None)
-                if non_risposte > 0:
-                    risp = messagebox.askyesno("Attenzione", f"Hai ancora {non_risposte} domande a cui non hai risposto. Vuoi consegnare lo stesso?")
-                    if not risp:
-                        if a_tempo:
-                            aggiorna_timer()
-                        return
-                mostra_risultato(finestra, domande, risposte_utente)
-            except Exception as e:
-                messagebox.showerror("Errore", f"Errore consegna: {e}")
-
-        btn_indietro = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=vai_indietro, width=12)
+        btn_indietro = tk.Button(frame_nav, text="<< Indietro", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_indietro(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
         btn_indietro.pack(side=tk.LEFT)
         
-        btn_consegna = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=consegna, width=12)
+        btn_consegna = tk.Button(frame_nav, text="Consegna", font=(MODELLO_FONT, 14, "bold"), bg="#3b82f6", fg="white", command=lambda: consegna(finestra, timer_id_gui, risposte_utente, a_tempo, domande, tempo_gui, label_timer), width=12)
         btn_consegna.pack(side=tk.LEFT, padx=160)
         
-        btn_avanti = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=vai_avanti, width=12)
+        btn_avanti = tk.Button(frame_nav, text="Avanti >>", font=(MODELLO_FONT, 14), bg=PULSANTE_BG_COLOR, command=lambda: vai_avanti(indice_gui, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, domande, risposte_utente), width=12)
         btn_avanti.pack(side=tk.RIGHT)
 
-        def aggiorna_vista():
-            try:
-                idx = stato["indice"]
-                domanda_testo, _ = domande[idx]
-                label_info.config(text=f"Domanda {idx + 1} di {len(domande)}")
-                label_domanda.config(text=domanda_testo)
-                
-                if pulsante_vero and pulsante_falso:
-                    if risposte_utente[idx] == "V":
-                        pulsante_vero.config(bg=ACTIVE_VERO_COLORE, fg="white")
-                        pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-                    elif risposte_utente[idx] == "F":
-                        pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
-                        pulsante_falso.config(bg=ACTIVE_FALSO_COLORE, fg="white")
-                    else:
-                        pulsante_vero.config(bg=VERO_COLORE, fg=BG_COLOR)
-                        pulsante_falso.config(bg=FALSO_COLORE, fg=BG_COLOR)
-                    
-                btn_indietro.config(state=tk.NORMAL if idx > 0 else tk.DISABLED)
-                btn_avanti.config(state=tk.NORMAL if idx < len(domande) - 1 else tk.DISABLED)
-            except Exception as e:
-                messagebox.showerror("Errore", f"Errore aggiornamento vista: {e}")
-
-        def aggiorna_timer():
-            try:
-                if stato["tempo"] > 0:
-                    minuti = stato["tempo"] // 60
-                    secondi = stato["tempo"] % 60
-                    label_timer.config(text=f"Tempo rimanente: {minuti:02d}:{secondi:02d}")
-                    stato["tempo"] -= 1
-                    stato["timer_id"] = finestra.after(1000, aggiorna_timer)
-                else:
-                    messagebox.showinfo("Tempo scaduto", "Il tempo è scaduto! Il quiz verrà consegnato automaticamente.")
-                    mostra_risultato(finestra, domande, risposte_utente)
-            except Exception as e:
-                pass
-
-        aggiorna_vista()
+        aggiorna_vista(indice_gui, domande, label_info, label_domanda, label_immagine, pulsante_vero, pulsante_falso, btn_indietro, btn_avanti, risposte_utente)
         
-        if a_tempo:
-            aggiorna_timer()
+        if a_tempo == True:
+            aggiorna_timer(tempo_gui, timer_id_gui, label_timer, finestra, domande, risposte_utente)
             
     except Exception as e:
         messagebox.showerror("Errore", f"Errore gestore quiz: {e}")
