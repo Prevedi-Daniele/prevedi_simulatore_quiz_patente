@@ -107,32 +107,38 @@ def preleva_domande(domande):
 
 def mostra_risultato(finestra, domande, risposte_utente):
     try:
-        for widget in finestra.winfo_children():
-            widget.destroy()
+        finestra.destroy()
+        finestra_schermata_risultato = tk.Tk()
+        finestra_schermata_risultato.title("Risultato Quiz Simulatore Patente")
+        finestra_schermata_risultato.geometry("900x600")
+        finestra_schermata_risultato.resizable(False, False)
+        finestra_schermata_risultato.configure(bg=BG_COLOR)
         
         errori = 0
         for i in range(len(domande)):
-            if risposte_utente[i] != domande[i][1]:
+            if risposte_utente[i].strip() != domande[i][1].strip():
                 errori = errori + 1
  
         if errori <= 3:
-            esito = "PROMOSSO/A"
+            esito_quiz = "PROMOSSO/A"
             colore_esito = VERO_COLORE
         else:
-            esito = "BOCCIATO/A"
+            esito_quiz = "BOCCIATO/A"
             colore_esito = FALSO_COLORE
 
-        label_titolo = tk.Label(finestra, text="Risultato del Quiz", font=(MODELLO_FONT, 24, "bold"), bg=BG_COLOR, fg=FG_COLOR)
-        label_titolo.pack(pady=30)
+        scritta_titolo = tk.Label(finestra_schermata_risultato, text="Risultato del Quiz", font=(MODELLO_FONT, 24, "bold"), bg=BG_COLOR, fg=FG_COLOR)
+        scritta_titolo.pack(pady=30)
         
-        label_esito = tk.Label(finestra, text=esito, font=(MODELLO_FONT, 30, "bold"), bg=BG_COLOR, fg=colore_esito)
-        label_esito.pack(pady=10)
+        scritta_esito = tk.Label(finestra_schermata_risultato, text=esito_quiz, font=(MODELLO_FONT, 30, "bold"), bg=BG_COLOR, fg=colore_esito)
+        scritta_esito.pack(pady=10)
         
-        label_errori = tk.Label(finestra, text=f"Hai commesso {errori} errori su {len(domande)} domande.", font=(MODELLO_FONT, 18), bg=BG_COLOR, fg=FG_COLOR)
-        label_errori.pack(pady=20)
+        scritta_quantita_errori = tk.Label(finestra_schermata_risultato, text=f"Hai commesso {errori} errori su {len(domande)} domande.", font=(MODELLO_FONT, 18), bg=BG_COLOR, fg=FG_COLOR)
+        scritta_quantita_errori.pack(pady=20)
         
-        btn_esci = tk.Button(finestra, text="Chiudi Simulatore", font=(MODELLO_FONT, 15), bg=PULSANTE_BG_COLOR, command=finestra.destroy, width=20)
-        btn_esci.pack(pady=40)
+        pulsante_esci = tk.Button(finestra_schermata_risultato, text="Chiudi Simulatore", font=(MODELLO_FONT, 15), bg=PULSANTE_BG_COLOR, command=finestra_schermata_risultato.destroy, width=20)
+        pulsante_esci.pack(pady=40)
+
+        finestra_schermata_risultato.mainloop()
     except Exception as e:
         messagebox.showerror("Errore", f"Errore nel mostrare il risultato: {e}")
 
@@ -174,9 +180,9 @@ def schermata_iniziale(finestra, domande):
         messagebox.showerror("Errore", f"Errore schermata iniziale: {e}")
 
 
-def inizia_quiz(finestra, domande, tempo):
+def inizia_quiz(finestra, domande, a_tempo):
     try:
-        if not domande:
+        if len(domande) == 0:
             messagebox.showerror("Errore", "Nessuna domanda disponibile.")
             return
 
@@ -189,7 +195,7 @@ def inizia_quiz(finestra, domande, tempo):
         finestra_quiz.resizable(False, False)
         finestra_quiz.configure(bg=BG_COLOR)
 
-        gestisci_quiz(finestra_quiz, domande_selezionate, a_tempo=tempo)
+        gestisci_quiz(finestra_quiz, domande_selezionate, a_tempo)
     except Exception as e:
         messagebox.showerror("Errore", f"Errore inizio quiz: {e}")
 
